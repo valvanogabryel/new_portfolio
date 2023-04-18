@@ -1,13 +1,11 @@
-import Atropos from 'atropos/react';
-import 'atropos/atropos.css';
+// import Atropos from 'atropos/react';
+// import 'atropos/atropos.css';
+
+import Header from "./components/Header";
 
 const App = () => {
   return (
-    <div>
-      <Atropos className='h-10 w-10'>
-
-      </Atropos>
-    </div>
+    <Header />
   );
 }
 
