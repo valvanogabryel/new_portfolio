@@ -14,7 +14,7 @@ const Header = () => {
   }
 
   return (
-    <header className="text-white flex justify-between p-10">
+    <header className="text-white flex justify-between p-10 items-center">
       <div className="text-4xl font-logo select-none">
         <span className="text-primary">G</span>
         <span>a</span>
@@ -29,16 +29,16 @@ const Header = () => {
       <nav className="">
 
         <div className='md:hidden'>
-          <MenuIcon isOpen={isMenuOpen} onClick={handleMenu} />
+          <MenuIcon isOpen={isMenuOpen} onClick={handleMenu} isAnimated={iconAnimation} />
         </div>
-        {
+        {/* {
           isMenuOpen &&
           <ul>
             <li>Projetos</li>
             <li>Sobre mim</li>
             <li>Currículo</li>
           </ul>
-        }
+        } */}
 
         <ul className="hidden md:flex gap-4">
           <li>
