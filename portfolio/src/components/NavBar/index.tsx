@@ -59,7 +59,7 @@ const NavBar = () => {
             >
               <a
                 href={menu.to}
-                target={menu.name === 'Currículo' ? '_blank' : ''}
+                target={menu.name === 'Currículo' ? '_blank' : '_parent'}
                 className="flex flex-col text-center pt-6"
                 onClick={() => setActive(i)}
               >
