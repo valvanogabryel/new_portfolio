@@ -47,7 +47,7 @@ const App = () => {
       <br />
       <br />
       <br />
-      <section id="#projetos">
+      <section id="projetos">
         <h1 className="text-white">PROJETOS</h1>
       </section>
       <br />
@@ -88,7 +88,7 @@ const App = () => {
       <br />
       <br />
       <br />
-      <section id="#sobre">
+      <section id="sobre">
         <h1 className="text-white">SOBRE</h1>
       </section>
       <br />
@@ -129,7 +129,7 @@ const App = () => {
       <br />
       <br />
       <br />
-      <section id="#Contato">
+      <section id="contato">
         <h1 className="text-white">CONTATO</h1>
       </section>
       <br />
