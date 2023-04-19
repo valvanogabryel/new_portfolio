@@ -17,6 +17,8 @@ const App = () => {
       <main className="container max-w-xs m-auto">
         <Presentation />
         <Projects />
+
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </main>
     </>
   );
