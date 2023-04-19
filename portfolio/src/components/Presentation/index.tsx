@@ -38,7 +38,7 @@ const Presentation = () => {
             triggerOnce
             direction='left'
           >
-            <li className="duration-500 transition-all hover:shadow-2xl text-sm min-w-fit">
+            <li className="duration-500 transition-all hover:shadow-2xl text-sm min-w-fit ml-10">
               <a
                 href="https://docs.google.com/document/d/1cnQm4vp6bqOJxO4Iuc_SX67zS9Y9GdKDmQI1dW0SXNE/edit?usp=sharing"
                 className='px-4 py-2 border-[1px] border-gray-400 rounded-md transition-all duration-300 hover:ring-4 hover:ring-background_color_darker hover:bg-gray-400 hover:text-background_color'

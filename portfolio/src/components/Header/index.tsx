@@ -10,8 +10,8 @@ const Header = () => {
   const scrollPosition = useScrollPosition();
 
   return (
-    <header className={cn('text-white flex justify-center md:justify-between p-10 items-center sticky transition-all duration-300', {
-      'py-4 bg-background_color_darker backdrop-blur-sm shadow-xl': scrollPosition >= 100,
+    <header className={cn('text-white z-50 flex justify-center md:justify-between p-10 items-center sticky transition-all duration-300', {
+      'py-4 bg-background_color_darker backdrop-blur-sm shadow-2xl': scrollPosition >= 50,
       '-top-24': scrollDirection === 'down',
       'top-0': scrollDirection === 'up'
     })}>
