@@ -46,9 +46,9 @@ const NavBar = () => {
     ];
 
   return (
-    <div className={cn('fixed max-h-[4.4rem] bottom-0 px-6 bg-background_color border-t-[1px] border-t-dark_gray text-white w-screen md:hidden duration-150 transition-all', {
+    <div className={cn('fixed max-h-[4.4rem] -bottom-24 px-6 bg-background_color border-t-[1px] border-t-dark_gray text-white w-screen md:hidden duration-150 transition-all', {
       '-bottom-24': scrollDirection === 'up',
-      'bottom-0': scrollDirection === 'down'
+      '!bottom-0': scrollDirection === 'down'
     })}>
       <ul className="flex relative">
         <span className={`bg-primary border-4 border-background_color h-16 w-16 absolute -top-5 rounded-full transition-all duration-500 -z-10 left-[0.4rem] ${Menus[active].dis}`}>
