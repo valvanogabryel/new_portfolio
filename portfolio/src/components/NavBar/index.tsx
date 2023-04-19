@@ -51,6 +51,9 @@ const NavBar = () => {
       'bottom-0': scrollDirection === 'down'
     })}>
       <ul className="flex relative">
+        <span className="bg-primary border-4 border-background_color h-16 w-16 absolute -top-5 rounded-full -z-10 left-[0.4rem]">
+
+        </span>
         {
           Menus.map((menu, i) => (
             <li
@@ -63,8 +66,8 @@ const NavBar = () => {
                 className="flex flex-col text-center pt-6"
                 onClick={() => setActive(i)}
               >
-                <span className={`mx-auto text-xl duration-500
-                ${i === active && '-mt-6'}`
+                <span className={`mx-auto text-2xl duration-500
+                ${i === active && '-mt-11'}`
                 }>
                   <i>{menu.icon}</i>
                 </span>
