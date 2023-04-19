@@ -1,45 +1,24 @@
-import { useState } from 'react';
-import MenuIcon from './MenuIcon';
+import useScrollDirection from '../../hooks/useScrollDirection';
+import useScrollPosition from '../../hooks/useScrollPosition';
+
+import Logo from './Logo';
+
+import cn from 'classnames';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [iconAnimation, setIconAnimation] = useState(false);
-
-  function handleMenu() {
-    setIsMenuOpen(!isMenuOpen);
-    setIconAnimation(true);
-    setTimeout(() => {
-      setIconAnimation(false);
-    }, 1000);
-  }
+  const scrollDirection = useScrollDirection();
+  const scrollPosition = useScrollPosition();
 
   return (
-    <header className="text-white flex justify-between p-10 items-center">
-      <div className="text-4xl font-logo select-none">
-        <span className="text-primary">G</span>
-        <span>a</span>
-        <span className="text-primary">b</span>
-        <span>r</span>
-        <span>y</span>
-        <span>e</span>
-        <span>l</span>
-        <span>.</span>
-      </div>
+    <header className={cn('text-white flex justify-center md:justify-between p-10 items-center sticky transition-all duration-300', {
+      'py-4 bg-background_color_darker backdrop-blur-sm': scrollPosition >= 100,
+      '-top-24': scrollDirection === 'down',
+      'top-0': scrollDirection === 'up'
+    })}>
 
-      <nav className="">
+      <Logo scrollPosition={scrollPosition} />
 
-        <div className='md:hidden'>
-          <MenuIcon isOpen={isMenuOpen} onClick={handleMenu} isAnimated={iconAnimation} />
-        </div>
-        {/* {
-          isMenuOpen &&
-          <ul>
-            <li>Projetos</li>
-            <li>Sobre mim</li>
-            <li>Currículo</li>
-          </ul>
-        } */}
-
+      <nav>
         <ul className="hidden md:flex gap-4">
           <li>
             Projetos
