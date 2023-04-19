@@ -23,19 +23,19 @@ const NavBar = () => {
         name: "Projetos",
         icon: <DiCode />,
         dis: 'translate-x-0',
-        // to: '#projetos'
+        to: '#projetos'
       },
       {
         name: "Sobre",
         icon: <VscPerson />,
         dis: 'translate-x-[4.9rem]',
-        // to: '#sobre'
+        to: '#sobre'
       },
       {
         name: "Contato",
         icon: <AiOutlinePhone />,
         dis: 'translate-x-[9.8rem]',
-        // to: '#contato'
+        to: '#contato'
       },
       {
         name: "Currículo",
