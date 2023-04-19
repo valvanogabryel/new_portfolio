@@ -50,7 +50,7 @@ const NavBar = () => {
       '-bottom-24': scrollDirection === 'up',
       'bottom-0': scrollDirection === 'down'
     })}>
-      <ul className="flex relative overflow-hidden">
+      <ul className="flex relative">
         {
           Menus.map((menu, i) => (
             <li
@@ -63,18 +63,20 @@ const NavBar = () => {
                 className="flex flex-col text-center pt-6"
                 onClick={() => setActive(i)}
               >
-                <span className="m-auto text-xl">
+                <span className={`mx-auto text-xl duration-500
+                ${i === active && '-mt-6'}`
+                }>
                   <i>{menu.icon}</i>
                 </span>
-                <span className={`text-white ${active === i ?
-                  'translate-y-4 duration-700 opacity-100' :
+                <span className={`${active === i ?
+                  'translate-y-4 duration-300 opacity-100' :
                   'opacity-0 translate-y-10'}`}>{menu.name}</span>
               </a>
             </li>
           ))
         }
       </ul>
-    </div>
+    </div >
   );
 }
 
