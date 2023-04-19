@@ -49,6 +49,7 @@ const App = () => {
       <br />
       <section id="projetos">
         <h1 className="text-white">PROJETOS</h1>
+        <p className="text-white font-secondary-simple font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, nostrum modi. Placeat perspiciatis veniam quas quibusdam unde. Odit, natus. Eos quia qui voluptatibus aspernatur maiores ipsum non in magnam suscipit.</p>
       </section>
       <br />
       <br />

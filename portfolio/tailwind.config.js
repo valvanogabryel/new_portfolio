@@ -15,7 +15,8 @@ export default {
       },
       fontFamily: {
         'logo': ['Sedgwick Ave Display', 'cursive'],
-        'main-simple': ['Josefin Sans', 'sans-serif']
+        'main-simple': ['Josefin Sans', 'sans-serif'],
+        'secondary-simple': ['Montserrat', 'sans-serif']
       },
       // keyframes: {
       //   fast_spin_kf: {
