@@ -46,7 +46,7 @@ const NavBar = () => {
     ];
 
   return (
-    <div className={cn('fixed max-h-[4.4rem] -bottom-24 bg-background_color border-t-[1px] border-t-dark_gray text-slate-300  w-screen md:hidden duration-150 transition-all', {
+    <div className={cn('fixed max-h-[4.4rem] z-50 -bottom-24 bg-background_color border-t-[1px] border-t-dark_gray text-slate-300  w-screen md:hidden duration-150 transition-all', {
       '-bottom-24': scrollDirection === 'up',
       '!bottom-0': scrollDirection === 'down'
     })}>
