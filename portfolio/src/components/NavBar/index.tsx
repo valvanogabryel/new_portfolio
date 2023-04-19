@@ -23,24 +23,24 @@ const NavBar = () => {
         name: "Projetos",
         icon: <DiCode />,
         dis: 'translate-x-0',
-        to: '#projetos'
+        // to: '#projetos'
       },
       {
         name: "Sobre",
         icon: <VscPerson />,
-        dis: 'translate-x-16',
-        to: '#sobre'
+        dis: 'translate-x-[4.9rem]',
+        // to: '#sobre'
       },
       {
         name: "Contato",
         icon: <AiOutlinePhone />,
-        dis: 'translate-x-32',
-        to: '#contato'
+        dis: 'translate-x-[9.8rem]',
+        // to: '#contato'
       },
       {
         name: "Currículo",
         icon: <HiDocumentText />,
-        dis: 'translate-x-48',
+        dis: 'translate-x-[14.7rem]',
         to: 'https://docs.google.com/document/d/1cnQm4vp6bqOJxO4Iuc_SX67zS9Y9GdKDmQI1dW0SXNE/edit?usp=sharing'
       }
     ];
@@ -51,7 +51,7 @@ const NavBar = () => {
       'bottom-0': scrollDirection === 'down'
     })}>
       <ul className="flex relative">
-        <span className="bg-primary border-4 border-background_color h-16 w-16 absolute -top-5 rounded-full -z-10 left-[0.4rem]">
+        <span className={`bg-primary border-4 border-background_color h-16 w-16 absolute -top-5 rounded-full transition-all duration-500 -z-10 left-[0.4rem] ${Menus[active].dis}`}>
 
         </span>
         {
@@ -66,7 +66,7 @@ const NavBar = () => {
                 className="flex flex-col text-center pt-6"
                 onClick={() => setActive(i)}
               >
-                <span className={`mx-auto text-2xl duration-500
+                <span className={`mx-auto text-white text-2xl duration-500
                 ${i === active && '-mt-11'}`
                 }>
                   <i>{menu.icon}</i>
