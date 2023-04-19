@@ -63,7 +63,7 @@ const NavBar = () => {
               <a
                 href={menu.to}
                 target={menu.name === 'Currículo' ? '_blank' : '_parent'}
-                className="flex flex-col text-center pt-6"
+                className="flex flex-col text-center pt-6 focus:bg-transparent"
                 onClick={() => setActive(i)}
               >
                 <span className={`mx-auto text-white text-2xl duration-500
