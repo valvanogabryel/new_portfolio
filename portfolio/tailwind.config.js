@@ -14,7 +14,8 @@ export default {
         light_gray: '#7F8487'
       },
       fontFamily: {
-        'logo': ['Sedgwick Ave Display', 'cursive']
+        'logo': ['Sedgwick Ave Display', 'cursive'],
+        'main-simple': ['Josefin Sans', 'sans-serif']
       },
       // keyframes: {
       //   fast_spin_kf: {
