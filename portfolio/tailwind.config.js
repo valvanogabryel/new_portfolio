@@ -9,7 +9,7 @@ export default {
       colors: {
         primary: '#ED2B2A',
         background_color: '#16003B',
-        background_color_darker: '#030008B3',
+        background_color_darker: '#00000066',
         dark_gray: '#413F42',
         light_gray: '#7F8487'
       },
