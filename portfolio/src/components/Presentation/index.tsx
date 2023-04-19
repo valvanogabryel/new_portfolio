@@ -9,7 +9,7 @@ import {
 
 const Presentation = () => {
   return (
-    <section className={`flex flex-col min-h-screen h-screen justify-center items-start -mt-24 transition-all duration-500 select-none p-4`}>
+    <section className="flex flex-col min-h-screen h-screen justify-center items-start -mt-24 transition-all duration-500 select-none p-4 border-b-[1px] border-slate-500 border-opacity-20">
       <Fade
         cascade
         direction='up'
@@ -43,7 +43,7 @@ const Presentation = () => {
                 href="https://docs.google.com/document/d/1cnQm4vp6bqOJxO4Iuc_SX67zS9Y9GdKDmQI1dW0SXNE/edit?usp=sharing"
                 className='px-4 py-2 border-[1px] border-gray-400 rounded-md transition-all duration-300 hover:ring-4 hover:ring-background_color_darker hover:bg-gray-400 hover:text-background_color'
               >
-                Baixar CV
+                Ver CV
               </a>
             </li>
           </Fade>

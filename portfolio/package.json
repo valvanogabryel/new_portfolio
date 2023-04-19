@@ -16,7 +16,9 @@
     "react-awesome-reveal": "^4.2.3",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
-    "rolly.js": "^0.4.0"
+    "react-slick": "^0.29.0",
+    "rolly.js": "^0.4.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
