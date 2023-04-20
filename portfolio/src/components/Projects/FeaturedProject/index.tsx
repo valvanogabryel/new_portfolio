@@ -1,24 +1,30 @@
 import Atropos from 'atropos/react';
 import 'atropos/atropos.css';
+import { IProject } from '../../../interfaces/IProject';
 
+interface featuredProjectProps {
+  featuredProject: IProject
+}
 
-const FeaturedProject = () => {
-  const settings = Atropos({
+const FeaturedProject = ({ featuredProject }: featuredProjectProps) => {
+  const settings = {
     el: 'hightlight',
     shadow: false,
-    rotateXMax: 10,
-    rotateYMax: 10
-  });
+    rotateXMax: 30,
+    rotateYMax: 30
+  };
+
   return (
-    <Atropos {...settings}>
+    <div>
       <header>
-        <h2>Projeto Destaque</h2>
+        <h2>{featuredProject.name}</h2>
       </header>
-
-
-
-
-    </Atropos>
+      <Atropos {...settings}>
+        <div>
+          <button><img src={featuredProject.image} alt="" /></button>
+        </div>
+      </Atropos>
+    </div>
   );
 }
 

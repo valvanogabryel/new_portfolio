@@ -1,1 +1,55 @@
-{}
+[
+  {
+    "id": 1,
+    "name": "<CodeChella/>",
+    "description": "Este é o CodeChella! Um projeto feito para o Alura Challenge lorem ipsum sit dolor amet",
+    "image": "/src/components/Projects/assets/cover/featuredProject.png",
+    "deploy": "https://code-chella-one.vercel.app/",
+    "repository": "https://github.com/valvanogabryel/codeChella/tree/main/code-chella",
+    "technologies": [
+      "ReactJS",
+      "React Router",
+      "CSS Modules"
+    ],
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Olá, mundo! - Blog",
+    "description": "Olá, mundo! Projeto feito no começo dos meus estudos de React, que me apresentou a biblioteca React Router.",
+    "image": "/src/components/Projects/assets/cover/project1.png",
+    "deploy": "https://react-projects-nb56-7duothlch-valvanogabryel.vercel.app/",
+    "repository": "https://github.com/valvanogabryel/alura-cursos/tree/main/forma%C3%A7%C3%B5es/formacao_react_com_javascript/blog_ola_mundo/ola_mundo",
+    "technologies": [
+      "ReactJS",
+      "React Router",
+      "CSS"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Olá, mundo! - Blog",
+    "description": "Olá, mundo! Projeto feito no começo dos meus estudos de React, que me apresentou a biblioteca React Router.",
+    "image": "/src/components/Projects/assets/cover/project1.png",
+    "deploy": "https://react-projects-nb56-7duothlch-valvanogabryel.vercel.app/",
+    "repository": "https://github.com/valvanogabryel/alura-cursos/tree/main/forma%C3%A7%C3%B5es/formacao_react_com_javascript/blog_ola_mundo/ola_mundo",
+    "technologies": [
+      "ReactJS",
+      "React Router",
+      "CSS"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Olá, mundo! - Blog",
+    "description": "Olá, mundo! Projeto feito no começo dos meus estudos de React, que me apresentou a biblioteca React Router.",
+    "image": "/src/components/Projects/assets/cover/project1.png",
+    "deploy": "https://react-projects-nb56-7duothlch-valvanogabryel.vercel.app/",
+    "repository": "https://github.com/valvanogabryel/alura-cursos/tree/main/forma%C3%A7%C3%B5es/formacao_react_com_javascript/blog_ola_mundo/ola_mundo",
+    "technologies": [
+      "ReactJS",
+      "React Router",
+      "CSS"
+    ]
+  }
+]

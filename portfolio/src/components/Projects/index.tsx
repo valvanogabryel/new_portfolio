@@ -1,7 +1,12 @@
 import FeaturedProject from "./FeaturedProject";
 import ProjectsCarousel from "./ProjectsCarousel";
 
+import projects from './projects.json';
+
 const Projects = () => {
+  const [featuredProject] = projects.filter(project => project.featured);
+  const projectsDefault = projects.filter(project => !project.featured);
+
   return (
     <section className="text-white">
       <header>
@@ -9,10 +14,10 @@ const Projects = () => {
       </header>
       <div className='w-4/5 m-auto max-w-xs'>
 
-        <FeaturedProject />
+        <FeaturedProject featuredProject={featuredProject} />
 
         <div className=''>
-          <ProjectsCarousel />
+          <ProjectsCarousel projects={projectsDefault} />
         </div>
       </div>
     </section>
