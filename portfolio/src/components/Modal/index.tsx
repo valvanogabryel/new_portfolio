@@ -91,7 +91,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => (
           </div>
 
         </div>
-      </Boun>
+      </Bounce>
     )}
   </>
 );
