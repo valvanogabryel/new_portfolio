@@ -1,20 +1,17 @@
-import { useState } from 'react';
-
 import Atropos from 'atropos/react';
 import 'atropos/atropos.css';
 
-import { IProject } from '../../../interfaces/IProject';
 import AnimatedBorder from '../../AnimatedBorder';
 import Button from '../../Button';
-import Modal from '../../Modal';
+
+import { IProject } from '../../../interfaces/IProject';
 
 interface featuredProjectProps {
   featuredProject: IProject;
+  onProjectClick: (project: IProject) => void;
 }
 
-const FeaturedProject = ({ featuredProject }: featuredProjectProps) => {
-
-
+const FeaturedProject = ({ featuredProject, onProjectClick }: featuredProjectProps) => {
   const settings = {
     el: 'hightlight',
     shadow: false,
@@ -22,11 +19,12 @@ const FeaturedProject = ({ featuredProject }: featuredProjectProps) => {
     rotateYMax: 10
   };
 
-
-
   return (
     <>
-      <div className='flex flex-col items-center p-4 overflow-hidden shadow-2xl relative bg-dark_gray w-full m-auto bg-opacity-75 scale-125'>
+      <div
+        className='flex flex-col items-center p-4 overflow-hidden shadow-2xl relative bg-dark_gray w-full m-auto bg-opacity-75 scale-125'
+        onClick={() => onProjectClick(featuredProject)}
+      >
 
         <AnimatedBorder />
 
@@ -44,11 +42,6 @@ const FeaturedProject = ({ featuredProject }: featuredProjectProps) => {
           </div>
         </Atropos>
       </div>
-      {/* <Modal
-        isOpen={isOpen}
-        onClose={handleCloseModal}
-        project={featuredProject}
-      /> */}
     </>
   );
 }

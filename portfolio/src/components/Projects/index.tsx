@@ -1,10 +1,16 @@
 import { Fade } from "react-awesome-reveal";
 import FeaturedProject from "./FeaturedProject";
 import ProjectsCarousel from "./ProjectsCarousel";
+import { useProjectsContext } from "../../contexts/ProjectsContext";
+import { IProject } from "../../interfaces/IProject";
 
-import projects from './projects.json';
+interface ProjectsProps {
+  onProjectClick: (project: IProject) => void;
+}
 
-const Projects = () => {
+const Projects = ({ onProjectClick }: ProjectsProps) => {
+  const projects = useProjectsContext();
+
   const [featuredProject] = projects.filter(project => project.featured);
   const projectsDefault = projects.filter(project => !project.featured);
 
@@ -27,11 +33,18 @@ const Projects = () => {
           direction="up"
           triggerOnce
         >
-          <FeaturedProject featuredProject={featuredProject} />
+          <FeaturedProject
+            featuredProject={featuredProject}
+            onProjectClick={onProjectClick}
+
+          />
         </Fade>
 
         <div className=''>
-          <ProjectsCarousel projects={projectsDefault} />
+          <ProjectsCarousel
+            projects={projectsDefault}
+            onProjectClick={onProjectClick}
+          />
         </div>
       </div>
     </section>

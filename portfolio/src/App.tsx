@@ -5,23 +5,25 @@ import NavBar from "./components/NavBar";
 import Presentation from "./components/Presentation";
 import Projects from "./components/Projects";
 import Modal from "./components/Modal";
-import { ProjectsProvider } from "./contexts/ProjectsContext";
+import { ProjectsProvider, useProjectsContext } from "./contexts/ProjectsContext";
+import { IProject } from "./interfaces/IProject";
 
 const App = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<IProject | null>(null);
 
   useEffect(() => {
-
-
     window.scrollTo(0, 0);
   }, []);
 
-  function handleOpenModal() {
+  function handleOpenModal(project: IProject) {
     setIsOpen(true);
+    setSelectedProject(project);
   }
 
   function handleCloseModal() {
     setIsOpen(false);
+    setSelectedProject(null);
   }
 
   return (
@@ -30,12 +32,13 @@ const App = () => {
         <Modal
           isOpen={isOpen}
           onClose={handleCloseModal}
+          project={selectedProject}
         />
         <Header />
         <NavBar />
         <main className="container max-w-xs m-auto">
           <Presentation />
-          <Projects />
+          <Projects onProjectClick={handleOpenModal} />
 
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </main>
