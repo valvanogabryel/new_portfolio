@@ -16,11 +16,19 @@ const FeaturedProject = ({ featuredProject }: featuredProjectProps) => {
   };
 
   return (
-    <div className='flex flex-col items-center p-4 shadow-2xl relative bg-dark_gray w-full m-auto bg-opacity-75 scale-125'>
-      <span className='absolute top-0 left-0 bg-gradient-to-r from-transparent to-primary w-full h-[1px] animate-border_top_spin'></span>
-      <span className='absolute top-0 right-0 bg-gradient-to-b from-transparent to-primary w-[1px] h-full'></span>
-      <span className='absolute bottom-0 left-0 bg-gradient-to-l from-transparent to-primary w-full h-[1px]'></span>
-      <span className='absolute top-0 left-0 bg-gradient-to-t from-transparent to-primary w-[1px] h-full'></span>
+    <div className='flex flex-col items-center p-4 overflow-hidden shadow-2xl relative bg-dark_gray w-full m-auto bg-opacity-75 scale-125'>
+
+      <span className='absolute top-0 left-0 bg-gradient-to-r from-transparent to-primary w-full h-[1px] animate-border_top_spin'>
+      </span>
+
+      <span className='absolute top-0 right-0 bg-gradient-to-b from-transparent to-primary w-[1px] h-full animate-border_left_spin'>
+      </span>
+
+      <span className='absolute bottom-0 left-0 bg-gradient-to-l from-transparent to-primary w-full h-[1px] animate-border_bottom_spin'>
+      </span>
+
+      <span className='absolute top-0 left-0 bg-gradient-to-t from-transparent to-primary w-[1px] h-full animate-border_right_spin'>
+      </span>
 
       <Atropos {...settings}>
         <div className='h-28 group'>
