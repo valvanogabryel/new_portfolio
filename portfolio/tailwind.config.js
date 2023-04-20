@@ -19,6 +19,7 @@ export default {
         'secondary-simple': ['Montserrat', 'sans-serif']
       },
       keyframes: {
+        // ANIMATED__BORDERS
         border_top_spin_kf: {
           '0%': {
             'transform': 'translateX(-100%)'
@@ -50,7 +51,7 @@ export default {
           '100%': {
             'transform': 'translateY(-100%)'
           }
-        },
+        }
       },
       animation: {
         border_top_spin: 'border_top_spin_kf 2s linear infinite',
