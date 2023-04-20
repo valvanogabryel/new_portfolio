@@ -26,7 +26,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
   return (
     <>
       {isOpen && (
-        <div className="flex justify-center items-center fixed bg-black bg-opacity-75 h-screen w-screen z-[1000] top-0 left-0 right-0 bottom-0"
+        <div className="flex justify-center items-center backdrop-blur-[3px] fixed bg-black bg-opacity-75 h-screen w-screen z-[1000] top-0 left-0 right-0 bottom-0 "
           onClick={onClose}
         >
 
