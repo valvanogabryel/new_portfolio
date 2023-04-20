@@ -12,6 +12,8 @@ interface featuredProjectProps {
   featuredProject: IProject
 }
 
+import imagem from '../assets/cover/featuredProject.png';
+
 const FeaturedProject = ({ featuredProject }: featuredProjectProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -40,7 +42,7 @@ const FeaturedProject = ({ featuredProject }: featuredProjectProps) => {
           <div className='h-28 group'>
             <Button onClick={handleOpenModal}>
               <h2 className='absolute bg-slate-500 w-full bg-opacity-50 z-30 text-white py-2 font-bold font-secondary-simple top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>{featuredProject.name}</h2>
-              <img src={featuredProject.image} alt="" className='rounded-lg object-cover shadow-2xl lg:grayscale duration-300 group-hover:grayscale-0' />
+              <img src={imagem} alt="" className='rounded-lg object-cover shadow-2xl lg:grayscale duration-300 group-hover:grayscale-0' />
             </Button>
           </div>
         </Atropos>
