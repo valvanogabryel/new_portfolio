@@ -60,13 +60,13 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => (
           </div>
 
           <div>
-            <ul>
-              <li>
+            <ul className='flex gap-2 text-3xl'>
+              <li className='text-light_gray duration-300 transition-all hover:scale-110 py-4 hover:text-gray-400'>
                 <a href={project.deploy}>
                   <AiOutlineRocket />
                 </a>
               </li>
-              <li>
+              <li className='text-light_gray duration-300 transition-all hover:scale-110 py-4 hover:text-gray-400'>
                 <a href={project.repository}>
                   <AiFillGithub />
                 </a>
