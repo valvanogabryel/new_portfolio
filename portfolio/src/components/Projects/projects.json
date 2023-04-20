@@ -3,7 +3,7 @@
     "id": 1,
     "name": "<CodeChella/>",
     "description": "Este é o CodeChella! Um projeto feito para o Alura Challenge lorem ipsum sit dolor amet",
-    "image": "../assets/cover/featuredProject.png",
+    "image": "./assets/cover/featuredProject/png",
     "deploy": "https://code-chella-one.vercel.app/",
     "repository": "https://github.com/valvanogabryel/codeChella/tree/main/code-chella",
     "technologies": [
