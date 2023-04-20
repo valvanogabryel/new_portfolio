@@ -52,7 +52,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
           direction="up"
           triggerOnce
         >
-          <div className='my-2'>
+          <div className='-my-4'>
             <ProjectsCarousel
               projects={projectsDefault}
               onProjectClick={onProjectClick}

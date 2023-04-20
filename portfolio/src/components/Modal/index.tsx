@@ -26,13 +26,14 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
   return (
     <>
       {isOpen && (
-        <div className={cn("flex justify-center items-center fixed bg-black bg-opacity-75 h-screen w-screen z-[1000] top-0 left-0 right-0 bottom-0", {
-          'animate-fade_up': isOpen
-        })}
+        <div className="flex justify-center items-center fixed bg-black bg-opacity-75 h-screen w-screen z-[1000] top-0 left-0 right-0 bottom-0"
           onClick={onClose}
         >
 
-          <div className="flex flex-col overflow-hidden bg-dark_gray fixed select-none w-80 max-w-xs">
+          <div className={cn("flex flex-col overflow-hidden bg-dark_gray fixed select-none w-80 max-w-xs", {
+            'animate-fade_up': isOpen,
+            'animate-fade_down': !isOpen,
+          })}>
             <AnimatedBorder />
 
             <div className="p-4 mt-4 relative overflow-hidden m-auto bg-black bg-opacity-20 max-w-[18rem]">

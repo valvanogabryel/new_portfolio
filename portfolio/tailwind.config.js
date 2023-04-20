@@ -62,6 +62,16 @@ export default {
             'transform': 'translateY(0)'
           }
         },
+        fade_down_kf: {
+          'from': {
+            'opacity': '1',
+            'transform': 'translateY(0)'
+          },
+          'to': {
+            'opacity': '0',
+            'transform': 'translateY(-20px)'
+          }
+        },
       },
       animation: {
         border_top_spin: 'border_top_spin_kf 2s linear infinite',
@@ -69,6 +79,7 @@ export default {
         border_bottom_spin: 'border_bottom_spin_kf 2s linear infinite',
         border_right_spin: 'border_right_spin_kf 2s linear 1s infinite',
         fade_up: 'fade_up_kf 0.3s ease-in-out',
+        fade_down: 'fade_down_kf 0.3s ease-in-out',
       }
     }
   },

@@ -31,8 +31,8 @@
     "name": "Alura Space",
     "description": "Projeto feito no começo dos meus estudos de React.",
     "image": "/assets/cover/project2.png",
-    "deploy": "https://react-projects-nb56-7duothlch-valvanogabryel.vercel.app/",
-    "repository": "https://github.com/valvanogabryel/alura-cursos/tree/main/forma%C3%A7%C3%B5es/formacao_react_com_javascript/blog_ola_mundo/ola_mundo",
+    "deploy": "https://react-projects-e1o9dp7qn-valvanogabryel.vercel.app/",
+    "repository": "https://github.com/valvanogabryel/alura-cursos/tree/main/forma%C3%A7%C3%B5es/formacao_react_com_javascript/alura_space/spacialstation_project/alura_space",
     "technologies": [
       "ReactJS",
       "SCSS"
@@ -43,8 +43,8 @@
     "name": "Studies",
     "description": "Organizador de estudos.",
     "image": "/assets/cover/project3.png",
-    "deploy": "https://react-projects-nb56-7duothlch-valvanogabryel.vercel.app/",
-    "repository": "https://github.com/valvanogabryel/alura-cursos/tree/main/forma%C3%A7%C3%B5es/formacao_react_com_javascript/blog_ola_mundo/ola_mundo",
+    "deploy": "https://react-projects-cvrq-af88uyc9o-valvanogabryel.vercel.app/",
+    "repository": "https://github.com/valvanogabryel/react_projects/tree/main/studies",
     "technologies": [
       "ReactJS",
       "contextAPI",
