@@ -18,19 +18,19 @@ export default {
         'main-simple': ['Josefin Sans', 'sans-serif'],
         'secondary-simple': ['Montserrat', 'sans-serif']
       },
-      // keyframes: {
-      //   fast_spin_kf: {
-      //     '0%': {
-      //       'transform': 'rotate(0)'
-      //     },
-      //     '100%': {
-      //       'transform': 'rotate(360deg)'
-      //     }
-      //   }
-      // },
-      // animation: {
-      //   fast_spin: 'fast_spin_kf .3s cubic-bezier(.36,.07,.19,.97)'
-      // }
+      keyframes: {
+        border_top_spin_kf: {
+          '0%': {
+            'transform': 'translateX(-100%)'
+          },
+          '100%': {
+            'transform': 'translateX(100%)'
+          }
+        }
+      },
+      animation: {
+        border_top_spin: 'border_top_spin_kf 2s linear infinite'
+      }
     }
   },
   plugins: [],
