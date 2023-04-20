@@ -27,7 +27,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
         <div className="flex justify-center items-center fixed bg-black bg-opacity-75 h-screen w-screen z-[1000] top-0 left-0 right-0 bottom-0" onClick={onClose}>
           <div className="flex flex-col bg-dark_gray fixed select-none">
 
-            <div className="p-4 relative bg-black bg-opacity-20 max-w-[18rem]">
+            <div className="p-4 relative overflow-hidden bg-black bg-opacity-20 max-w-[18rem]">
               <AnimatedBorder />
               <img
                 className=""

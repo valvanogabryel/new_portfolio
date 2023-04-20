@@ -40,12 +40,25 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
           />
         </Fade>
 
-        <div className='my-40'>
-          <ProjectsCarousel
-            projects={projectsDefault}
-            onProjectClick={onProjectClick}
-          />
-        </div>
+        <Fade
+          cascade
+          duration={100}
+          className="text-center mt-10 mb-10 text-light_gray m-auto"
+        >
+          demais projetos:
+        </Fade>
+
+        <Fade
+          direction="up"
+          triggerOnce
+        >
+          <div className='my-2'>
+            <ProjectsCarousel
+              projects={projectsDefault}
+              onProjectClick={onProjectClick}
+            />
+          </div>
+        </Fade>
       </div>
     </section>
   );
