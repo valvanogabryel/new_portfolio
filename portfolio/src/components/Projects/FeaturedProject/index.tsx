@@ -13,7 +13,7 @@ interface featuredProjectProps {
 }
 
 const FeaturedProject = ({ featuredProject }: featuredProjectProps) => {
-  const [isOpen, setIsOpen] = useState(false);
+
 
   const settings = {
     el: 'hightlight',
@@ -22,13 +22,7 @@ const FeaturedProject = ({ featuredProject }: featuredProjectProps) => {
     rotateYMax: 10
   };
 
-  function handleOpenModal() {
-    setIsOpen(true);
-  }
 
-  function handleCloseModal() {
-    setIsOpen(false);
-  }
 
   return (
     <>
@@ -40,7 +34,7 @@ const FeaturedProject = ({ featuredProject }: featuredProjectProps) => {
           {...settings}
         >
           <div className='h-28 group'>
-            <Button onClick={handleOpenModal}>
+            <Button onClick={() => { }}>
               <h2 className='absolute bg-slate-500 w-full bg-opacity-50 z-30 text-white py-2 font-bold font-secondary-simple top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>{featuredProject.name}</h2>
               <img
                 src={featuredProject.image}
@@ -50,11 +44,11 @@ const FeaturedProject = ({ featuredProject }: featuredProjectProps) => {
           </div>
         </Atropos>
       </div>
-      <Modal
+      {/* <Modal
         isOpen={isOpen}
         onClose={handleCloseModal}
         project={featuredProject}
-      />
+      /> */}
     </>
   );
 }

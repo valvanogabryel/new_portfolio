@@ -7,7 +7,12 @@ interface ButtonProps {
 
 const Button = ({ children, onClick }: ButtonProps) => {
   return (
-    <button onClick={onClick} className="hover:outline-none">{children}</button>
+    <button
+      onClick={onClick}
+      className="hover:outline-none"
+    >
+      {children}
+    </button>
   );
 }
 

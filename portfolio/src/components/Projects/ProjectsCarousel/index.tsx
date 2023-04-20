@@ -12,8 +12,8 @@ const ProjectsCarousel = ({ projects }: ProjectsCarouselProps) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
-    cssEase: 'linear',
+    autoplaySpeed: 3000,
+    cssEase: 'ease-in-out',
     pauseOnHover: true
   }
 

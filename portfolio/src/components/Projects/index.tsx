@@ -9,7 +9,7 @@ const Projects = () => {
   const projectsDefault = projects.filter(project => !project.featured);
 
   return (
-    <section className="text-white overflow-hidden">
+    <section className="text-white">
       <header>
         <h2 className="text-4xl mt-10 mb-4 after:h-[1px] after:w-2/4 after:bg-primary flex items-center after:ml-6 after:grow">Projetos</h2>
       </header>
@@ -29,10 +29,6 @@ const Projects = () => {
         >
           <FeaturedProject featuredProject={featuredProject} />
         </Fade>
-
-        <br /><br /><br />
-        <br /><br /><br />
-        <br /><br /><br />
 
         <div className=''>
           <ProjectsCarousel projects={projectsDefault} />
