@@ -20,10 +20,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => (
   <>
     {isOpen && (
       // ESSA ANIMAÇÃO É PROVISÓRIA!!
-      <Bounce
-        direction='up'
-        cascade
-      >
+      <Bounce>
         <div className="fixed bg-black bg-opacity-50 z-[1000] top-0 left-0 right-0 bottom-0">
 
           <div className="flex flex-col bg-dark_gray relative select-none">
