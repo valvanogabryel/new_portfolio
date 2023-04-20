@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Fade, Bounce } from 'react-awesome-reveal';
+import { Fade, JackInTheBox } from 'react-awesome-reveal';
 
 import { AiFillLinkedin } from 'react-icons/ai';
 
@@ -48,7 +48,7 @@ const Presentation = () => {
             </li>
           </Fade>
           <div className='flex gap-2 ml-auto'>
-            <Bounce
+            <JackInTheBox
               cascade
               delay={1000}
               triggerOnce
@@ -63,7 +63,7 @@ const Presentation = () => {
                   <FaGithub />
                 </a>
               </li>
-            </Bounce>
+            </JackInTheBox>
           </div>
         </ul>
       </div>
