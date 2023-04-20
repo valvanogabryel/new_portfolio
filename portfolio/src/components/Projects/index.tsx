@@ -40,7 +40,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
           />
         </Fade>
 
-        <div className=''>
+        <div className='my-40'>
           <ProjectsCarousel
             projects={projectsDefault}
             onProjectClick={onProjectClick}
