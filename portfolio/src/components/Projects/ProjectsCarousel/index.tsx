@@ -19,7 +19,10 @@ const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) =
   }
 
   return (
-    <Slider {...settings} className="">
+    <Slider
+      {...settings}
+      className=""
+    >
       {
         projects.map(project => (
           <div

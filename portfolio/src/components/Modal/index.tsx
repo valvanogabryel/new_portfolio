@@ -8,6 +8,8 @@ import AnimatedBorder from "../AnimatedBorder";
 import { IProject } from "../../interfaces/IProject";
 import Tag from "../Tag";
 
+import cn from 'classnames';
+
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -24,11 +26,17 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
   return (
     <>
       {isOpen && (
-        <div className="flex justify-center items-center fixed bg-black bg-opacity-75 h-screen w-screen z-[1000] top-0 left-0 right-0 bottom-0" onClick={onClose}>
-          <div className="flex flex-col bg-dark_gray fixed select-none">
+        <div className={cn("flex justify-center items-center fixed bg-black bg-opacity-75 h-screen w-screen z-[1000] top-0 left-0 right-0 bottom-0", {
+          'animate-fade_up': isOpen
+        })}
+          onClick={onClose}
+        >
 
-            <div className="p-4 relative overflow-hidden bg-black bg-opacity-20 max-w-[18rem]">
-              <AnimatedBorder />
+          <div className="flex flex-col overflow-hidden bg-dark_gray fixed select-none w-80 max-w-xs">
+            <AnimatedBorder />
+
+            <div className="p-4 mt-4 relative overflow-hidden m-auto bg-black bg-opacity-20 max-w-[18rem]">
+
               <img
                 className=""
                 src={project?.image}
@@ -38,7 +46,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
             </div>
 
             <div>
-              <header className="p-4 border-b-[1px] border-light_gray">
+              <header className="p-4 border-b-[1px] border-light_gray text-gray-200">
                 <h2>{project?.name}</h2>
               </header>
             </div>

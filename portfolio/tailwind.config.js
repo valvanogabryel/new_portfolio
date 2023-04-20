@@ -51,13 +51,24 @@ export default {
           '100%': {
             'transform': 'translateY(-100%)'
           }
-        }
+        },
+        fade_up_kf: {
+          'from': {
+            'opacity': '0',
+            'transform': 'translateY(20px)'
+          },
+          'to': {
+            'opacity': '1',
+            'transform': 'translateY(0)'
+          }
+        },
       },
       animation: {
         border_top_spin: 'border_top_spin_kf 2s linear infinite',
         border_left_spin: 'border_left_spin_kf 2s linear 1s infinite',
         border_bottom_spin: 'border_bottom_spin_kf 2s linear infinite',
         border_right_spin: 'border_right_spin_kf 2s linear 1s infinite',
+        fade_up: 'fade_up_kf 0.3s ease-in-out',
       }
     }
   },
