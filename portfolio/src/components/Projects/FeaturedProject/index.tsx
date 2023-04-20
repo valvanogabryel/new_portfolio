@@ -12,8 +12,6 @@ interface featuredProjectProps {
   featuredProject: IProject;
 }
 
-// import imagem from '../assets/cover/featuredProject.png';
-
 const FeaturedProject = ({ featuredProject }: featuredProjectProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
