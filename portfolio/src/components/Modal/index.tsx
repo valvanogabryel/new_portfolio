@@ -53,7 +53,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => (
             </div>
 
             <div>
-              <ul className="flex">
+              <ul className="flex overflow-x-auto gap-2">
                 {
                   project.technologies.map((tech, i) => (
                     <Tag
