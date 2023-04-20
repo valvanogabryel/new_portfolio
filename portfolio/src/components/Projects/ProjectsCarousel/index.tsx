@@ -18,7 +18,7 @@ const ProjectsCarousel = ({ projects }: ProjectsCarouselProps) => {
   }
 
   return (
-    <Slider {...settings}>
+    <Slider {...settings} className="-z-50">
       {
         projects.map(project => (
           <div
