@@ -1,13 +1,8 @@
 import Slider from "react-slick";
-import { IProject } from "../../../interfaces/IProject";
-import { useEffect, useState } from "react";
-import useMediaMatch from "../../../hooks/useMediaMatch";
 
-const CaroulselArrow = () => {
-  return (
-    <span aria-hidden='true' className="hidden"></span>
-  );
-}
+import CaroulselArrow from "./CarouselArrow";
+
+import { IProject } from "../../../interfaces/IProject";
 
 interface ProjectsCarouselProps {
   projects: IProject[];
@@ -15,13 +10,10 @@ interface ProjectsCarouselProps {
 }
 
 const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) => {
-  const [isRolling, setIsRolling] = useState(false);
-
   const settings = {
     infinite: true,
     centerMode: true,
     speed: 500,
-    swipeToSlide: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -39,28 +31,35 @@ const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) =
       }
     ],
     prevArrow: <CaroulselArrow />,
-    nextArrow: <CaroulselArrow />
-    // className: isRolling ? 'opacity-50' : 'opacity-100'
+    nextArrow: <CaroulselArrow />,
+    className: ''
   }
 
   return (
-    <Slider
-      {...settings}
+    <div
+      className="hover:shadow-2xl lg:cursor-pointer"
+      style={{
+        boxShadow: '10px -7px 0 black'
+      }}
     >
-      {
-        projects.map(project => (
-          <div
-            key={project.id}
-            className='flex flex-col justify-center items-center h-40 w-80 bg-dark_gray text-center'
-            onClick={() => onProjectClick(project)}
-          >
-            <img src={project.image} alt="" />
-            <h3>{project.name}</h3>
-          </div>
-        ))
-      }
-
-    </Slider>
+      <Slider {...settings}
+      >
+        {
+          projects.map(project => (
+            <div
+              key={project.id}
+              className='flex flex-col justify-center items-center h-40 w-80 bg-dark_gray text-center'
+              onClick={() => onProjectClick(project)}
+            >
+              <img src={project.image} alt="" className="object-cover min-h-full" />
+              <h3 className="absolute  bg-black bg-opacity-50 top-0 w-auto py-2 px-4 rounded-br-lg text-white">
+                {project.name}
+              </h3>
+            </div>
+          ))
+        }
+      </Slider>
+    </div>
   );
 }
 

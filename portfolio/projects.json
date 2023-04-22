@@ -47,8 +47,73 @@
     "repository": "https://github.com/valvanogabryel/react_projects/tree/main/studies",
     "technologies": [
       "ReactJS",
-      "contextAPI",
-      "TypeScript"
+      "TypeScript",
+      "contextAPI"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "HZC",
+    "description": "HZC é um site de filmagens de skate. O design do projeto é focado em grid.",
+    "image": "/assets/cover/project4.png",
+    "deploy": "https://alura-cursos-8w6gu3mi4-valvanogabryel.vercel.app/index.html",
+    "repository": "https://github.com/valvanogabryel/alura-cursos/tree/main/css-dispondo-elementos-flexbox-grid",
+    "technologies": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "SelfCare | Home",
+    "description": "SelfCare é um projeto simples. ",
+    "image": "/assets/cover/project5.png",
+    "deploy": "https://valvanogabryel.github.io/selfcare/index.html",
+    "repository": "https://github.com/valvanogabryel/selfcare",
+    "technologies": [
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Mundo Invertido",
+    "description": "Projeto feito lorem ipsum dolor sit amet. ",
+    "image": "/assets/cover/project6.png",
+    "deploy": "https://valvanogabryel.github.io/projetoST/index.html",
+    "repository": "https://github.com/valvanogabryel/projetoST",
+    "technologies": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Calculadora de gorjeta",
+    "description": "Projeto feito lorem ipsum dolor sit amet. ",
+    "image": "/assets/cover/project7.png",
+    "deploy": "https://valvanogabryel.github.io/projetos/projetos-treinamento/funcionalidades/tip-calculator-app/index.html",
+    "repository": "https://github.com/valvanogabryel/projetos/tree/main/projetos-treinamento/funcionalidades/tip-calculator-app",
+    "technologies": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Página de filmes",
+    "description": "Projeto feito lorem ipsum dolor sit amet. ",
+    "image": "/assets/cover/project7.png",
+    "deploy": "https://valvanogabryel.github.io/7-days-of-code/javascript-pagina-de-filmes/index.html",
+    "repository": "https://github.com/valvanogabryel/7-days-of-code/tree/main/javascript-pagina-de-filmes",
+    "technologies": [
+      "RestAPI",
+      "JavaScript",
+      "CSS",
+      "HTML"
     ]
   }
 ]
