@@ -122,10 +122,34 @@
     "name": "Jogo da velha",
     "description": "Projeto feito lorem ipsum dolor sit amet. ",
     "image": "/assets/cover/project9.png",
-    "deploy": "https://valvanogabryel.github.io/7-days-of-code/javascript-pagina-de-filmes/index.html",
-    "repository": "https://github.com/valvanogabryel/7-days-of-code/tree/main/javascript-pagina-de-filmes",
+    "deploy": "https://valvanogabryel.github.io/projetos/games/jogo-da-velha1/index.html",
+    "repository": "https://github.com/valvanogabryel/projetos/tree/main/games/jogo-da-velha1",
     "technologies": [
-      "RestAPI",
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Galleria | Home",
+    "description": "Projeto feito lorem ipsum dolor sit amet. ",
+    "image": "/assets/cover/project10.png",
+    "deploy": "https://valvanogabryel.github.io/projetos/projetos-treinamento/sites/Galleria%20(Sass)/index.html",
+    "repository": "https://github.com/valvanogabryel/projetos/tree/main/projetos-treinamento/sites/Galleria%20(Sass)",
+    "technologies": [
+      "SASS",
+      "HTML"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Super Trunfo Pokémon",
+    "description": "Projeto feito lorem ipsum dolor sit amet. ",
+    "image": "/assets/cover/project11.png",
+    "deploy": "https://valvanogabryel.github.io/projetos/games/supertrunfo-pokemon/index.html",
+    "repository": "https://github.com/valvanogabryel/projetos/tree/main/games/supertrunfo-pokemon",
+    "technologies": [
       "JavaScript",
       "CSS",
       "HTML"
