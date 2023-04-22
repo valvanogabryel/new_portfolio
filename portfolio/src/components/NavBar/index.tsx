@@ -2,7 +2,7 @@ import useScrollDirection from "../../hooks/useScrollDirection";
 
 import { DiCode } from 'react-icons/di';
 import { VscPerson } from 'react-icons/vsc';
-import { AiOutlinePhone } from 'react-icons/ai';
+import { AiOutlineMail } from 'react-icons/ai';
 import { HiDocumentText } from 'react-icons/hi';
 
 import cn from 'classnames';
@@ -33,7 +33,7 @@ const NavBar = () => {
       },
       {
         name: "Contato",
-        icon: <AiOutlinePhone />,
+        icon: <AiOutlineMail />,
         dis: 'translate-x-40',
         // to: '#contato'
       },

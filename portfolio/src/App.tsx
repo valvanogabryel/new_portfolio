@@ -7,6 +7,8 @@ import Projects from "./components/Projects";
 import Modal from "./components/Modal";
 import { ProjectsProvider, useProjectsContext } from "./contexts/ProjectsContext";
 import { IProject } from "./interfaces/IProject";
+import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,8 +41,8 @@ const App = () => {
         <main className="container max-w-xs m-auto">
           <Presentation />
           <Projects onProjectClick={handleOpenModal} />
-
-          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <AboutMe />
+          <Contact />
         </main>
       </ProjectsProvider>
     </>

@@ -46,7 +46,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
           duration={100}
           className="text-center mt-20 mb-10 text-light_gray mx-auto"
         >
-          demais projetos:
+          todos os projetos:
         </Fade>
 
         <Fade
