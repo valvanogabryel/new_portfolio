@@ -1,5 +1,13 @@
 import Slider from "react-slick";
 import { IProject } from "../../../interfaces/IProject";
+import { useEffect, useState } from "react";
+import useMediaMatch from "../../../hooks/useMediaMatch";
+
+const CaroulselArrow = () => {
+  return (
+    <span aria-hidden='true' className="hidden"></span>
+  );
+}
 
 interface ProjectsCarouselProps {
   projects: IProject[];
@@ -7,21 +15,37 @@ interface ProjectsCarouselProps {
 }
 
 const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) => {
+  const [isRolling, setIsRolling] = useState(false);
+
   const settings = {
     infinite: true,
+    centerMode: true,
     speed: 500,
-    slidesToShow: 1,
+    swipeToSlide: true,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: 'ease-in-out',
-    pauseOnHover: true
+    pauseOnHover: true,
+    rtl: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        }
+      }
+    ],
+    prevArrow: <CaroulselArrow />,
+    nextArrow: <CaroulselArrow />
+    // className: isRolling ? 'opacity-50' : 'opacity-100'
   }
 
   return (
     <Slider
       {...settings}
-      className=""
     >
       {
         projects.map(project => (

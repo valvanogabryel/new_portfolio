@@ -3,6 +3,7 @@ import FeaturedProject from "./FeaturedProject";
 import ProjectsCarousel from "./ProjectsCarousel";
 import { useProjectsContext } from "../../contexts/ProjectsContext";
 import { IProject } from "../../interfaces/IProject";
+import SectionHeader from "../SectionHeader";
 
 interface ProjectsProps {
   onProjectClick: (project: IProject) => void;
@@ -16,9 +17,9 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
 
   return (
     <section className="text-white">
-      <header>
-        <h2 className="text-4xl mt-10 mb-4 after:h-[1px] after:w-2/4 after:bg-primary flex items-center after:ml-6 after:grow">Projetos</h2>
-      </header>
+
+      <SectionHeader title="Projetos" />
+
       <div className='w-4/5 m-auto max-w-xs'>
 
         <Fade
