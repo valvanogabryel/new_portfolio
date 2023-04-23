@@ -12,8 +12,6 @@ interface ProjectsCarouselProps {
 
 const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) => {
   const settings = {
-    dots: true,
-    dotsClass: "slick-dots slick-thumb h-8 pb-4 before:text-white",
     infinite: true,
     centerMode: true,
     speed: 500,
