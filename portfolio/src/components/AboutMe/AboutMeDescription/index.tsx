@@ -17,6 +17,7 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
           typingDelay={0}
           eraseSpeed={20}
           className=""
+          eraseDelay={100000}
         />
       }
       {
@@ -26,6 +27,7 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
           speed={50}
           typingDelay={0}
           eraseSpeed={20}
+          eraseDelay={100000}
           className=""
         />
       }
@@ -36,6 +38,7 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
           speed={50}
           typingDelay={0}
           eraseSpeed={20}
+          eraseDelay={100000}
           className=""
         />
       }

@@ -4,6 +4,7 @@ import SectionHeader from "../SectionHeader";
 import AnimatedBorder from "../AnimatedBorder";
 
 import AboutMeDescription from "./AboutMeDescription";
+import AboutCard from "./AboutCard";
 
 const AboutMe = () => {
   const [selectedOption, setSelectedOption] = useState<string>('resume');
@@ -78,6 +79,7 @@ const AboutMe = () => {
         </div>
       </div>
 
+      <AboutCard />
 
       <br /><br /><br /><br /><br /><br /><br /><br /><br />
     </section>
