@@ -1,7 +1,5 @@
 import Slider from "react-slick";
 
-import CaroulselArrow from "./CarouselArrow";
-
 import { IProject } from "../../../interfaces/IProject";
 import Button from "../../Button";
 
@@ -28,8 +26,6 @@ const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) =
         }
       }
     ],
-    // prevArrow: <CaroulselArrow />,
-    // nextArrow: <CaroulselArrow />,
   }
 
   return (
