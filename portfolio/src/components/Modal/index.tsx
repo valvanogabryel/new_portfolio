@@ -57,7 +57,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
             </div>
 
             <div>
-              <ul className="flex overflow-x-auto gap-2">
+              <ul className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth gap-2 pb-4" dir='ltr'>
                 {
                   project?.technologies.map((tech, i) => (
                     <Tag
