@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import CaroulselArrow from "./CarouselArrow";
 
 import { IProject } from "../../../interfaces/IProject";
+import Button from "../../Button";
 
 interface ProjectsCarouselProps {
   projects: IProject[];
@@ -11,16 +12,15 @@ interface ProjectsCarouselProps {
 
 const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) => {
   const settings = {
+    dots: true,
+    dotsClass: "slick-dots slick-thumb h-8 pb-4 before:text-white",
     infinite: true,
     centerMode: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
     cssEase: 'ease-in-out',
     pauseOnHover: true,
-    rtl: true,
     responsive: [
       {
         breakpoint: 768,
@@ -30,9 +30,8 @@ const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) =
         }
       }
     ],
-    prevArrow: <CaroulselArrow />,
-    nextArrow: <CaroulselArrow />,
-    className: ''
+    // prevArrow: <CaroulselArrow />,
+    // nextArrow: <CaroulselArrow />,
   }
 
   return (
