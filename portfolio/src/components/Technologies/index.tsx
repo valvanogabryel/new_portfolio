@@ -18,7 +18,6 @@ const Technologies = () => {
         }
       </ul>
     ),
-    appendDotsClass: "text-blue-500",
     autoplay: true,
     autoplaySpeed: 5000,
     slidesToShow: 1,
@@ -27,7 +26,7 @@ const Technologies = () => {
     pauseOnHover: true,
     prevArrow: <InvisibleArrows />,
     nextArrow: <InvisibleArrows />
-  }
+  };
 
   const techs = useTechnologies();
 

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-dots {
+  @apply -ml-4 mb-4;
+}
+.slick-dots li button::before {
+  @apply text-white;
+}
