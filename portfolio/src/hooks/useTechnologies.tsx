@@ -15,8 +15,10 @@ import {
   SiHtml5,
 } from 'react-icons/si';
 
+import { ITech } from '../interfaces/ITech';
+
 const useTechnologies = () => {
-  const techs = [
+  const techs: ITech[] = [
     {
       id: 1,
       badge: <FaReact />,
@@ -102,7 +104,6 @@ const useTechnologies = () => {
       description: 'Cascading Style Sheets (Folha de Estilo em Cascata) é o mecanismo que dá estilo e beleza ao site.'
     }
   ];
-
 
   return techs;
 }

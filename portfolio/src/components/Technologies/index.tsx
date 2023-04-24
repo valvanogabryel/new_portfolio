@@ -2,6 +2,7 @@ import Slider from 'react-slick';
 import useTechnologies from '../../hooks/useTechnologies';
 import InvisibleArrows from '../InvisibleArrows';
 import { Fade } from 'react-awesome-reveal';
+import { ITech } from '../../interfaces/ITech';
 
 const Technologies = () => {
   const settings = {
@@ -29,7 +30,7 @@ const Technologies = () => {
     nextArrow: <InvisibleArrows />
   };
 
-  const techs = useTechnologies();
+  const techs: ITech[] = useTechnologies();
 
   return (
     <section className='text-white text-center my-10 mt-40 border-b-[1px] border-b-slate-300 border-opacity-20 h-96'>
@@ -40,6 +41,13 @@ const Technologies = () => {
         <h2 className='flex flex-grow items-center gap-8 before:h-[1px] before:w-1/6 before:bg-primary before:flex before:flex-grow after:h-[1px] after:w-1/6 after:flex after:bg-primary after:flex-grow text-2xl text-neutral-300'>
           Minhas Skills
         </h2>
+        <Fade
+          cascade
+          duration={100}
+          className='text-xs text-gray-400 text-opacity-50 absolute left-[50%] -translate-x-[50%]'
+        >
+          (aperte no ícone para parar a rolagem automática)
+        </Fade>
       </Fade>
       <Fade
         direction='up'

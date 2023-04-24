@@ -8,3 +8,7 @@
 .slick-dots li button::before {
   @apply text-white scale-150;
 }
+
+.teste .slick-dots {
+  @apply -ml-0 -mb-0;
+}

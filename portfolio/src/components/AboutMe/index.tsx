@@ -23,10 +23,10 @@ const AboutMe = () => {
 
         <div className="py-10 after:h-[1px] after:w-screen after:max-w-full after:bg-white after:bg-opacity-5 after:inline-block">
           <Fade
-            direction="right"
             triggerOnce
             cascade
-            duration={1000}
+            duration={500}
+            damping={1.5}
           >
 
             <label
@@ -89,7 +89,8 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <AboutCard />
+      <AboutCard type={'Soft Skills'} />
+      <AboutCard type={'Formação'} />
 
       <br /><br /><br /><br /><br /><br /><br /><br /><br />
     </section>
