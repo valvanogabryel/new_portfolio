@@ -40,7 +40,6 @@ const AboutCard = ({ type }: AboutCardProps) => {
         {
           cardInfo.map(info => (
             <div key={info.id}>
-
               <div className='flex flex-col items-center gap-4'>
                 <div className='text-4xl'>
                   {info.icon}
@@ -50,7 +49,6 @@ const AboutCard = ({ type }: AboutCardProps) => {
               <div className='text-md text-center w-4/5 m-auto'>
                 {info.text}
               </div>
-
             </div>
           ))
         }
