@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .slick-dots {
-  @apply -ml-4 mb-4;
+  @apply -ml-4 -mb-8;
 }
 .slick-dots li button::before {
   @apply text-white scale-150;
