@@ -19,11 +19,13 @@ const AboutCard = () => {
   const settings = {
     infinite: false,
     dots: true,
-    centerMode: true,
+    centerMode: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    cssEase: 'ease-in-out',
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: 'ease-out',
     pauseOnHover: true,
   }
 
@@ -35,9 +37,10 @@ const AboutCard = () => {
       <Slider
         {...settings}
       >
-        <ul>
-          {/* Aqui */}
-        </ul>
+        {
+
+        }
+
       </Slider>
     </div>
   );

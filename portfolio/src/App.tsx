@@ -9,6 +9,7 @@ import { ProjectsProvider, useProjectsContext } from "./contexts/ProjectsContext
 import { IProject } from "./interfaces/IProject";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
+import Technologies from "./components/Technologies";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,6 +42,7 @@ const App = () => {
         <main className="container max-w-xs m-auto">
           <Presentation />
           <Projects onProjectClick={handleOpenModal} />
+          <Technologies />
           <AboutMe />
           <Contact />
         </main>
