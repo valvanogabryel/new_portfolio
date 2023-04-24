@@ -1,59 +1,39 @@
-import { FaReact } from 'react-icons/fa';
-import {
-  SiTypescript,
-  SiTailwindcss
-} from 'react-icons/si';
 import Slider from 'react-slick';
-
-const Arrows = () => {
-  return (
-    <span className='hidden'></span>
-  )
-}
-
+import useTechnologies from '../../hooks/useTechnologies';
+import InvisibleArrows from '../InvisibleArrows';
 
 const Technologies = () => {
   const settings = {
     infinite: true,
     speed: 200,
     dots: true,
+    appendDots: (dots: any) => (
+      <ul className='slick-dots my-4'>
+        {
+          dots.map((dot: any) => (
+            <li key={dot.key} className="inline-block mx-1">
+              {dot.props.children}
+            </li>
+          ))
+        }
+      </ul>
+    ),
+    appendDotsClass: "text-blue-500",
     autoplay: true,
     autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     cssEase: 'ease-in-out',
     pauseOnHover: true,
-    prevArrow: <Arrows />,
-    nextArrow: <Arrows />
+    prevArrow: <InvisibleArrows />,
+    nextArrow: <InvisibleArrows />
   }
 
-  const techs = [
-    {
-      id: 1,
-      badge: <FaReact />,
-      name: "React",
-      className: 'text-[#61dafb]',
-      description: 'Uma biblioteca JavaScript de código aberto. Útil para criar interfaces de usuário (UI).'
-    },
-    {
-      id: 2,
-      badge: <SiTypescript />,
-      name: "TypeScript",
-      className: 'text-[#007acc]',
-      description: 'Uma linguagem de programação de código aberto desenvolvida pela Microsoft. Um superset (ou super-conjunto) do Javascript, que adiciona uma tipagem estática à linguagem.'
-    },
-    {
-      id: 3,
-      badge: <SiTailwindcss />,
-      name: "TailwindCSS",
-      className: 'text-[#06B6D4]',
-      description: 'uma biblioteca de classes CSS prontas para uso, projetada para ajudar os desenvolvedores a criar interfaces de usuário rapidamente.'
-    }
-  ];
+  const techs = useTechnologies();
 
   return (
     <section className='text-white text-center my-10 mt-40 border-b-[1px] border-b-slate-300 border-opacity-20 h-80'>
-      <h2 className='flex flex-grow items-center gap-8 before:h-[1px] before:w-1/6 before:bg-red-400 before:flex before:flex-grow after:h-[1px] after:w-1/6 after:flex after:bg-red-400 after:flex-grow text-2xl text-neutral-300'>Minhas Skills</h2>
+      <h2 className='flex flex-grow items-center gap-8 before:h-[1px] before:w-1/6 before:bg-primary before:flex before:flex-grow after:h-[1px] after:w-1/6 after:flex after:bg-primary after:flex-grow text-2xl text-neutral-300'>Minhas Skills</h2>
       <ul className=''>
         <Slider
           {...settings}
