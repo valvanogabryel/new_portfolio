@@ -2,19 +2,17 @@ import Slider from 'react-slick';
 import InvisibleArrows from '../../InvisibleArrows';
 import useSoftSkills from '../../../hooks/useSoftSkills';
 import useTraining from '../../../hooks/useTraining';
+import { Fade } from 'react-awesome-reveal';
 
 interface AboutCardProps {
   type: string;
 }
 
 const AboutCard = ({ type }: AboutCardProps) => {
-  const softSkills = useSoftSkills();
-
-  const cardInfo = type === 'Soft Skills' ? useSoftSkills() : useTraining();
-
-  console.log(cardInfo);
-
-  console.log(type);
+  const cardInfo = type ===
+    'Soft Skills' ?
+    useSoftSkills() :
+    useTraining();
 
   const settings = {
     infinite: true,
