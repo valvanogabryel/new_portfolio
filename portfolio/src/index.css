@@ -6,5 +6,5 @@
   @apply -ml-4 mb-4;
 }
 .slick-dots li button::before {
-  @apply text-white;
+  @apply text-white scale-150;
 }
