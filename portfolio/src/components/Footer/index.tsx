@@ -9,11 +9,12 @@ const Footer = () => {
     <footer className="text-white bg-gradient-to-b from-background_color to-background_color_darker h-60 text-center mt-80">
       <div>
         <ul className="flex justify-center gap-4 mb-8">
-          <li className="cursor-pointer duration-300 hover:scale-110 overflow-auto">
+          <li className="cursor-pointer duration-300 hover:scale-110">
             <UseAnimations
               animation={linkedin}
               size={40}
               strokeColor="rgb(156, 163, 175)"
+              className=""
             />
           </li>
           <li className="cursor-pointer duration-300 hover:scale-110">
