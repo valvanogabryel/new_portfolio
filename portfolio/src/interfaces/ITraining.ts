@@ -1,7 +1,8 @@
 export interface ITraining {
   id: number;
   course: string;
+  duration: number;
   platform: string;
-  text: string;
   link?: string;
+  certificate?: string;
 }

@@ -5,6 +5,8 @@ import useTraining from '../../../hooks/useTraining';
 import { ISkill } from '../../../interfaces/ISkill';
 import { ITraining } from '../../../interfaces/ITraining';
 
+import { GrCertificate } from 'react-icons/gr';
+
 interface AboutCardProps {
   type: string;
 }
@@ -54,26 +56,39 @@ const AboutCard = ({ type }: AboutCardProps) => {
             :
             training?.map(info => (
               <div key={info.id}>
-                <div className='flex flex-col items-center gap-4'>
-                  <div className='text-4xl'>
+                <div className='flex flex-col items-center'>
+                  <div className='text-2xl font-bold font-secondary-simple'>
                     {info.platform}
                   </div>
-                  <h4 className='text-2xl text-gray-400 pb-4 mb-10 border-b-[1px] w-full border-opacity-[5%] border-b-gray-200'>
-                    {info.course}
-                  </h4>
-                </div>
-                <div className='text-md text-center w-4/5 m-auto'>
-                  {info.text}
+                  <div>
+                    <span className='text-xs font-thin text-gray-200 w-screen'>({info.duration} horas)</span>
+                    <h4 className='text-2xl text-gray-400 pb-4 mb-10 border-b-[1px] w-full border-opacity-[5%] border-b-gray-200'>
+                      {info.course}
+                    </h4>
+                  </div>
                 </div>
                 {
-                  info.link ?
-                    (<a
-                      href={info.link}
+                  info.link &&
+                  (<a
+                    href={info.link}
+                    target='_blank'
+                    className='text-xs inline-block w-4/5 text-gray-400 duration-300 hover:text-white hover:underline mt-10 animate-pulse'
+                  >Clique aqui para ver todos os cursos que fiz na Alura
+                  </a>)
+                }
+                {
+                  info.certificate &&
+                  (
+                    <a
+                      href={info.certificate}
                       target='_blank'
-                      className='text-xs inline-block w-4/5 text-gray-400 duration-300 hover:text-white hover:underline mt-10'
-                    >Clique aqui para ver todos os cursos que fiz na Alura
-                    </a>)
-                    : ''
+                      className='text-xs inline-block w-4/5 text-white duration-300 hover:text-white hover:underline mt-10'
+                    >
+                      <div className='text-2xl'>
+                        <GrCertificate className='animate-bounce' />
+                      </div>
+                    </a>
+                  )
                 }
               </div>
             ))

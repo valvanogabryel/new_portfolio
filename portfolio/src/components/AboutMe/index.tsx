@@ -89,8 +89,19 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <AboutCard type={'Soft Skills'} />
-      <AboutCard type={'Formação'} />
+      <Fade
+        direction="left"
+        triggerOnce
+      >
+        <AboutCard type={'Soft Skills'} />
+      </Fade>
+
+      <Fade
+        direction="right"
+        triggerOnce
+      >
+        <AboutCard type={'Formação'} />
+      </Fade>
 
       <br /><br /><br /><br /><br /><br /><br /><br /><br />
     </section>
