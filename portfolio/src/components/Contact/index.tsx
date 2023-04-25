@@ -4,6 +4,8 @@ const Contact = () => {
   return (
     <section>
       <SectionHeader title="Contato" />
+
+
     </section>
   );
 }

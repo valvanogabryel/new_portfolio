@@ -24,7 +24,7 @@ const AboutCard = ({ type }: AboutCardProps) => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 10000,
-    cssEase: 'ease-in-out',
+    cssEase: 'cubic-bezier(.47,1.64,.41,.8)',
     pauseOnHover: true,
     prevArrow: <InvisibleArrows />,
     nextArrow: <InvisibleArrows />,
