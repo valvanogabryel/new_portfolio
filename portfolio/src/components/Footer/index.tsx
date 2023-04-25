@@ -14,7 +14,6 @@ const Footer = () => {
               animation={linkedin}
               size={40}
               strokeColor="rgb(156, 163, 175)"
-              className=""
             />
           </li>
           <li className="cursor-pointer duration-300 hover:scale-110">
