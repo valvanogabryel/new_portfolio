@@ -1,25 +1,25 @@
+import { ITraining } from "../interfaces/ITraining";
+
 const useTraining = () => {
-  const training = [
+  const training: ITraining[] = [
     {
       id: 1,
-      title: 'Alura',
-      icon: null,
-      text: '',
+      course: 'Formação React com JavaScript',
+      platform: 'Alura',
+      text: 'Conjunto de cursos que me apresentaram a biblioteca mais popular do mercado!',
       link: 'https://cursos.alura.com.br/vitrinedev/valvanogabryel'
     },
     {
       id: 2,
-      title: 'OneBitCode',
-      icon: null,
-      text: '',
-      link: 'https://cursos.alura.com.br/vitrinedev/valvanogabryel'
+      course: '',
+      platform: 'OneBitCode',
+      text: ''
     },
     {
       id: 3,
-      title: 'RocketSeat',
-      icon: null,
-      text: '',
-      link: 'https://cursos.alura.com.br/vitrinedev/valvanogabryel'
+      course: '',
+      platform: 'RocketSeat',
+      text: ''
     }
   ];
 

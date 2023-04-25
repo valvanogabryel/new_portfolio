@@ -80,7 +80,7 @@ const useTechnologies = () => {
       badge: <SiApollographql />,
       name: "Apollo GraphQL",
       className: 'text-[#311C87]',
-      description: 'Uma biblioteca de gerenciamento de estado de gerenciamento de dados para aplicativos baseados em GraphQL. Com ele, é mais fácil realizar consultas, mutações e gerenciar dados no lado do cliente.'
+      description: 'Uma biblioteca de gerenciamento de dados para aplicativos baseados em GraphQL. Com ele, é mais fácil realizar consultas, mutações e gerenciar dados no lado do cliente.'
     },
     {
       id: 10,
