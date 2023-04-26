@@ -18,6 +18,7 @@ const Presentation = () => {
         direction='up'
         duration={600}
         triggerOnce
+        delay={1000}
       >
         <div className="text-primary my-4 bg-red-800 bg-opacity-10 w-auto px-4 py-2 rounded-full duration-150 hover:ring-1 hover:ring-primary hover:ring-opacity-50">
           <h1 className="text-md">👋 Olá, mundo! Meu nome é</h1>
@@ -26,7 +27,7 @@ const Presentation = () => {
           <h2 className="text-3xl font-bold md:text-4xl xl:text-5xl 2xl:text-6xl 2xl:mb-4">Gabryel Valvano.</h2>
         </div>
         <div className="text-gray-500">
-          <h3 className="text-2xl font-bold md:text-3xl xl:text-4xl 2xl:text-5xl 2xl:mb-8">Desenvolvedor Front-End.</h3>
+          <h3 className="text-2xl font-bold md:text-3xl xl:text-4xl 2xl:text-5xl 2xl:mb-5">Desenvolvedor Front-End.</h3>
         </div>
         <div className="text-gray-500 text-xs font-secondary-simple md:text-md xl:text-lg 2xl:text-xl">
           <Fade cascade damping={0.1} duration={500}>
@@ -37,7 +38,7 @@ const Presentation = () => {
       <div>
         <ul className='flex gap-36 justify-end text-3xl text-slate-400 items-center -ml-10 md:hidden'>
           <Fade
-            delay={1000}
+            delay={2000}
             triggerOnce
             direction='left'
           >
@@ -53,7 +54,7 @@ const Presentation = () => {
           <div className='flex gap-2 ml-auto'>
             <JackInTheBox
               cascade
-              delay={1000}
+              delay={1800}
               triggerOnce
             >
               <li className="py-4 duration-500 transition-all hover:-mt-0.5 hover:shadow-2xl">

@@ -31,9 +31,9 @@ const FeaturedProject = ({ featuredProject, onProjectClick }: featuredProjectPro
         <Atropos
           {...settings}
         >
-          <div className='h-28 group'>
+          <div className='h-28 group sm:h-36 md:h-44 lg:h-52 xl:h-56 2xl:h-[16.5rem]'>
             <Button onClick={() => { }}>
-              <h2 className='absolute bg-slate-500 w-full bg-opacity-50 z-30 text-white py-2 font-bold font-secondary-simple top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>{featuredProject.name}</h2>
+              <h2 className='absolute bg-slate-500 w-full bg-opacity-50 z-30 text-white py-2 font-bold font-secondary-simple top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] sm:py-4 md:text-xl'>{featuredProject.name}</h2>
               <img
                 src={featuredProject.image}
                 alt="" className='rounded-lg object-cover shadow-2xl lg:grayscale duration-300 group-hover:grayscale-0'

@@ -5,6 +5,7 @@ import useScrollPosition from '../../hooks/useScrollPosition';
 import Logo from './Logo';
 
 import cn from 'classnames';
+import { Fade } from 'react-awesome-reveal';
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
@@ -20,38 +21,45 @@ const Header = () => {
       <Logo scrollPosition={scrollPosition} />
 
       <nav>
-        <ul className="hidden md:flex gap-4">
-          <li>
-            <Link
-              to='projects'
-              smooth
-              offset={-100}
-            >
-              Projetos
-            </Link>
-          </li>
-          <li>
-            <Link
-              to='about'
-              smooth
-              offset={-100}
-            >
-              Sobre mim
-            </Link>
-          </li>
-          <li>
-            <Link
-              to='contact'
-              smooth
-              offset={-100}
-            >
-              Contato
-            </Link>
-          </li>
-          <li>
-            <button>Currículo</button>
-          </li>
-        </ul>
+        <Fade
+          direction='down'
+          triggerOnce
+          cascade
+          duration={300}
+        >
+          <ul className="hidden md:flex gap-4">
+            <li>
+              <Link
+                to='projects'
+                smooth
+                offset={-100}
+              >
+                Projetos
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='about'
+                smooth
+                offset={-100}
+              >
+                Sobre mim
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='contact'
+                smooth
+                offset={-100}
+              >
+                Contato
+              </Link>
+            </li>
+            <li>
+              <button>Currículo</button>
+            </li>
+          </ul>
+        </Fade>
       </nav>
     </header>
   );

@@ -20,7 +20,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
 
       <SectionHeader title="Projetos" />
 
-      <div className='w-4/5 m-auto max-w-xs'>
+      <div className='w-4/5 m-auto sm:w-5/6'>
 
         <Fade
           cascade
@@ -39,7 +39,6 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
           <FeaturedProject
             featuredProject={featuredProject}
             onProjectClick={onProjectClick}
-
           />
         </Fade>
 
