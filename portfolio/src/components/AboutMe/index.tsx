@@ -15,7 +15,7 @@ const AboutMe = () => {
   }
 
   return (
-    <section className="mt-40 text-white">
+    <section className="mt-40 text-white" id="about">
 
       <SectionHeader title="Sobre mim" />
 

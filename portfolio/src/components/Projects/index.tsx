@@ -16,7 +16,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
   const projectsDefault = projects.filter(project => !project.featured);
 
   return (
-    <section className="text-white">
+    <section className="text-white" id="projects">
 
       <SectionHeader title="Projetos" />
 

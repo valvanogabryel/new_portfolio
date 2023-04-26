@@ -1,12 +1,16 @@
-import useScrollDirection from "../../hooks/useScrollDirection";
+import { useState } from "react";
+
 
 import { DiCode } from 'react-icons/di';
 import { VscPerson } from 'react-icons/vsc';
 import { AiOutlineMail } from 'react-icons/ai';
 import { HiDocumentText } from 'react-icons/hi';
 
+import { Link } from 'react-scroll';
+
+import useScrollDirection from "../../hooks/useScrollDirection";
+
 import cn from 'classnames';
-import { useState } from "react";
 
 const NavBar = () => {
   const [active, setActive] = useState(0);
@@ -17,25 +21,25 @@ const NavBar = () => {
     name: string;
     icon: JSX.Element;
     dis: string;
-    to?: string;
+    to: string;
   }[] = [
       {
         name: "Projetos",
         icon: <DiCode />,
         dis: 'translate-x-0',
-        // to: '#projetos'
+        to: 'projects'
       },
       {
         name: "Sobre",
         icon: <VscPerson />,
         dis: 'translate-x-20',
-        // to: '#sobre'
+        to: 'about'
       },
       {
         name: "Contato",
         icon: <AiOutlineMail />,
         dis: 'translate-x-40',
-        // to: '#contato'
+        to: 'contact'
       },
       {
         name: "Currículo",
@@ -59,9 +63,11 @@ const NavBar = () => {
               key={i}
               className="w-16 m-auto"
             >
-              <a
-                href={menu.to}
-                target={menu.name === 'Currículo' ? '_blank' : '_parent'}
+              <Link
+                to={menu.to}
+                smooth={true}
+                offset={-100}
+                target={menu.name === 'Currículo' ? '_blank' : ''}
                 className="flex flex-col text-center pt-6 focus:bg-transparent"
                 onClick={() => setActive(i)}
               >
@@ -73,7 +79,7 @@ const NavBar = () => {
                 <span className={`${active === i ?
                   'translate-y-4 duration-300 opacity-100' :
                   'opacity-0 translate-y-10'}`}>{menu.name}</span>
-              </a>
+              </Link>
             </li>
           ))
         }

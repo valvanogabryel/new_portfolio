@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import useScrollDirection from '../../hooks/useScrollDirection';
 import useScrollPosition from '../../hooks/useScrollPosition';
 
@@ -21,13 +22,31 @@ const Header = () => {
       <nav>
         <ul className="hidden md:flex gap-4">
           <li>
-            Projetos
+            <Link
+              to='projects'
+              smooth
+              offset={-100}
+            >
+              Projetos
+            </Link>
           </li>
           <li>
-            Sobre mim
+            <Link
+              to='about'
+              smooth
+              offset={-100}
+            >
+              Sobre mim
+            </Link>
           </li>
           <li>
-
+            <Link
+              to='contact'
+              smooth
+              offset={-100}
+            >
+              Contato
+            </Link>
           </li>
           <li>
             <button>Currículo</button>
