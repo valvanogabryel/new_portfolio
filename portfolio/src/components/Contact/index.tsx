@@ -3,7 +3,7 @@ import SectionHeader from "../SectionHeader";
 
 const Contact = () => {
   return (
-    <section className="text-white text-center h-80 mt-40">
+    <section className="text-white text-center h-64 mt-40">
 
       <SectionHeader title="Contato" />
 

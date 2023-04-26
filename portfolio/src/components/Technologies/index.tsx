@@ -38,6 +38,7 @@ const Technologies = () => {
         direction='left'
         triggerOnce
         delay={300}
+        damping={100}
       >
         <h2 className='flex flex-grow items-center gap-8 before:h-[1px] before:w-1/6 before:bg-primary before:flex before:flex-grow after:h-[1px] after:w-1/6 after:flex after:bg-primary after:flex-grow text-2xl text-neutral-300'>
           Minhas Skills
