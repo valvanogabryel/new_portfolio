@@ -40,7 +40,7 @@ const App = () => {
         />
         <Header />
         <NavBar />
-        <main className="max-w-xs m-auto lg:m-0 sm:max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-5xlxl 2xl:max-w-7xl">
+        <main className="container max-w-xs m-auto sm:max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl">
           <Presentation />
           <Projects onProjectClick={handleOpenModal} />
           <Technologies />

@@ -16,11 +16,11 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
   const projectsDefault = projects.filter(project => !project.featured);
 
   return (
-    <section className="text-white lg:container lg:mx-16" id="projects">
+    <section className="text-white" id="projects">
 
       <SectionHeader title="Projetos" />
 
-      <div className='w-4/5 m-auto sm:w-5/6'>
+      <div className='w-4/5 m-auto sm:w-5/6 lg:w-full'>
 
         <Fade
           cascade
