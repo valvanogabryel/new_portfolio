@@ -12,7 +12,7 @@ import {
 
 const Presentation = () => {
   return (
-    <section className="flex flex-col min-h-screen justify-center items-start -mt-24 transition-all duration-500 select-none p-4 border-b-[1px] border-slate-500 border-opacity-20 sm:">
+    <section className="flex flex-col min-h-screen justify-center items-start -mt-24 transition-all duration-500 select-none p-4 border-b-[1px] border-slate-500 border-opacity-20 2xl:-mt-40">
       <Fade
         cascade
         direction='up'
@@ -23,19 +23,19 @@ const Presentation = () => {
           <h1 className="text-md">👋 Olá, mundo! Meu nome é</h1>
         </div>
         <div className="text-gray-400 m-0">
-          <h2 className="text-3xl font-bold">Gabryel Valvano.</h2>
+          <h2 className="text-3xl font-bold md:text-4xl xl:text-5xl 2xl:text-6xl 2xl:mb-4">Gabryel Valvano.</h2>
         </div>
         <div className="text-gray-500">
-          <h3 className="text-2xl font-bold">Desenvolvedor Front-End.</h3>
+          <h3 className="text-2xl font-bold md:text-3xl xl:text-4xl 2xl:text-5xl 2xl:mb-8">Desenvolvedor Front-End.</h3>
         </div>
-        <div className="text-gray-500 text-xs font-secondary-simple">
+        <div className="text-gray-500 text-xs font-secondary-simple md:text-md xl:text-lg 2xl:text-xl">
           <Fade cascade damping={0.1} duration={500}>
             grandes coisas começam como pequenas ideias...
           </Fade>
         </div>
       </Fade>
       <div>
-        <ul className='flex gap-32 justify-end text-3xl text-slate-400 items-center'>
+        <ul className='flex gap-36 justify-end text-3xl text-slate-400 items-center -ml-10 md:hidden'>
           <Fade
             delay={1000}
             triggerOnce
