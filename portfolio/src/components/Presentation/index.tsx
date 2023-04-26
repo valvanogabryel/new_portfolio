@@ -12,7 +12,7 @@ import {
 
 const Presentation = () => {
   return (
-    <section className="flex flex-col min-h-screen justify-center items-start -mt-24 transition-all duration-500 select-none p-4 border-b-[1px] border-slate-500 border-opacity-20 2xl:-mt-40 xl:mb-40 lg:w-screen lg:m-auto">
+    <section className="flex flex-col min-h-screen justify-center items-start -mt-24 transition-all duration-500 select-none p-4 border-b-[1px] border-slate-500 border-opacity-20 2xl:-mt-40 xl:mb-40 lg:border-b-0 lg:w-screen lg:pl-[30%]">
       <Fade
         cascade
         direction='up'

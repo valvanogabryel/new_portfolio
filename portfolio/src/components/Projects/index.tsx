@@ -16,7 +16,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
   const projectsDefault = projects.filter(project => !project.featured);
 
   return (
-    <section className="text-white" id="projects">
+    <section className="text-white lg:container lg:mx-16" id="projects">
 
       <SectionHeader title="Projetos" />
 

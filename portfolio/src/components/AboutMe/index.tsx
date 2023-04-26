@@ -21,7 +21,7 @@ const AboutMe = () => {
 
       <div className="flex flex-col items-center lg:flex-row">
 
-        <div className="py-10 after:h-[1px] after:w-screen after:max-w-full after:bg-white after:bg-opacity-5 after:inline-block  sm:w-96 md:w-full">
+        <div className="py-10 after:h-[1px] after:w-screen after:max-w-full after:bg-white after:bg-opacity-5 after:inline-block  sm:w-96 md:w-full lg:w-[25rem]">
           <Fade
             triggerOnce
             cascade

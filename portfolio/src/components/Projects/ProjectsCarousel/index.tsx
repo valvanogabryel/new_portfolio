@@ -30,7 +30,7 @@ const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) =
 
   return (
     <div
-      className="shadow-[10px_-7px_0] shadow-black lg:cursor-pointer lg:w-[150%] lg:-ml-28 xl:-ml-30"
+      className="shadow-[10px_-7px_0] shadow-black lg:cursor-pointer lg:-ml-28 xl:-ml-30"
     >
 
       <Slider
