@@ -34,6 +34,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
         <Fade
           direction="up"
           triggerOnce
+          delay={300}
         >
           <FeaturedProject
             featuredProject={featuredProject}
@@ -45,6 +46,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
         <Fade
           cascade
           duration={100}
+          delay={200}
           className="text-center mt-20 mb-10 text-light_gray mx-auto"
         >
           todos os projetos:
