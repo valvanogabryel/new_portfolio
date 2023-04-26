@@ -8,7 +8,7 @@ interface AboutMeDescriptionProps {
 
 const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
   return (
-    <>
+    <div className='lg:w-[30vw] '>
       {
         selected === 'resume' &&
         <Typing
@@ -43,7 +43,7 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
         />
       }
 
-    </>
+    </div>
 
   );
 }
