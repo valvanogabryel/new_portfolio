@@ -1,5 +1,8 @@
 import { useState } from 'react';
-import { Fade, JackInTheBox } from 'react-awesome-reveal';
+import {
+  Fade,
+  JackInTheBox
+} from 'react-awesome-reveal';
 
 import { AiFillLinkedin } from 'react-icons/ai';
 
@@ -13,7 +16,7 @@ const Presentation = () => {
       <Fade
         cascade
         direction='up'
-        duration={700}
+        duration={600}
         triggerOnce
       >
         <div className="text-primary my-4 bg-red-800 bg-opacity-10 w-auto px-4 py-2 rounded-full duration-150 hover:ring-1 hover:ring-primary hover:ring-opacity-50">
@@ -22,7 +25,7 @@ const Presentation = () => {
         <div className="text-gray-400 m-0">
           <h2 className="text-3xl font-bold">Gabryel Valvano.</h2>
         </div>
-        <div className="text-dark_gray">
+        <div className="text-gray-500">
           <h3 className="text-2xl font-bold">Desenvolvedor Front-End.</h3>
         </div>
         <div className="text-gray-500 text-xs font-secondary-simple">

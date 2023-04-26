@@ -26,6 +26,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
           cascade
           duration={100}
           className="text-center -mt-10 mb-10 text-light_gray m-auto"
+          delay={300}
         >
           em destaque:
         </Fade>

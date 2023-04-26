@@ -16,10 +16,10 @@ const AboutMe = () => {
 
   return (
     <section className="mt-40 text-white">
+
       <SectionHeader title="Sobre mim" />
 
       <div className="flex flex-col items-center">
-
 
         <div className="py-10 after:h-[1px] after:w-screen after:max-w-full after:bg-white after:bg-opacity-5 after:inline-block">
           <Fade
@@ -92,18 +92,18 @@ const AboutMe = () => {
       <Fade
         direction="left"
         triggerOnce
+        delay={500}
       >
         <AboutCard type={'Soft Skills'} />
       </Fade>
 
       <Fade
-        direction="right"
+        direction="left"
         triggerOnce
+        delay={500}
       >
         <AboutCard type={'Formação'} />
       </Fade>
-
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
     </section>
   );
 }
