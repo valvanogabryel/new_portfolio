@@ -76,7 +76,7 @@ const Footer = () => {
         projetado e construído por <a
           href="https://github.com/valvanogabryel/new_portfolio/tree/main/portfolio"
           target="_blank"
-          className="animate-pulse relative after:h-[1px] after:w-0 after:inline-block after:bg-dark_gray transition-all hover:text-light_gray hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300"
+          className="animate-pulse relative after:h-[1px] after:w-0 after:inline-block after:bg-primary transition-all hover:text-primary hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300 link"
         >
           Gabryel Valvano.
         </a>

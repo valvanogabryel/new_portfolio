@@ -17,6 +17,14 @@
   @apply fill-white m-auto duration-300 drop-shadow-md text-5xl hover:fill-gray-400 hover:drop-shadow-lg;
 }
 
+.link:not(:hover) {
+  @apply text-gray-300 duration-300;
+}
+
+.link:not(:hover)::after {
+  @apply w-0 duration-300;
+}
+
 ::-webkit-scrollbar {
   @apply bg-transparent w-[6px];
 }
