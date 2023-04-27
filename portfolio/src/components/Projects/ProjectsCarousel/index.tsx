@@ -13,7 +13,7 @@ const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) =
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     cssEase: 'ease-in-out',
     pauseOnHover: true,
     autoplay: true,
@@ -23,6 +23,7 @@ const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) =
         breakpoint: 1024,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         }
       }
     ],
@@ -41,10 +42,10 @@ const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) =
           projects.map(project => (
             <div
               key={project.id}
-              className='flex flex-col justify-center items-center h-40 w-80 bg-dark_gray text-center lg:m-auto duration-300 hover:shadow-2xl hover:z-30 hover:scale-105 lg:h-40'
+              className='flex flex-col justify-center items-center h-40 w-80 bg-dark_gray text-center lg:m-auto duration-300 hover:shadow-2xl hover:z-50 lg:h-40 2xl:h-60 group'
               onClick={() => onProjectClick(project)}
             >
-              <img src={project.image} alt="" className="object-cover min-h-full min-w-screen" />
+              <img src={project.image} alt="" className="object-cover min-h-full min-w-screen grayscale duration-300 group-hover:grayscale-0" />
               <h3 className="absolute  bg-black bg-opacity-50 top-0 w-auto py-2 px-4 rounded-br-lg text-white">
                 {project.name}
               </h3>
