@@ -17,7 +17,7 @@ const Contact = () => {
         >
           Caso queira meus serviços
         </Fade>
-        <button className="text-primary border-[1px] w-1/2 m-auto outline-none bg-transparent p-2 rounded-md border-primary duration-300 hover:-translate-x-[5px] hover:-translate-y-[5px] hover:shadow-[4px_4px_0] hover:shadow-primary relative lg:w-1/5">
+        <button className="text-primary border-[1px] w-1/2 m-auto outline-none bg-transparent p-2 rounded-md border-primary duration-300 hover:-translate-x-[5px] hover:-translate-y-[5px] hover:shadow-[4px_4px_0] hover:shadow-primary relative lg:w-1/5 2xl:w-[13%]">
           <a
             href="mailto:valvanogabryel@gmail.com"
             target="_blank"
