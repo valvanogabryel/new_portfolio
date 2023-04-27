@@ -31,7 +31,7 @@ const AboutCard = ({ type }: AboutCardProps) => {
   };
 
   return (
-    <div className='bg-dark_gray items-center text-center my-10 w-11/12 m-auto shadow-2xl rounded-md min-h-[30rem] slick-wrapper'>
+    <div className='bg-dark_gray items-center text-center my-10 w-11/12 m-auto shadow-2xl rounded-md min-h-[30rem] slick-wrapper lg:w-4/6 2xl:w-3/5'>
       <header className='bg-gray-900 bg-opacity-30 py-4 mb-4'>
         <h3 className='text-3xl font-secondary-simple font-bold'>{type}</h3>
       </header>
