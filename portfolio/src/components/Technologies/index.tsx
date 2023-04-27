@@ -22,7 +22,7 @@ const Technologies = () => {
     ),
     autoplay: true,
     autoplaySpeed: 5000,
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     cssEase: 'ease-in-out',
     pauseOnHover: true,
@@ -30,15 +30,21 @@ const Technologies = () => {
     nextArrow: <InvisibleArrows />,
     responsive: [
       {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 3,
         }
       },
       {
         breakpoint: 1536,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 3,
         }
       },
     ]
@@ -47,7 +53,7 @@ const Technologies = () => {
   const techs: ITech[] = useTechnologies();
 
   return (
-    <section className='text-white text-center my-10 mt-40 border-b-[1px] border-b-slate-300 border-opacity-20 h-96'>
+    <section className='text-white text-center my-10 mt-40 border-b-[1px] border-b-slate-300 border-opacity-20 h-96 2xl:h-[28rem]'>
       <Fade
         direction='left'
         triggerOnce
@@ -80,7 +86,7 @@ const Technologies = () => {
                   key={tech.id}
                   className=''
                 >
-                  <div className={`text-[100px] relative left-[5.9rem] mt-4 mb-2 ${tech.className} hover:-translate-y-2 duration-300 sm:left-[7.9rem] md:left-[9.9rem] lg:left-[5.9rem] xl:left-[7.2rem]`}>
+                  <div className={`text-[100px] relative left-[5.9rem] mt-4 mb-2 ${tech.className} hover:-translate-y-2 duration-300 sm:left-[7.9rem] md:left-[9.9rem] lg:left-[5.9rem] xl:left-[7.2rem] 2xl:left-[4.7rem]`}>
                     {tech.badge}
                   </div>
                   <div className='flex flex-col'>
