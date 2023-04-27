@@ -9,7 +9,7 @@ import goToPage from "../../utils/goToPage";
 const SocialMediasSide = () => {
   return (
     <JackInTheBox
-      className="w-[4%] after:inline-block after:h-40 after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2 2xl:after:h-36"
+      className="w-[4%] after:inline-block after:h-40 after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2"
       triggerOnce
       delay={3000}
       duration={300}
