@@ -51,7 +51,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
             cascade
             duration={100}
             delay={600}
-            className="text-center mt-20 mb-10 text-light_gray mx-auto md:text-lg 2xl:text-xl"
+            className="text-center mt-20 mb-10 text-light_gray mx-auto md:text-lg 2xl:text-2xl"
           >
             todos os projetos:
           </Fade>
