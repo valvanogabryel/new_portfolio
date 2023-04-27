@@ -30,7 +30,7 @@ const Header = () => {
           duration={300}
         >
           <ul className="hidden md:flex gap-4">
-            <li className='cursor-pointer xl:text-lg link'>
+            <li className='cursor-pointer xl:text-lg link relative after:h-[1px] after:w-0 after:inline-block after:bg-primary transition-all hover:text-primary hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300'>
               <Link
                 to='projects'
                 smooth
@@ -40,7 +40,7 @@ const Header = () => {
                 Projetos
               </Link>
             </li>
-            <li className='cursor-pointer xl:text-lg link'>
+            <li className='cursor-pointer xl:text-lg link relative after:h-[1px] after:w-0 after:inline-block after:bg-primary transition-all hover:text-primary hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300'>
               <Link
                 to='about'
                 smooth
@@ -49,7 +49,7 @@ const Header = () => {
                 Sobre mim
               </Link>
             </li>
-            <li className='cursor-pointer xl:text-lg link'>
+            <li className='cursor-pointer xl:text-lg link relative after:h-[1px] after:w-0 after:inline-block after:bg-primary transition-all hover:text-primary hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300'>
               <Link
                 to='contact'
                 smooth

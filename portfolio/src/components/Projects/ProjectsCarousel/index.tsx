@@ -45,8 +45,8 @@ const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) =
               className='flex flex-col justify-center items-center h-40 w-80 bg-dark_gray text-center lg:m-auto duration-300 hover:shadow-2xl hover:z-50 lg:h-40 2xl:h-60 group'
               onClick={() => onProjectClick(project)}
             >
-              <img src={project.image} alt="" className="object-cover min-h-full min-w-screen grayscale duration-300 group-hover:grayscale-0" />
-              <h3 className="absolute  bg-black bg-opacity-50 top-0 w-auto py-2 px-4 rounded-br-lg text-white">
+              <img src={project.image} alt="" className="object-cover min-h-full min-w-screen 2xl:grayscale duration-300 2xl:group-hover:grayscale-0" />
+              <h3 className="absolute bg-black bg-opacity-50 top-0 w-auto py-2 px-4 rounded-br-lg text-white">
                 {project.name}
               </h3>
             </div>
