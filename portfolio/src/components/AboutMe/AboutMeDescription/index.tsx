@@ -8,7 +8,7 @@ interface AboutMeDescriptionProps {
 
 const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
   return (
-    <div className='lg:w-[30vw] '>
+    <div className='lg:w-[30vw] mb-10 max-h-40 lg:pr-4 overflow-y-scroll shadow-inner'>
       {
         selected === 'resume' &&
         <Typing

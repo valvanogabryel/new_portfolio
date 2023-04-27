@@ -22,12 +22,20 @@ const Technologies = () => {
     ),
     autoplay: true,
     autoplaySpeed: 5000,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     cssEase: 'ease-in-out',
     pauseOnHover: true,
     prevArrow: <InvisibleArrows />,
-    nextArrow: <InvisibleArrows />
+    nextArrow: <InvisibleArrows />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   };
 
   const techs: ITech[] = useTechnologies();
@@ -37,8 +45,8 @@ const Technologies = () => {
       <Fade
         direction='left'
         triggerOnce
-        delay={300}
-        damping={100}
+        delay={500}
+        damping={200}
       >
         <h2 className='flex flex-grow items-center gap-8 before:h-[1px] before:w-1/6 before:bg-primary before:flex before:flex-grow after:h-[1px] after:w-1/6 after:flex after:bg-primary after:flex-grow text-2xl text-neutral-300 md:text-3xl'>
           Minhas Skills
@@ -66,7 +74,7 @@ const Technologies = () => {
                   key={tech.id}
                   className=''
                 >
-                  <div className={`text-[100px] relative left-[5.9rem] mt-4 mb-2 ${tech.className} hover:-translate-y-2 duration-300 sm:left-[7.9rem] md:left-[9.9rem] lg:left-[11.9rem] xl:left-[13.9rem] 2xl:left-[16.9rem]`}>
+                  <div className={`text-[100px] relative left-[5.9rem] mt-4 mb-2 ${tech.className} hover:-translate-y-2 duration-300 sm:left-[7.9rem] md:left-[9.9rem] lg:left-[5.9rem]`}>
                     {tech.badge}
                   </div>
                   <div className='flex flex-col'>

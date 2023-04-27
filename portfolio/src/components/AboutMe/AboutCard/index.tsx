@@ -28,10 +28,10 @@ const AboutCard = ({ type }: AboutCardProps) => {
     pauseOnHover: true,
     prevArrow: <InvisibleArrows />,
     nextArrow: <InvisibleArrows />,
-  }
+  };
 
   return (
-    <div className='bg-dark_gray items-center text-center my-10 w-11/12 m-auto shadow-2xl rounded-md min-h-[30rem] teste'>
+    <div className='bg-dark_gray items-center text-center my-10 w-11/12 m-auto shadow-2xl rounded-md min-h-[30rem] slick-wrapper'>
       <header className='bg-gray-900 bg-opacity-30 py-4 mb-4'>
         <h3 className='text-3xl font-secondary-simple font-bold'>{type}</h3>
       </header>
@@ -48,7 +48,7 @@ const AboutCard = ({ type }: AboutCardProps) => {
                   </div>
                   <h4 className='text-2xl text-gray-400 pb-4 mb-10 border-b-[1px] w-full border-opacity-[5%] border-b-gray-200'>{info.title}</h4>
                 </div>
-                <div className='text-md text-center w-4/5 m-auto'>
+                <div className='text-md text-center w-4/5 m-auto min-h-[12rem]'>
                   {info.text}
                 </div>
               </div>
@@ -67,29 +67,32 @@ const AboutCard = ({ type }: AboutCardProps) => {
                     </h4>
                   </div>
                 </div>
-                {
-                  info.link &&
-                  (<a
-                    href={info.link}
-                    target='_blank'
-                    className='text-xs inline-block w-4/5 text-gray-400 duration-300 hover:text-white hover:underline mt-10 animate-pulse'
-                  >Clique aqui para ver todos os cursos que fiz na Alura
-                  </a>)
-                }
-                {
-                  info.certificate &&
-                  (
-                    <a
-                      href={info.certificate}
+                <div className='min-h-[9.9rem]'>
+
+                  {
+                    info.link &&
+                    (<a
+                      href={info.link}
                       target='_blank'
-                      className='text-xs inline-block w-4/5 text-white duration-300 hover:text-white hover:underline mt-10'
-                    >
-                      <div className='text-2xl'>
-                        <GrCertificate className='animate-bounce' />
-                      </div>
-                    </a>
-                  )
-                }
+                      className='text-xs inline-block w-4/5 text-gray-400 duration-300 hover:text-white hover:underline mt-10 animate-pulse'
+                    >Clique aqui para ver todos os cursos que fiz na Alura
+                    </a>)
+                  }
+                  {
+                    info.certificate &&
+                    (
+                      <a
+                        href={info.certificate}
+                        target='_blank'
+                        className='text-xs inline-block w-4/5 text-white duration-300 hover:text-white hover:underline mt-10'
+                      >
+                        <div className='text-2xl certificate'>
+                          <GrCertificate className='' />
+                        </div>
+                      </a>
+                    )
+                  }
+                </div>
               </div>
             ))
         }

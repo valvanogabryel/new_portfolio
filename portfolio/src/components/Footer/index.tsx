@@ -13,13 +13,12 @@ const Footer = () => {
     setTimeout(() => {
       window.open(goTo, '_blank');
     }, 1000);
-
   }
 
   return (
     <footer className="text-white bg-gradient-to-b from-background_color to-background_color_darker h-60 text-center mt-80">
       <div>
-        <ul className="flex justify-center gap-4 mb-8">
+        <ul className="flex justify-center gap-4 mb-8 lg:hidden">
           <li className="cursor-pointer duration-300 hover:scale-110">
             <a
               href="https://www.linkedin.com/in/gabryel-valvano-94338a204/"

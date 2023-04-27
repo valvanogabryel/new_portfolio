@@ -15,11 +15,11 @@ const AboutMe = () => {
   }
 
   return (
-    <section className="mt-40 text-white" id="about">
+    <section className="mt-40 text-white lg:mb-40" id="about">
 
       <SectionHeader title="Sobre mim" />
 
-      <div className="flex flex-col items-center lg:flex-row">
+      <div className="flex flex-col items-center lg:flex-row lg:justify-center gap-10">
 
         <div className="py-10 after:h-[1px] after:w-screen after:max-w-full after:bg-white after:bg-opacity-5 after:inline-block  sm:w-96 md:w-full lg:w-[25rem]">
           <Fade
@@ -89,21 +89,25 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <Fade
-        direction="left"
-        triggerOnce
-        delay={500}
-      >
-        <AboutCard type={'Soft Skills'} />
-      </Fade>
+      <div className="lg:grid lg:grid-cols-2">
 
-      <Fade
-        direction="left"
-        triggerOnce
-        delay={500}
-      >
-        <AboutCard type={'Formação'} />
-      </Fade>
+        <Fade
+          direction="left"
+          triggerOnce
+          delay={500}
+        >
+          <AboutCard type={'Soft Skills'} />
+        </Fade>
+
+        <Fade
+          direction="left"
+          triggerOnce
+          delay={500}
+        >
+          <AboutCard type={'Formação'} />
+        </Fade>
+
+      </div>
     </section>
   );
 }

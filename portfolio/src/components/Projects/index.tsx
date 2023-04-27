@@ -20,7 +20,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
 
       <SectionHeader title="Projetos" />
 
-      <div className='w-4/5 m-auto sm:w-5/6 lg:w-full'>
+      <div className='w-4/5 m-auto sm:w-5/6'>
 
         <Fade
           cascade
@@ -34,7 +34,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
         <Fade
           direction="up"
           triggerOnce
-          delay={300}
+          delay={1e1}
         >
           <FeaturedProject
             featuredProject={featuredProject}
@@ -45,7 +45,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
         <Fade
           cascade
           duration={100}
-          delay={200}
+          delay={600}
           className="text-center mt-20 mb-10 text-light_gray mx-auto md:text-lg 2xl:text-xl"
         >
           todos os projetos:
@@ -54,6 +54,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
         <Fade
           direction="up"
           triggerOnce
+          delay={1e2}
         >
           <div className='-my-4'>
             <ProjectsCarousel

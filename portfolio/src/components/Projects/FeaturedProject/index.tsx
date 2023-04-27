@@ -22,7 +22,7 @@ const FeaturedProject = ({ featuredProject, onProjectClick }: featuredProjectPro
   return (
     <>
       <div
-        className='flex flex-col items-center p-4 overflow-hidden shadow-2xl relative bg-dark_gray w-full m-auto bg-opacity-75 scale-125'
+        className='flex flex-col items-center p-4 overflow-hidden shadow-2xl relative bg-dark_gray w-full m-auto bg-opacity-75 scale-125 lg:scale-100 lg:w-[65%]'
         onClick={() => onProjectClick(featuredProject)}
       >
 
@@ -31,7 +31,7 @@ const FeaturedProject = ({ featuredProject, onProjectClick }: featuredProjectPro
         <Atropos
           {...settings}
         >
-          <div className='h-28 group sm:h-36 md:h-44 lg:h-52 xl:h-56 2xl:h-[16.5rem]'>
+          <div className='h-28 group sm:h-36 md:h-44 lg:h-56 xl:h-56 2xl:h-[16.5rem]'>
             <Button onClick={() => { }}>
               <h2 className='absolute bg-slate-500 w-full bg-opacity-50 z-30 text-white py-2 font-bold font-secondary-simple top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] sm:py-4 md:text-xl'>{featuredProject.name}</h2>
               <img

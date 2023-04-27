@@ -30,7 +30,7 @@ const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) =
 
   return (
     <div
-      className="shadow-[10px_-7px_0] shadow-black lg:cursor-pointer lg:-ml-28 xl:-ml-30"
+      className="shadow-[10px_-7px_0] shadow-black lg:cursor-pointer lg:m-0"
     >
 
       <Slider
@@ -41,7 +41,7 @@ const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) =
           projects.map(project => (
             <div
               key={project.id}
-              className='flex flex-col justify-center items-center h-40 w-80 bg-dark_gray text-center lg:m-auto duration-300 hover:shadow-2xl hover:z-30 hover:scale-105'
+              className='flex flex-col justify-center items-center h-40 w-80 bg-dark_gray text-center lg:m-auto duration-300 hover:shadow-2xl hover:z-30 hover:scale-105 lg:h-40'
               onClick={() => onProjectClick(project)}
             >
               <img src={project.image} alt="" className="object-cover min-h-full min-w-screen" />
