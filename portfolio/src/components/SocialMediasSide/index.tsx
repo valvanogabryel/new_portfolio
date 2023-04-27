@@ -4,18 +4,9 @@ import github from 'react-useanimations/lib/github';
 import codepen from 'react-useanimations/lib/codepen';
 import twitter from 'react-useanimations/lib/twitter';
 import { Fade } from "react-awesome-reveal";
+import goToPage from "../../utils/goToPage";
 
 const SocialMediasSide = () => {
-  function handleLinkClick(event: React.MouseEvent<HTMLAnchorElement>) {
-    event.preventDefault();
-
-    const goTo = event.currentTarget.href
-
-    setTimeout(() => {
-      window.open(goTo, '_blank');
-    }, 1000);
-  }
-
   return (
     <Fade
       className="w-[4%] after:inline-block after:h-40 after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2"
@@ -24,11 +15,12 @@ const SocialMediasSide = () => {
       duration={300}
     >
       <ul className="hidden lg:flex lg:flex-col lg:items-center lg:gap-2 lg:w-[4%] lg:fixed lg:bottom-0 lg:pl-4 ">
-        <li className="cursor-pointer duration-300 w-[1.7rem]">
+        <li className="cursor-pointer duration-300 w-[1.7rem] hover:text-primary">
           <a
             href="https://www.linkedin.com/in/gabryel-valvano-94338a204/"
-            onClick={handleLinkClick}
-            target="_blank"
+            onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+              event.preventDefault(); goToPage(event.currentTarget.href)
+            }}
           >
             <UseAnimations
               animation={linkedin}
@@ -40,7 +32,9 @@ const SocialMediasSide = () => {
         <li className="cursor-pointer duration-300 w-[1.7rem]">
           <a
             href="https://github.com/valvanogabryel"
-            onClick={handleLinkClick}
+            onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+              event.preventDefault(); goToPage(event.currentTarget.href)
+            }}
             target="_blank"
           >
             <UseAnimations
@@ -53,7 +47,9 @@ const SocialMediasSide = () => {
         <li className="cursor-pointer duration-300 w-[1.7rem]">
           <a
             href="https://codepen.io/valvanogabryel"
-            onClick={handleLinkClick}
+            onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+              event.preventDefault(); goToPage(event.currentTarget.href)
+            }}
             target="_blank"
           >
             <UseAnimations
@@ -66,7 +62,9 @@ const SocialMediasSide = () => {
         <li className="cursor-pointer duration-300 w-[1.7rem]">
           <a
             href="https://twitter.com/gabryeldev"
-            onClick={handleLinkClick}
+            onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+              event.preventDefault(); goToPage(event.currentTarget.href)
+            }}
             target="_blank"
           >
             <UseAnimations
