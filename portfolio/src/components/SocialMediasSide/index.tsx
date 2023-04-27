@@ -3,18 +3,19 @@ import linkedin from 'react-useanimations/lib/linkedin';
 import github from 'react-useanimations/lib/github';
 import codepen from 'react-useanimations/lib/codepen';
 import twitter from 'react-useanimations/lib/twitter';
-import { Fade } from "react-awesome-reveal";
+import { Fade, JackInTheBox } from "react-awesome-reveal";
 import goToPage from "../../utils/goToPage";
 
 const SocialMediasSide = () => {
   return (
-    <Fade
-      className="w-[4%] after:inline-block after:h-40 after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2"
+    <JackInTheBox
+      className="w-[4%] after:inline-block after:h-40 after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2 2xl:after:h-36"
       triggerOnce
       delay={3000}
       duration={300}
+      cascade
     >
-      <ul className="hidden md:flex md:flex-col md:items-center md:gap-2 md:w-[4%] md:fixed md:bottom-0 md:pl-4 ">
+      <ul className="hidden md:flex md:flex-col md:items-center md:gap-2 md:w-[4%] md:fixed md:bottom-0 md:pl-4 lg:scale-110 xl:pl-10 2xl:scale-125">
         <li className="cursor-pointer duration-300 w-[1.7rem]">
           <a
             href="https://www.linkedin.com/in/gabryel-valvano-94338a204/"
@@ -75,7 +76,7 @@ const SocialMediasSide = () => {
           </a>
         </li>
       </ul>
-    </Fade>
+    </JackInTheBox>
   );
 }
 

@@ -59,7 +59,15 @@ const Header = () => {
               </Link>
             </li>
             <li className='cursor-pointer'>
-              <button className='text-primary border-[1px] w-full m-auto outline-none bg-transparent px-4 rounded-md border-primary duration-300 hover:-translate-x-[5px] hover:-translate-y-[5px] hover:shadow-[4px_4px_0] hover:shadow-primary relative'>Currículo</button>
+
+              <a
+                href="https://docs.google.com/document/d/1cnQm4vp6bqOJxO4Iuc_SX67zS9Y9GdKDmQI1dW0SXNE/edit?usp=sharing"
+                target='_blank'
+              >
+                <button className='text-primary border-[1px] w-full m-auto outline-none bg-transparent px-4 rounded-md border-primary duration-300 hover:-translate-x-[5px] hover:-translate-y-[5px] hover:shadow-[4px_4px_0] hover:shadow-primary relative'>
+                  Currículo
+                </button>
+              </a>
             </li>
           </ul>
         </Fade>
