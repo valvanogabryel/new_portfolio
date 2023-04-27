@@ -2,6 +2,8 @@ import { Fade } from 'react-awesome-reveal';
 
 import cn from 'classnames';
 
+import { motion } from 'framer-motion';
+
 interface LogoProps {
   scrollPosition: number;
 }
@@ -21,9 +23,13 @@ const Logo = ({ scrollPosition }: LogoProps) => {
       cascade
       delay={500}
     >
-      <div
-        className='text-4xl font-logo select-none'
+      <motion.div
+        className='text-4xl font-logo select-none cursor-pointer'
         onClick={scrollToTop}
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 1.1 }}
+        drag="x"
+        dragConstraints={{ left: -100, right: 100 }}
       >
         <span className='text-primary'>G</span>
 
@@ -51,7 +57,7 @@ const Logo = ({ scrollPosition }: LogoProps) => {
         })}>l</span>
 
         <span className={`${scrollPosition > 200 ? 'text-primary' : ''}`}>.</span>
-      </div>
+      </motion.div>
     </Fade>
   );
 }

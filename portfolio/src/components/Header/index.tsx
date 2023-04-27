@@ -7,6 +7,8 @@ import Logo from './Logo';
 import cn from 'classnames';
 import { Fade } from 'react-awesome-reveal';
 
+import { motion } from 'framer-motion';
+
 const Header = () => {
   const scrollDirection = useScrollDirection();
   const scrollPosition = useScrollPosition();
@@ -28,16 +30,17 @@ const Header = () => {
           duration={300}
         >
           <ul className="hidden md:flex gap-4">
-            <li className='cursor-pointer'>
+            <li className='cursor-pointer xl:text-lg'>
               <Link
                 to='projects'
                 smooth
                 offset={-100}
+                className=''
               >
                 Projetos
               </Link>
             </li>
-            <li className='cursor-pointer'>
+            <li className='cursor-pointer xl:text-lg'>
               <Link
                 to='about'
                 smooth
@@ -46,7 +49,7 @@ const Header = () => {
                 Sobre mim
               </Link>
             </li>
-            <li className='cursor-pointer'>
+            <li className='cursor-pointer xl:text-lg'>
               <Link
                 to='contact'
                 smooth
@@ -56,7 +59,7 @@ const Header = () => {
               </Link>
             </li>
             <li className='cursor-pointer'>
-              <button>Currículo</button>
+              <button className='text-primary border-[1px] w-full m-auto outline-none bg-transparent px-4 rounded-md border-primary duration-300 hover:-translate-x-[5px] hover:-translate-y-[5px] hover:shadow-[4px_4px_0] hover:shadow-primary relative'>Currículo</button>
             </li>
           </ul>
         </Fade>

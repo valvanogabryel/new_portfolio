@@ -3,26 +3,19 @@ import linkedin from 'react-useanimations/lib/linkedin';
 import github from 'react-useanimations/lib/github';
 import codepen from 'react-useanimations/lib/codepen';
 import twitter from 'react-useanimations/lib/twitter';
+import goToPage from "../../utils/goToPage";
 
 const Footer = () => {
-  function handleLinkClick(event: React.MouseEvent<HTMLAnchorElement>) {
-    event.preventDefault();
-
-    const goTo = event.currentTarget.href
-
-    setTimeout(() => {
-      window.open(goTo, '_blank');
-    }, 1000);
-  }
-
   return (
     <footer className="text-white bg-gradient-to-b from-background_color to-background_color_darker h-60 text-center mt-80">
       <div>
-        <ul className="flex justify-center gap-4 mb-8 lg:hidden">
+        <ul className="flex justify-center gap-4 mb-8 md:hidden">
           <li className="cursor-pointer duration-300 hover:scale-110">
             <a
               href="https://www.linkedin.com/in/gabryel-valvano-94338a204/"
-              onClick={handleLinkClick}
+              onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+                event.preventDefault(); goToPage(event.currentTarget.href);
+              }}
               target="_blank"
             >
               <UseAnimations
@@ -35,7 +28,9 @@ const Footer = () => {
           <li className="cursor-pointer duration-300 hover:scale-110">
             <a
               href="https://github.com/valvanogabryel"
-              onClick={handleLinkClick}
+              onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+                event.preventDefault(); goToPage(event.currentTarget.href);
+              }}
               target="_blank"
             >
               <UseAnimations
@@ -48,7 +43,9 @@ const Footer = () => {
           <li className="cursor-pointer duration-300 hover:scale-110">
             <a
               href="https://codepen.io/valvanogabryel"
-              onClick={handleLinkClick}
+              onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+                event.preventDefault(); goToPage(event.currentTarget.href);
+              }}
               target="_blank"
             >
               <UseAnimations
@@ -61,7 +58,9 @@ const Footer = () => {
           <li className="cursor-pointer duration-300 hover:scale-110">
             <a
               href="https://twitter.com/gabryeldev"
-              onClick={handleLinkClick}
+              onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+                event.preventDefault(); goToPage(event.currentTarget.href);
+              }}
               target="_blank"
             >
               <UseAnimations

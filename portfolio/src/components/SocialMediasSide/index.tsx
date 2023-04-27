@@ -14,12 +14,12 @@ const SocialMediasSide = () => {
       delay={3000}
       duration={300}
     >
-      <ul className="hidden lg:flex lg:flex-col lg:items-center lg:gap-2 lg:w-[4%] lg:fixed lg:bottom-0 lg:pl-4 ">
-        <li className="cursor-pointer duration-300 w-[1.7rem] hover:text-primary">
+      <ul className="hidden md:flex md:flex-col md:items-center md:gap-2 md:w-[4%] md:fixed md:bottom-0 md:pl-4 ">
+        <li className="cursor-pointer duration-300 w-[1.7rem]">
           <a
             href="https://www.linkedin.com/in/gabryel-valvano-94338a204/"
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-              event.preventDefault(); goToPage(event.currentTarget.href)
+              event.preventDefault(); goToPage(event.currentTarget.href);
             }}
           >
             <UseAnimations
@@ -33,7 +33,7 @@ const SocialMediasSide = () => {
           <a
             href="https://github.com/valvanogabryel"
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-              event.preventDefault(); goToPage(event.currentTarget.href)
+              event.preventDefault(); goToPage(event.currentTarget.href);
             }}
             target="_blank"
           >
@@ -48,7 +48,7 @@ const SocialMediasSide = () => {
           <a
             href="https://codepen.io/valvanogabryel"
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-              event.preventDefault(); goToPage(event.currentTarget.href)
+              event.preventDefault(); goToPage(event.currentTarget.href);
             }}
             target="_blank"
           >
@@ -63,7 +63,7 @@ const SocialMediasSide = () => {
           <a
             href="https://twitter.com/gabryeldev"
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-              event.preventDefault(); goToPage(event.currentTarget.href)
+              event.preventDefault(); goToPage(event.currentTarget.href);
             }}
             target="_blank"
           >

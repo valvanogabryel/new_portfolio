@@ -22,47 +22,53 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
 
       <div className='w-4/5 m-auto sm:w-5/6'>
 
-        <Fade
-          cascade
-          duration={100}
-          className="text-center -mt-10 mb-10 text-light_gray m-auto md:text-lg 2xl:text-xl"
-          delay={300}
-        >
-          em destaque:
-        </Fade>
 
-        <Fade
-          direction="up"
-          triggerOnce
-          delay={1e1}
-        >
-          <FeaturedProject
-            featuredProject={featuredProject}
-            onProjectClick={onProjectClick}
-          />
-        </Fade>
+        <div>
+          <Fade
+            cascade
+            duration={100}
+            className="text-center -mt-10 mb-10 text-light_gray m-auto md:text-lg 2xl:text-xl"
+            delay={300}
+          >
+            em destaque:
+          </Fade>
 
-        <Fade
-          cascade
-          duration={100}
-          delay={600}
-          className="text-center mt-20 mb-10 text-light_gray mx-auto md:text-lg 2xl:text-xl"
-        >
-          todos os projetos:
-        </Fade>
-
-        <Fade
-          direction="up"
-          triggerOnce
-          delay={1e2}
-        >
-          <div className='-my-4'>
-            <ProjectsCarousel
-              projects={projectsDefault}
+          <Fade
+            direction="up"
+            triggerOnce
+            delay={1e1}
+          >
+            <FeaturedProject
+              featuredProject={featuredProject}
               onProjectClick={onProjectClick}
             />
-          </div>
-        </Fade>
+          </Fade>
+        </div>
+
+
+        <div>
+          <Fade
+            cascade
+            duration={100}
+            delay={600}
+            className="text-center mt-20 mb-10 text-light_gray mx-auto md:text-lg 2xl:text-xl"
+          >
+            todos os projetos:
+          </Fade>
+
+          <Fade
+            direction="up"
+            triggerOnce
+            delay={1e2}
+          >
+            <div className='-my-4'>
+              <ProjectsCarousel
+                projects={projectsDefault}
+                onProjectClick={onProjectClick}
+              />
+            </div>
+          </Fade>
+        </div>
       </div>
     </section>
   );

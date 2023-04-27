@@ -87,7 +87,7 @@ const AboutCard = ({ type }: AboutCardProps) => {
                         className='text-xs inline-block w-4/5 text-white duration-300 hover:text-white hover:underline mt-10'
                       >
                         <div className='text-2xl certificate'>
-                          <GrCertificate className='' />
+                          <GrCertificate />
                         </div>
                       </a>
                     )

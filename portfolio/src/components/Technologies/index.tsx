@@ -34,7 +34,13 @@ const Technologies = () => {
         settings: {
           slidesToShow: 1
         }
-      }
+      },
+      {
+        breakpoint: 1536,
+        settings: {
+          slidesToShow: 1
+        }
+      },
     ]
   };
 
@@ -74,7 +80,7 @@ const Technologies = () => {
                   key={tech.id}
                   className=''
                 >
-                  <div className={`text-[100px] relative left-[5.9rem] mt-4 mb-2 ${tech.className} hover:-translate-y-2 duration-300 sm:left-[7.9rem] md:left-[9.9rem] lg:left-[5.9rem]`}>
+                  <div className={`text-[100px] relative left-[5.9rem] mt-4 mb-2 ${tech.className} hover:-translate-y-2 duration-300 sm:left-[7.9rem] md:left-[9.9rem] lg:left-[5.9rem] xl:left-[7.2rem]`}>
                     {tech.badge}
                   </div>
                   <div className='flex flex-col'>
