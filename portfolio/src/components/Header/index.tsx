@@ -52,7 +52,7 @@ const Header = () => {
                 Sobre mim
               </Link>
             </li>
-            <li className='cursor-pointer xl:text-lg link relative after:h-[1px] after:w-0 after:inline-block after:bg-primary transition-all hover:text-primary hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300'>
+            <li className='cursor-pointer xl:text-lg link relative after:h-[1px] after:w-0 after:inline-block after:bg-primary transition-all hover:text-primary hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300 ease-[cubic-bezier(.47,1.64,.41,.8)]'>
               <Link
                 to='contact'
                 smooth
