@@ -1,5 +1,4 @@
 import cn from 'classnames';
-import { useEffect, useState } from 'react';
 import {
   Fade,
   JackInTheBox
@@ -10,7 +9,10 @@ import { AiFillLinkedin } from 'react-icons/ai';
 import {
   FaGithub
 } from 'react-icons/fa';
-import DelayShow from '../../utils/delayShow';
+import DelayShow from '../../utils/DelayShow';
+import { Parallax } from 'react-scroll-parallax';
+
+
 
 const Presentation = () => {
   const show = DelayShow();
@@ -27,20 +29,27 @@ const Presentation = () => {
         triggerOnce
         delay={2000}
       >
-        <div className="text-primary my-4 bg-red-800 bg-opacity-10 w-auto px-4 py-2 rounded-full duration-150 hover:ring-1 hover:ring-primary hover:ring-opacity-50">
-          <h1 className="text-md">👋 Olá, mundo! Meu nome é</h1>
-        </div>
+        <Parallax speed={10}>
+          <div className="text-primary my-4 bg-red-800 bg-opacity-10 w-auto px-4 py-2 rounded-full duration-150 hover:ring-1 hover:ring-primary hover:ring-opacity-50">
+            <h1 className="text-md">👋 Olá, mundo! Meu nome é</h1>
+          </div>
+        </Parallax>
+
         <div className="text-gray-400 m-0">
           <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl 2xl:text-7xl 2xl:mb-4">Gabryel Valvano.</h2>
         </div>
+
         <div className="text-gray-500">
           <h3 className="text-2xl font-bold md:text-4xl xl:text-5xl 2xl:text-6xl 2xl:mb-5">Desenvolvedor Front-End.</h3>
         </div>
-        <div className="text-gray-500 text-xs font-secondary-simple md:text-md xl:text-lg 2xl:text-xl">
-          <Fade cascade damping={0.1} duration={500}>
-            grandes coisas começam como pequenas ideias...
-          </Fade>
-        </div>
+
+        <Parallax scale={[.9, 1.1]}>
+          <div className="text-gray-500 text-xs font-secondary-simple md:text-md xl:text-lg 2xl:text-xl">
+            <Fade cascade damping={0.1} duration={500} delay={1500}>
+              grandes coisas começam como pequenas ideias...
+            </Fade>
+          </div>
+        </Parallax>
       </Fade>
       <div>
         <ul className='flex gap-36 justify-end text-3xl text-slate-400 items-center -ml-10 md:hidden'>

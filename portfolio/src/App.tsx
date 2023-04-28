@@ -1,6 +1,5 @@
 import {
   useEffect,
-  useRef,
   useState
 } from "react";
 
@@ -21,6 +20,8 @@ import SocialMediasSide from "./components/SocialMediasSide";
 import { IProject } from "./interfaces/IProject";
 
 import { ProjectsProvider } from "./contexts/ProjectsContext";
+
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,25 +50,27 @@ const App = () => {
 
   return (
     <>
-      <ProjectsProvider>
-        <Modal
-          isOpen={isOpen}
-          onClose={handleCloseModal}
-          project={selectedProject}
-        />
-        <Header />
-        <NavBar />
-        <main className="container max-w-xs m-auto sm:max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl">
-          <Presentation />
-          <Projects onProjectClick={handleOpenModal} />
-          <Technologies />
-          <AboutMe />
-          <Contact />
-        </main>
-      </ProjectsProvider>
-      <SocialMediasSide />
-      <PhoneSide />
-      <Footer />
+      <ParallaxProvider>
+        <ProjectsProvider>
+          <Modal
+            isOpen={isOpen}
+            onClose={handleCloseModal}
+            project={selectedProject}
+          />
+          <Header />
+          <NavBar />
+          <main className="container max-w-xs m-auto sm:max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl">
+            <Presentation />
+            <Projects onProjectClick={handleOpenModal} />
+            <Technologies />
+            <AboutMe />
+            <Contact />
+          </main>
+        </ProjectsProvider>
+        <SocialMediasSide />
+        <PhoneSide />
+        <Footer />
+      </ParallaxProvider>
     </>
   );
 }
