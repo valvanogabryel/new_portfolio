@@ -24,14 +24,16 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
       <div className='w-4/5 m-auto sm:w-5/6'>
 
         <div>
-          <Fade
-            cascade
-            duration={100}
-            className="text-center -mt-10 mb-10 text-light_gray m-auto md:text-lg xl:text-xl 2xl:text-2xl"
-            delay={300}
-          >
-            em destaque:
-          </Fade>
+          <Parallax translateX={['100px', '-100px']}>
+            <Fade
+              cascade
+              duration={100}
+              className="text-center -mt-10 mb-10 text-light_gray m-auto md:text-lg xl:text-xl 2xl:text-2xl"
+              delay={300}
+            >
+              em destaque:
+            </Fade>
+          </Parallax>
 
           <Fade
             direction="up"
@@ -70,7 +72,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
           </Fade>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
 
