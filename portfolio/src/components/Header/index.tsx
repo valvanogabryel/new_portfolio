@@ -52,7 +52,7 @@ const Header = () => {
                 Sobre mim
               </Link>
             </li>
-            <li className='cursor-pointer xl:text-lg link relative after:h-[1px] after:w-0 after:inline-block after:bg-primary transition-all hover:text-primary hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300 ease-[cubic-bezier(.47,1.64,.41,.8)]'>
+            <li className='cursor-pointer xl:text-lg link relative after:h-[1px] after:w-0 after:inline-block after:bg-primary transition-all hover:text-primary hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300'>
               <Link
                 to='contact'
                 smooth
@@ -67,7 +67,7 @@ const Header = () => {
                 href="https://docs.google.com/document/d/1cnQm4vp6bqOJxO4Iuc_SX67zS9Y9GdKDmQI1dW0SXNE/edit?usp=sharing"
                 target='_blank'
               >
-                <button className='text-primary border-[1px] w-full m-auto outline-none bg-transparent px-4 rounded-md border-primary duration-300 hover:-translate-x-[5px] hover:-translate-y-[5px] hover:shadow-[4px_4px_0] hover:shadow-primary relative'>
+                <button className='text-primary border-[1px] w-full m-auto outline-none bg-transparent px-4 rounded-md border-primary duration-300 hover:-translate-x-[5px] hover:-translate-y-[5px] hover:shadow-[4px_4px_0] hover:shadow-primary relative ease-[cubic-bezier(.47,2.5,.41,.8)]'>
                   Currículo
                 </button>
               </a>
