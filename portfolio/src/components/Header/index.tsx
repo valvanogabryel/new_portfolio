@@ -6,7 +6,7 @@ import Logo from './Logo';
 import useScrollDirection from '../../hooks/useScrollDirection';
 import useScrollPosition from '../../hooks/useScrollPosition';
 
-import DelayShow from '../../utils/delayShow';
+import DelayShow from '../../utils/DelayShow';
 
 import cn from 'classnames';
 
