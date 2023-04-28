@@ -69,7 +69,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
             </div>
 
             <div>
-              <ul className='flex gap-2 text-3xl py-4 pl-1 lg:pl-10'>
+              <ul className='flex gap-2 text-3xl py-4 pl-1 lg:pl-10 lg:pb-8'>
                 <a
                   href={project?.deploy}
                   target='_blank'
