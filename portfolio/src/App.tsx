@@ -12,6 +12,7 @@ import Contact from "./components/Contact";
 import Technologies from "./components/Technologies";
 import Footer from "./components/Footer";
 import SocialMediasSide from "./components/SocialMediasSide";
+import PhoneSide from "./components/PhoneSide";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,6 +51,7 @@ const App = () => {
         </main>
       </ProjectsProvider>
       <SocialMediasSide />
+      <PhoneSide />
       <Footer />
     </>
   );
