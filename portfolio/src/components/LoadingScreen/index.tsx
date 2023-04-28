@@ -1,4 +1,4 @@
-import { ScaleLoader } from "react-spinners";
+import { PropagateLoader } from "react-spinners";
 import { motion } from 'framer-motion';
 import { useEffect, useState } from "react";
 
@@ -15,10 +15,13 @@ const LoadingScreen = () => {
   return (
     <motion.div
       className="text-white fixed flex justify-center items-center top-0 left-0 right-0 bottom-0"
-      animate={{ scale: isVisible ? 1 : 0 }}
+      animate={{
+        scale: isVisible ? 1 : 0,
+        opacity: isVisible ? 1 : 0,
+      }}
       transition={{ duration: .3 }}
     >
-      <ScaleLoader
+      <PropagateLoader
         color="#ED2B2A"
       // size={90}
       />
