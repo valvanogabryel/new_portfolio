@@ -22,7 +22,6 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
 
       <div className='w-4/5 m-auto sm:w-5/6'>
 
-
         <div>
           <Fade
             cascade

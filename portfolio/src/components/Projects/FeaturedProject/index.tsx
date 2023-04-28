@@ -16,17 +16,17 @@ const FeaturedProject = ({ featuredProject, onProjectClick }: featuredProjectPro
     el: 'hightlight',
     shadow: false,
     rotateXMax: 10,
-    rotateYMax: 10
+    rotateYMax: 10,
   };
 
   return (
     <>
       <div
-        className='flex flex-col items-center p-4 overflow-hidden shadow-2xl relative bg-dark_gray w-full m-auto bg-opacity-75 scale-125 lg:scale-100 lg:w-[65%]'
+        className='flex flex-col items-center p-4 overflow-hidden duration-300 hover:px-8 shadow-2xl relative bg-dark_gray w-full m-auto bg-opacity-75 scale-125 lg:scale-100 lg:w-[65%]'
         onClick={() => onProjectClick(featuredProject)}
       >
-
         <AnimatedBorder />
+
 
         <Atropos
           {...settings}
