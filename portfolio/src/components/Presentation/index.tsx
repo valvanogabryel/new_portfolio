@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import cn from 'classnames';
+import { useEffect, useState } from 'react';
 import {
   Fade,
   JackInTheBox
@@ -11,14 +12,23 @@ import {
 } from 'react-icons/fa';
 
 const Presentation = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 1000)
+  }, []);
+
+
   return (
-    <section className="flex flex-col min-h-screen justify-center items-start -mt-24 transition-all duration-500 select-none p-4 border-b-[1px] border-slate-500 border-opacity-20 2xl:-mt-40 xl:mb-40 lg:border-b-0 lg:max-w-full lg:pl-10">
+    <section className={cn("flex flex-col min-h-screen justify-center items-start -mt-24 transition-all duration-500 select-none p-4 border-b-[1px] border-slate-500 border-opacity-20 2xl:-mt-40 xl:mb-40 lg:border-b-0 lg:max-w-full lg:pl-10 invisible", { '!visible': show })}>
       <Fade
         cascade
         direction='up'
         duration={300}
         triggerOnce
-        delay={1000}
+        delay={2000}
       >
         <div className="text-primary my-4 bg-red-800 bg-opacity-10 w-auto px-4 py-2 rounded-full duration-150 hover:ring-1 hover:ring-primary hover:ring-opacity-50">
           <h1 className="text-md">👋 Olá, mundo! Meu nome é</h1>

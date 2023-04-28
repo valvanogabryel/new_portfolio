@@ -1,25 +1,36 @@
-import { useEffect, useState } from "react";
+import {
+  useEffect,
+  useState
+} from "react";
 
+import { RingLoader } from 'react-spinners';
+
+import LoadingScreen from "./components/LoadingScreen";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import Presentation from "./components/Presentation";
 import Projects from "./components/Projects";
 import Modal from "./components/Modal";
-import { ProjectsProvider, useProjectsContext } from "./contexts/ProjectsContext";
-import { IProject } from "./interfaces/IProject";
 import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
 import Technologies from "./components/Technologies";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import SocialMediasSide from "./components/SocialMediasSide";
 import PhoneSide from "./components/PhoneSide";
+import SocialMediasSide from "./components/SocialMediasSide";
+
+import { IProject } from "./interfaces/IProject";
+
+import { ProjectsProvider } from "./contexts/ProjectsContext";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<IProject | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
   }, []);
 
   function handleOpenModal(project: IProject) {
@@ -30,6 +41,10 @@ const App = () => {
   function handleCloseModal() {
     setIsOpen(false);
     setSelectedProject(null);
+  }
+
+  if (isLoading) {
+    return <LoadingScreen />;
   }
 
   return (

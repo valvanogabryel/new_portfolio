@@ -21,7 +21,8 @@ const Logo = ({ scrollPosition }: LogoProps) => {
       direction='down'
       triggerOnce
       cascade
-      delay={500}
+      delay={1000}
+      duration={300}
     >
       <motion.div
         className='text-4xl font-logo select-none cursor-pointer'
@@ -29,7 +30,7 @@ const Logo = ({ scrollPosition }: LogoProps) => {
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 1.1 }}
         drag="x"
-        dragConstraints={{ left: -100, right: 100 }}
+        dragConstraints={{ left: -10, right: 10 }}
       >
         <span className='text-primary'>G</span>
 

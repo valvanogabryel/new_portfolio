@@ -5,11 +5,20 @@ import codepen from 'react-useanimations/lib/codepen';
 import twitter from 'react-useanimations/lib/twitter';
 import { JackInTheBox } from "react-awesome-reveal";
 import goToPage from "../../utils/goToPage";
+import { useEffect, useState } from "react";
 
 const SocialMediasSide = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 1000)
+  }, []);
+
   return (
     <JackInTheBox
-      className="w-[4%] after:inline-block after:h-[90px] after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2"
+      className={`w-[4%] after:inline-block after:h-[90px] after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2 invisible ${show && '!visible'}`}
       triggerOnce
       delay={3000}
       duration={300}

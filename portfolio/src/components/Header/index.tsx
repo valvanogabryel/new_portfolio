@@ -6,18 +6,25 @@ import Logo from './Logo';
 
 import cn from 'classnames';
 import { Fade } from 'react-awesome-reveal';
-
-import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
   const scrollPosition = useScrollPosition();
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 1000)
+  }, []);
 
   return (
-    <header className={cn('text-white z-50 flex justify-center md:justify-between p-10 items-center sticky transition-all duration-300', {
+    <header className={cn('text-white z-50 flex justify-center md:justify-between p-10 items-center sticky transition-all duration-300 invisible', {
       'py-4 bg-background_color_darker backdrop-blur-sm shadow-2xl': scrollPosition >= 50,
       '-top-24': scrollDirection === 'down',
-      'top-0': scrollDirection === 'up'
+      'top-0': scrollDirection === 'up',
+      '!visible': show
     })}>
 
       <Logo scrollPosition={scrollPosition} />
@@ -28,6 +35,7 @@ const Header = () => {
           triggerOnce
           cascade
           duration={300}
+          delay={1500}
         >
           <ul className="hidden md:flex gap-4">
             <li className='cursor-pointer xl:text-lg link relative after:h-[1px] after:w-0 after:inline-block after:bg-primary transition-all hover:text-primary hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300'>
