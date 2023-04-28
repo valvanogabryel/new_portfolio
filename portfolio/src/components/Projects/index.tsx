@@ -24,7 +24,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
       <div className='w-4/5 m-auto sm:w-5/6'>
 
         <div>
-          <Parallax translateX={['0px', '30px']}>
+          <Parallax translateX={['-5px', '10px']}>
             <Fade
               cascade
               duration={100}
@@ -49,7 +49,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
 
 
         <div>
-          <Parallax translateX={['0px', '30px']}>
+          <Parallax translateX={['-5px', '10px']}>
             <Fade
               cascade
               duration={100}
