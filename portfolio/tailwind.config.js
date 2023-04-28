@@ -69,7 +69,7 @@ export default {
           },
           'to': {
             'opacity': '1',
-            'height': '160px'
+            'height': '90px'
           }
         },
       },
