@@ -31,7 +31,7 @@ const Header = () => {
           direction='down'
           triggerOnce
           cascade
-          duration={300}
+          duration={200}
           delay={1500}
         >
           <ul className="hidden md:flex gap-4">

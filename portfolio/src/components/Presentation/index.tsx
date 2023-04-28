@@ -29,21 +29,25 @@ const Presentation = () => {
         triggerOnce
         delay={2000}
       >
-        <Parallax speed={10}>
-          <div className="text-primary my-4 bg-red-800 bg-opacity-10 w-auto px-4 py-2 rounded-full duration-150 hover:ring-1 hover:ring-primary hover:ring-opacity-50">
+        <Parallax speed={20}>
+          <div className="text-primary bg-red-800 bg-opacity-10 w-auto px-4 py-2 rounded-full duration-150 hover:ring-1 hover:ring-primary hover:ring-opacity-50">
             <h1 className="text-md">👋 Olá, mundo! Meu nome é</h1>
           </div>
         </Parallax>
 
-        <div className="text-gray-400 m-0">
-          <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl 2xl:text-7xl 2xl:mb-4">Gabryel Valvano.</h2>
-        </div>
+        <Parallax speed={15}>
+          <div className="text-gray-400 m-0">
+            <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl 2xl:text-7xl">Gabryel Valvano.</h2>
+          </div>
+        </Parallax>
 
-        <div className="text-gray-500">
-          <h3 className="text-2xl font-bold md:text-4xl xl:text-5xl 2xl:text-6xl 2xl:mb-5">Desenvolvedor Front-End.</h3>
-        </div>
+        <Parallax speed={10}>
+          <div className="text-gray-500">
+            <h3 className="text-2xl font-bold md:text-4xl xl:text-5xl 2xl:text-6xl 2xl:mb-5">Desenvolvedor Front-End.</h3>
+          </div>
+        </Parallax>
 
-        <Parallax scale={[.9, 1.1]}>
+        <Parallax speed={5}>
           <div className="text-gray-500 text-xs font-secondary-simple md:text-md xl:text-lg 2xl:text-xl">
             <Fade cascade damping={0.1} duration={500} delay={1500}>
               grandes coisas começam como pequenas ideias...
@@ -73,6 +77,7 @@ const Presentation = () => {
               delay={1800}
               triggerOnce
             >
+
               <li className="py-4 duration-500 transition-all hover:-mt-0.5 hover:shadow-2xl">
                 <a href="https://www.linkedin.com/in/gabryel-valvano-94338a204/" target='_blank'>
                   <AiFillLinkedin />

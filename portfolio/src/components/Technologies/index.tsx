@@ -3,6 +3,7 @@ import useTechnologies from '../../hooks/useTechnologies';
 import InvisibleArrows from '../InvisibleArrows';
 import { Fade } from 'react-awesome-reveal';
 import { ITech } from '../../interfaces/ITech';
+import { Parallax } from 'react-scroll-parallax';
 
 const Technologies = () => {
   const settings = {
@@ -79,6 +80,7 @@ const Technologies = () => {
         delay={1000}
       >
         <ul>
+
           <Slider
             {...settings}
             className='m-auto p-4'
@@ -89,9 +91,11 @@ const Technologies = () => {
                   key={tech.id}
                   className=''
                 >
-                  <div className={`text-[100px] relative left-[5.9rem] mt-4 mb-2 ${tech.className} hover:-translate-y-2 duration-300 sm:left-[7.9rem] md:left-[9.9rem] lg:left-[5.9rem] xl:left-[7.2rem] 2xl:left-[4.7rem]`}>
-                    {tech.badge}
-                  </div>
+                  <Parallax scale={[0.1, 1, 'easeOutCubic']}>
+                    <div className={`text-[100px] relative left-[5.9rem] mt-4 mb-2 ${tech.className} hover:-translate-y-2 duration-300 sm:left-[7.9rem] md:left-[9.9rem] lg:left-[5.9rem] xl:left-[7.2rem] 2xl:left-[4.7rem]`}>
+                      {tech.badge}
+                    </div>
+                  </Parallax>
                   <div className='flex flex-col'>
                     <span className='text-sm font-main-simple text-light_gray font-bold md:text-lg'>
                       {tech.name}
@@ -105,6 +109,7 @@ const Technologies = () => {
               ))
             }
           </Slider>
+
         </ul>
       </Fade>
     </section>

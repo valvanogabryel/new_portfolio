@@ -16,7 +16,7 @@ const Logo = ({ scrollPosition }: LogoProps) => {
       triggerOnce
       cascade
       delay={1000}
-      duration={300}
+      duration={200}
     >
       <motion.div
         className='text-4xl font-logo select-none cursor-pointer'
