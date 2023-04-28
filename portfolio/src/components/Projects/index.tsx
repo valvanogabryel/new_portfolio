@@ -24,7 +24,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
       <div className='w-4/5 m-auto sm:w-5/6'>
 
         <div>
-          <Parallax translateX={['100px', '-100px']}>
+          <Parallax translateX={['0px', '30px']}>
             <Fade
               cascade
               duration={100}
@@ -49,14 +49,16 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
 
 
         <div>
-          <Fade
-            cascade
-            duration={100}
-            delay={600}
-            className="text-center mt-20 mb-10 text-light_gray mx-auto md:text-lg 2xl:text-2xl"
-          >
-            todos os projetos:
-          </Fade>
+          <Parallax translateX={['0px', '30px']}>
+            <Fade
+              cascade
+              duration={100}
+              delay={600}
+              className="text-center mt-20 mb-10 text-light_gray mx-auto md:text-lg 2xl:text-2xl"
+            >
+              todos os projetos:
+            </Fade>
+          </Parallax>
 
           <Fade
             direction="up"
