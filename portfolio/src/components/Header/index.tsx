@@ -1,5 +1,6 @@
 import { Link } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
+import Typing from 'react-typing-effect';
 
 import Logo from './Logo';
 
@@ -68,7 +69,14 @@ const Header = () => {
                 target='_blank'
               >
                 <button className='text-primary border-[1px] w-full m-auto outline-none bg-transparent px-4 rounded-md border-primary duration-300 hover:-translate-x-[5px] hover:-translate-y-[5px] hover:shadow-[4px_4px_0] hover:shadow-primary relative ease-[cubic-bezier(.47,2.5,.41,.8)]'>
-                  Currículo
+                  <Typing
+                    text={['Currículo', 'Resumo']}
+                    speed={100}
+                    typingDelay={0}
+                    eraseDelay={10000}
+                    eraseSpeed={50}
+                    cursorClassName='invisible'
+                  />
                 </button>
               </a>
             </li>
