@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import DelayShow from "../../utils/delayShow";
+import DelayShow from "../../utils/DelayShow";
 import cn from "classnames";
 
 const PhoneSide = () => {

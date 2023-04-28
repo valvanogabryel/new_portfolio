@@ -5,7 +5,7 @@ import codepen from 'react-useanimations/lib/codepen';
 import twitter from 'react-useanimations/lib/twitter';
 import { JackInTheBox } from "react-awesome-reveal";
 import goToPage from "../../utils/goToPage";
-import DelayShow from "../../utils/delayShow";
+import DelayShow from "../../utils/DelayShow";
 import cn from "classnames";
 
 const SocialMediasSide = () => {
