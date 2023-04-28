@@ -5,8 +5,10 @@ import {
 } from 'react-icons/ai';
 
 import AnimatedBorder from "../AnimatedBorder";
-import { IProject } from "../../interfaces/IProject";
 import Tag from "../Tag";
+
+import { IProject } from "../../interfaces/IProject";
+
 
 import cn from 'classnames';
 

@@ -3,8 +3,6 @@ import {
   useState
 } from "react";
 
-import { RingLoader } from 'react-spinners';
-
 import LoadingScreen from "./components/LoadingScreen";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";

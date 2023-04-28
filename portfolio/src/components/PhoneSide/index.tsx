@@ -1,18 +1,16 @@
 import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
+import DelayShow from "../../utils/delayShow";
+import cn from "classnames";
 
 const PhoneSide = () => {
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShow(true);
-    }, 1000)
-  }, []);
+  const show = DelayShow();
 
   return (
     <Fade
-      className={`w-[4%] after:inline-block after:h-[90px] after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2 hidden md:flex md:flex-col md:items-center md:gap-2 md:w-[4%] md:fixed md:bottom-0 md:right-0 md:pr-4 lg:scale-110 xl:pr-10 2xl:scale-105 md:text-gray-400 duration-200 hover:text-gray-500 md:text-xs invisible ${show && '!visible'}`}
+      className={cn('w-[4%] after:inline-block after:h-[90px] after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2 hidden md:flex md:flex-col md:items-center md:gap-2 md:w-[4%] md:fixed md:bottom-0 md:right-0 md:pr-4 lg:scale-110 xl:pr-10 2xl:scale-105 md:text-gray-400 duration-200 hover:text-gray-500 md:text-xs invisible', {
+        '!visible': show
+      })}
       triggerOnce
       delay={5000}
       duration={200}

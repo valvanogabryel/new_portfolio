@@ -3,19 +3,13 @@ import { Fade } from 'react-awesome-reveal';
 import cn from 'classnames';
 
 import { motion } from 'framer-motion';
+import scrollToTop from '../../../utils/scrollToTop';
 
 interface LogoProps {
   scrollPosition: number;
 }
 
 const Logo = ({ scrollPosition }: LogoProps) => {
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-
   return (
     <Fade
       direction='down'

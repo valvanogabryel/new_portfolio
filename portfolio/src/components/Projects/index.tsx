@@ -36,7 +36,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
           <Fade
             direction="up"
             triggerOnce
-            delay={1e1}
+            delay={1e2}
           >
             <FeaturedProject
               featuredProject={featuredProject}
@@ -59,7 +59,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
           <Fade
             direction="up"
             triggerOnce
-            delay={1e2}
+            delay={1e3}
           >
             <div className='-my-4'>
               <ProjectsCarousel

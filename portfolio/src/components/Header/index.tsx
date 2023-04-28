@@ -1,23 +1,19 @@
 import { Link } from 'react-scroll';
-import useScrollDirection from '../../hooks/useScrollDirection';
-import useScrollPosition from '../../hooks/useScrollPosition';
+import { Fade } from 'react-awesome-reveal';
 
 import Logo from './Logo';
 
+import useScrollDirection from '../../hooks/useScrollDirection';
+import useScrollPosition from '../../hooks/useScrollPosition';
+
+import DelayShow from '../../utils/delayShow';
+
 import cn from 'classnames';
-import { Fade } from 'react-awesome-reveal';
-import { useEffect, useState } from 'react';
 
 const Header = () => {
   const scrollDirection = useScrollDirection();
   const scrollPosition = useScrollPosition();
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShow(true);
-    }, 1000)
-  }, []);
+  const show = DelayShow();
 
   return (
     <header className={cn('text-white z-50 flex justify-center md:justify-between p-10 items-center sticky transition-all duration-300 invisible', {
@@ -43,7 +39,6 @@ const Header = () => {
                 to='projects'
                 smooth
                 offset={-100}
-                className=''
               >
                 Projetos
               </Link>

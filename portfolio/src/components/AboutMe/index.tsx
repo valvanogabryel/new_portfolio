@@ -89,20 +89,20 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <div className="lg:grid lg:grid-cols-2">
+      <div className="lg:grid lg:grid-cols-2 overflow-hidden">
 
         <Fade
           direction="left"
           triggerOnce
-          delay={500}
+          delay={1000}
         >
           <AboutCard type={'Soft Skills'} />
         </Fade>
 
         <Fade
-          direction="left"
+          direction="right"
           triggerOnce
-          delay={500}
+          delay={1500}
         >
           <AboutCard type={'Formação'} />
         </Fade>
