@@ -14,9 +14,11 @@ interface featuredProjectProps {
 const FeaturedProject = ({ featuredProject, onProjectClick }: featuredProjectProps) => {
   const settings = {
     el: 'hightlight',
-    shadow: false,
+    shadow: true,
+    shadowScale: 0.5,
     rotateXMax: 10,
     rotateYMax: 10,
+    highlight: true,
   };
 
   return (
@@ -27,13 +29,16 @@ const FeaturedProject = ({ featuredProject, onProjectClick }: featuredProjectPro
       >
         <AnimatedBorder />
 
-
         <Atropos
           {...settings}
         >
           <div className='h-28 group sm:h-36 md:h-44 lg:h-56 xl:h-64 2xl:h-[20.5rem]'>
-            <Button onClick={() => { }}>
-              <h2 className='absolute bg-slate-500 w-full bg-opacity-50 z-30 text-white py-2 font-bold font-secondary-simple top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] sm:py-4 md:text-xl xl:text-2xl 2xl:text-3xl'>{featuredProject.name}</h2>
+            <Button>
+              <h2
+                className='absolute bg-slate-500 w-full bg-opacity-50 z-30 text-white py-2 font-bold font-secondary-simple top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] sm:py-4 md:text-xl xl:text-2xl 2xl:text-3xl'
+              >
+                {featuredProject.name}
+              </h2>
               <img
                 src={featuredProject.image}
                 alt="" className='rounded-lg object-cover shadow-2xl lg:grayscale duration-300 group-hover:grayscale-0'

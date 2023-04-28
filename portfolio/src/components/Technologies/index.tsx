@@ -63,7 +63,7 @@ const Technologies = () => {
         triggerOnce
         delay={800}
       >
-        <h2 className='flex flex-grow items-center gap-8 before:h-[1px] before:w-1/6 before:bg-primary before:flex before:flex-grow after:h-[1px] after:w-1/6 after:flex after:bg-primary after:flex-grow text-2xl text-neutral-300 md:text-3xl'>
+        <h2 className='flex flex-grow items-center gap-8 before:h-[1px] before:w-1/6 before:bg-primary before:flex before:flex-grow after:h-[1px] after:w-1/6 after:flex after:bg-primary after:flex-grow text-2xl text-neutral-300 md:text-3xl select-none'>
           Minhas Skills
         </h2>
         <Fade
@@ -91,7 +91,7 @@ const Technologies = () => {
                   key={tech.id}
                   className=''
                 >
-                  <Parallax scale={[0.1, 1, 'easeOutCubic']}>
+                  <Parallax scale={[0.5, 1, 'easeOutCubic']}>
                     <div className={`text-[100px] relative left-[5.9rem] mt-4 mb-2 ${tech.className} hover:-translate-y-2 duration-300 sm:left-[7.9rem] md:left-[9.9rem] lg:left-[5.9rem] xl:left-[7.2rem] 2xl:left-[4.7rem]`}>
                       {tech.badge}
                     </div>

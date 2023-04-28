@@ -8,7 +8,7 @@ const PhoneSide = () => {
 
   return (
     <Fade
-      className={cn('w-[4%] after:inline-block after:h-[90px] after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2 hidden md:flex md:flex-col md:items-center md:gap-2 md:w-[4%] md:fixed md:bottom-0 md:right-0 md:pr-4 lg:scale-110 xl:pr-10 2xl:scale-105 md:text-gray-400 duration-200 hover:text-gray-500 md:text-xs invisible', {
+      className={cn('w-[4%] after:inline-block after:h-[90px] after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2 hidden md:flex md:flex-col md:items-center md:gap-2 md:w-[4%] md:fixed md:bottom-0 md:right-0 md:pr-4 lg:scale-110 xl:pr-10 2xl:scale-105 md:text-gray-400 duration-200 md:text-xs invisible', {
         '!visible': show
       })}
       triggerOnce
@@ -20,7 +20,7 @@ const PhoneSide = () => {
         href="https://wa.me/5521986010370"
         target="_blank"
       >
-        <div className="flex flex-col items-center pl-1 cursor-pointer">
+        <div className="flex flex-col items-center pl-1 cursor-pointer duration-200 hover:text-gray-500">
           <span className="rotate-90 h-2">(</span>
           <span className="rotate-90 h-2">2</span>
           <span className="rotate-90 h-2">1</span>
