@@ -20,7 +20,7 @@ const PhoneSide = () => {
         href="https://wa.me/5521986010370"
         target="_blank"
       >
-        <div className="flex flex-col items-center pl-1 cursor-pointer duration-200 hover:text-gray-500">
+        <div className="flex flex-col items-center pl-1 cursor-pointer duration-200 hover:text-primary hover:-translate-y-1">
           <span className="rotate-90 h-2">(</span>
           <span className="rotate-90 h-2">2</span>
           <span className="rotate-90 h-2">1</span>
