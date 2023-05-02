@@ -15,8 +15,6 @@ const ProjectsCarousel = ({ projects, onProjectClick }: ProjectsCarouselProps) =
     slidesToShow: 3,
     slidesToScroll: 3,
     cssEase: 'ease-in-out',
-    pauseOnHover: true,
-    autoplay: true,
     autoplaySpeed: 5000,
     responsive: [
       {
