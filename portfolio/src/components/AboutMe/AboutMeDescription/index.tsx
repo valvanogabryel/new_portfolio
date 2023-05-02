@@ -37,11 +37,19 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
     if (divRef.current) {
       const element = divRef.current;
       if (element.scrollTop < prevScrollTop) {
+
         clearInterval(intervalId);
+
         setIntervalId(undefined);
-      } else {
+
         setTimeout(() => {
-          console.log('oi')
+          setIntervalId(
+            setInterval(() => {
+              animateScroll.scrollToBottom({
+                containerId: 'div-scroll',
+                duration: 500
+              });
+            }, 800));
         }, 5000);
       }
 
