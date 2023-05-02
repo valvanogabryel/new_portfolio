@@ -39,17 +39,6 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
       if (element.scrollTop < prevScrollTop) {
         clearInterval(intervalId);
         setIntervalId(undefined);
-      } else {
-        setTimeout(() => {
-          setIntervalId(
-            setInterval(() => {
-              animateScroll.scrollToBottom({
-                containerId: 'div-scroll',
-                duration: 500,
-              });
-            }, 800)
-          );
-        }, 3000);
       }
 
       setPrevScrollTop(element.scrollTop);
