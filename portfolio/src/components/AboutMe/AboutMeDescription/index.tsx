@@ -1,12 +1,14 @@
-import Typing from 'react-typing-effect';
-import aboutMeTexts from '../texts.json';
-
 import {
-  Element,
+  useEffect,
+  useRef,
+  useState
+} from 'react';
+import {
   animateScroll,
-  scroller
 } from 'react-scroll';
-import { useEffect, useRef, useState } from 'react';
+import Typing from 'react-typing-effect';
+
+import aboutMeTexts from '../texts.json';
 
 interface AboutMeDescriptionProps {
   selected: string;
@@ -37,20 +39,11 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
       if (element.scrollTop < prevScrollTop) {
         clearInterval(intervalId);
         setIntervalId(undefined);
-      } else {
-        setIntervalId(
-          setInterval(() => {
-            animateScroll.scrollToBottom({
-              containerId: 'teste',
-              duration: 500
-            });
-          }, 800)
-        );
       }
+
       setPrevScrollTop(element.scrollTop);
     }
   }
-
 
   return (
     <div
@@ -59,6 +52,17 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
       ref={divRef}
       onScroll={handleScroll}
     >
+      {
+        selected === '' &&
+        <Typing
+          text={['Escolha uma das opções...', 'Me conheça melhor!']}
+          speed={50}
+          typingDelay={0}
+          eraseSpeed={20}
+          eraseDelay={5000}
+          className='text-opacity-50'
+        />
+      }
       {
         selected === 'resume' &&
         <Typing

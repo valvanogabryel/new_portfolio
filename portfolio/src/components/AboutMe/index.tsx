@@ -8,7 +8,7 @@ import AboutCard from "./AboutCard";
 import { Fade } from "react-awesome-reveal";
 
 const AboutMe = () => {
-  const [selectedOption, setSelectedOption] = useState<string>('resume');
+  const [selectedOption, setSelectedOption] = useState<string>('');
 
   function handleAboutMe(event: React.ChangeEvent<HTMLInputElement>) {
     setSelectedOption(event.target.value);
