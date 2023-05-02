@@ -78,7 +78,7 @@ export default {
         border_left_spin: 'border_left_spin_kf 2s linear 1s infinite',
         border_bottom_spin: 'border_bottom_spin_kf 2s linear infinite',
         border_right_spin: 'border_right_spin_kf 2s linear 1s infinite',
-        fade_up: 'fade_up_kf 0.3s cubic-bezier(.47,2.5,.41,.8)',
+        fade_up: 'fade_up_kf 0.3s linear',
         grow_up: 'grow_up_kf 3s linear',
       }
     }
