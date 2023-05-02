@@ -39,6 +39,10 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
       if (element.scrollTop < prevScrollTop) {
         clearInterval(intervalId);
         setIntervalId(undefined);
+      } else {
+        setTimeout(() => {
+          console.log('oi')
+        }, 5000);
       }
 
       setPrevScrollTop(element.scrollTop);
@@ -60,7 +64,7 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
           typingDelay={0}
           eraseSpeed={20}
           eraseDelay={5000}
-          className='text-opacity-50'
+          className='text-dark_gray'
         />
       }
       {
