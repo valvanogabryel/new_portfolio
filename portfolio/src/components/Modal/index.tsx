@@ -18,7 +18,12 @@ interface ModalProps {
   project: IProject | null;
 }
 
-const Modal = ({ isOpen, onClose, project }: ModalProps) => {
+const Modal = (
+  {
+    isOpen,
+    onClose,
+    project
+  }: ModalProps) => {
   if (isOpen) {
     document.body.style.overflowY = 'hidden';
   } else {
