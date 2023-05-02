@@ -56,7 +56,7 @@ const Modal = (
               </header>
             </div>
 
-            <div className="p-4 lg:w-11/12 lg:m-auto lg:my-4 overflow-y-scroll max-h-14 lg:max-h-36">
+            <div className="p-4 lg:w-11/12 lg:m-auto lg:my-4 overflow-y-auto max-h-40 lg:max-h-32">
               <p className="text-gray-300 text-xs font-thin font-secondary-simple lg:text-base">{project?.description}</p>
             </div>
 
