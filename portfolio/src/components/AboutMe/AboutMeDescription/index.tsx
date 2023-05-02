@@ -36,10 +36,12 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
   function handleScroll() {
     if (divRef.current) {
       const element = divRef.current;
+      const atBottom = element.scrollTop + element.clientHeight === element.scrollHeight;
       if (element.scrollTop < prevScrollTop) {
         clearInterval(intervalId);
         setIntervalId(undefined);
-      } else if (element.scrollTop + element.clientHeight === element.scrollHeight) {
+      } else if (atBottom) {
+        console.log('oi')
         setIntervalId(
           setInterval(() => {
             animateScroll.scrollToBottom({
