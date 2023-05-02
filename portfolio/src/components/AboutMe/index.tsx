@@ -1,11 +1,11 @@
 import { useState } from "react";
+
 import SectionHeader from "../SectionHeader";
-
 import AnimatedBorder from "../AnimatedBorder";
-
 import AboutMeDescription from "./AboutMeDescription";
 import AboutCard from "./AboutCard";
-import { Bounce, Fade } from "react-awesome-reveal";
+
+import { Fade } from "react-awesome-reveal";
 
 const AboutMe = () => {
   const [selectedOption, setSelectedOption] = useState<string>('resume');

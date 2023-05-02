@@ -41,7 +41,8 @@ const FeaturedProject = ({ featuredProject, onProjectClick }: featuredProjectPro
               </h2>
               <img
                 src={featuredProject.image}
-                alt="" className='rounded-lg object-cover shadow-2xl lg:grayscale duration-300 group-hover:grayscale-0'
+                alt={`Capa do projeto destaque ${featuredProject.name}`}
+                className='rounded-lg object-cover shadow-2xl lg:grayscale duration-300 group-hover:grayscale-0'
               />
             </Button>
           </div>

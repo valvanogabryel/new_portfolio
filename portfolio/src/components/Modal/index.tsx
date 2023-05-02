@@ -36,7 +36,6 @@ const Modal = (
         <div className="flex justify-center items-center backdrop-blur-[3px] fixed bg-black bg-opacity-75 h-screen w-screen z-[1000] top-0 left-0 right-0 bottom-0"
           onClick={onClose}
         >
-
           <div className={cn("flex flex-col overflow-hidden bg-dark_gray fixed select-none w-80 max-w-xs lg:max-w-2xl lg:w-3/4", {
             'animate-fade_up': isOpen
           })}>
@@ -45,9 +44,8 @@ const Modal = (
             <div className="p-4 mt-4 relative overflow-hidden m-auto bg-black bg-opacity-20 max-w-[18rem] lg:max-w-[40rem]">
 
               <img
-                className=""
                 src={project?.image}
-                alt=''
+                alt={`Capa do projeto ${project?.name}`}
                 aria-hidden="true"
               />
             </div>
