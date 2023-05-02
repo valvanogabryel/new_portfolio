@@ -64,7 +64,7 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
           typingDelay={0}
           eraseSpeed={20}
           eraseDelay={5000}
-          className='text-dark_gray'
+          className='text-gray-400'
         />
       }
       {
