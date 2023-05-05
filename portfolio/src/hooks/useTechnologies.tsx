@@ -13,6 +13,8 @@ import {
   SiBootstrap,
   SiCss3,
   SiHtml5,
+  SiJest,
+  SiTestinglibrary
 } from 'react-icons/si';
 
 import { ITech } from '../interfaces/ITech';
@@ -102,7 +104,21 @@ const useTechnologies = () => {
       name: "HTML",
       className: 'text-[#E44D26]',
       description: 'Cascading Style Sheets (Folha de Estilo em Cascata) é o mecanismo que dá estilo e beleza ao site.'
-    }
+    },
+    {
+      id: 13,
+      badge: <SiJest />,
+      name: "Jest",
+      className: 'text-[#944058]',
+      description: 'Uma estrutura de teste de código aberto para projetos em JavaScript, desenvolvida pelo Facebook. Ele é projetado para ser fácil de configurar e usar, e fornece uma ampla variedade de recursos para testar aplicativos e bibliotecas em JavaScript, incluindo testes unitários, de integração e de comportamento.'
+    },
+    {
+      id: 14,
+      badge: <SiTestinglibrary />,
+      name: "React Testing Library",
+      className: 'text-[#1E90FF]',
+      description: 'Uma biblioteca de teste de código aberto para aplicativos React, projetada para testar a funcionalidade real do aplicativo e não apenas a implementação.'
+    },
   ];
 
   return techs;
