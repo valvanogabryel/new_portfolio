@@ -110,7 +110,7 @@ const useTechnologies = () => {
       badge: <SiJest />,
       name: "Jest",
       className: 'text-[#944058]',
-      description: 'Uma estrutura de teste de código aberto para projetos em JavaScript, desenvolvida pelo Facebook. Ele é projetado para ser fácil de configurar e usar, e fornece uma ampla variedade de recursos para testar aplicativos e bibliotecas em JavaScript, incluindo testes unitários, de integração e de comportamento.'
+      description: 'Uma estrutura de teste de código aberto para projetos em JavaScript, desenvolvida pelo Facebook.'
     },
     {
       id: 14,
