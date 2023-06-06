@@ -1,8 +1,4 @@
-import {
-  useEffect,
-  useState
-} from "react";
-
+import { useEffect, useState } from "react";
 
 import LoadingScreen from "./components/LoadingScreen";
 import Header from "./components/Header";
@@ -21,7 +17,7 @@ import { IProject } from "./interfaces/IProject";
 
 import { ProjectsProvider } from "./contexts/ProjectsContext";
 
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +27,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
 
   function handleOpenModal(project: IProject) {
@@ -73,6 +69,6 @@ const App = () => {
       </ParallaxProvider>
     </>
   );
-}
+};
 
 export default App;

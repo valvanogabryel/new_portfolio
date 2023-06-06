@@ -6,10 +6,10 @@ const DelayShow = () => {
   useEffect(() => {
     setTimeout(() => {
       setShow(true);
-    }, 1000)
+    }, 100);
   }, []);
 
   return show;
-}
+};
 
 export default DelayShow;
