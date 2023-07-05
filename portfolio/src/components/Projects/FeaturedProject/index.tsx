@@ -6,7 +6,7 @@ import Button from "../../Button";
 
 import { IProject } from "../../../interfaces/IProject";
 
-interface featuredProjectProps {
+interface FeaturedProjectProps {
   featuredProject: IProject;
   onProjectClick: (project: IProject) => void;
 }
@@ -14,7 +14,7 @@ interface featuredProjectProps {
 const FeaturedProject = ({
   featuredProject,
   onProjectClick,
-}: featuredProjectProps) => {
+}: FeaturedProjectProps) => {
   const settings = {
     el: "hightlight",
     shadow: true,

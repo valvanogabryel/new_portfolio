@@ -5,6 +5,7 @@ import { useProjectsContext } from "../../contexts/ProjectsContext";
 import { IProject } from "../../interfaces/IProject";
 import SectionHeader from "../SectionHeader";
 import { Parallax } from "react-scroll-parallax";
+import { motion } from "framer-motion";
 
 interface ProjectsProps {
   onProjectClick: (project: IProject) => void;
@@ -13,18 +14,16 @@ interface ProjectsProps {
 const Projects = ({ onProjectClick }: ProjectsProps) => {
   const projects = useProjectsContext();
 
-  const [featuredProject] = projects.filter(project => project.featured);
-  const projectsDefault = projects.filter(project => !project.featured);
+  const [featuredProject] = projects.filter((project) => project.featured);
+  const projectsDefault = projects.filter((project) => !project.featured);
 
   return (
     <section className="text-white" id="projects">
-
       <SectionHeader title="Projetos" />
 
-      <div className='w-4/5 m-auto sm:w-5/6'>
-
+      <div className="w-4/5 m-auto sm:w-5/6">
         <div>
-          <Parallax translateX={['-5px', '10px']}>
+          <Parallax translateX={["-5px", "10px"]}>
             <Fade
               cascade
               duration={100}
@@ -35,21 +34,27 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
             </Fade>
           </Parallax>
 
-          <Fade
+          {/* <Fade
             direction="up"
             triggerOnce
             delay={1e2}
+          > */}
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 1 }}
+            viewport={{ once: true }}
           >
             <FeaturedProject
               featuredProject={featuredProject}
               onProjectClick={onProjectClick}
             />
-          </Fade>
+          </motion.div>
+          {/* </Fade> */}
         </div>
 
-
         <div>
-          <Parallax translateX={['-5px', '10px']}>
+          <Parallax translateX={["-5px", "10px"]}>
             <Fade
               cascade
               duration={100}
@@ -60,22 +65,25 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
             </Fade>
           </Parallax>
 
-          <Fade
-            direction="up"
-            triggerOnce
-            delay={1e3}
+          {/* <Fade direction="up" triggerOnce delay={1e3}> */}
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 1 }}
+            viewport={{ once: true }}
           >
-            <div className='-my-4'>
+            <div className="-my-4">
               <ProjectsCarousel
                 projects={projectsDefault}
                 onProjectClick={onProjectClick}
               />
             </div>
-          </Fade>
+          </motion.div>
+          {/* </Fade> */}
         </div>
       </div>
-    </section >
+    </section>
   );
-}
+};
 
 export default Projects;

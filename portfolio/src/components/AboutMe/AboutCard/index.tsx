@@ -68,13 +68,13 @@ const AboutCard = ({ type }: AboutCardProps) => {
                     </h4>
                   </div>
                 </div>
-                <div className="min-h-[9.9rem]">
+                <div className="min-h-fit lg:min-h-[10rem]">
                   {info.link ===
                     "https://cursos.alura.com.br/vitrinedev/valvanogabryel" && (
                     <a
                       href={info.link}
                       target="_blank"
-                      className="text-xs inline-block w-4/5 text-gray-400 duration-300 dark:hover:text-white hover:underline mt-10 animate-pulse"
+                      className="text-xs inline-block w-4/5 text-gray-400 duration-300 dark:hover:text-white hover:underline animate-pulse"
                     >
                       Clique aqui para ver todos os cursos que fiz na Alura
                     </a>
@@ -95,7 +95,7 @@ const AboutCard = ({ type }: AboutCardProps) => {
                       target="_blank"
                       className="text-xs inline-block w-4/5 duration-300 mt-10"
                     >
-                      <div className="text-2xl certificate">
+                      <div className="text-2xl">
                         <span className="text-xs font-thin text-gray-900 dark:text-gray-200 w-screen hover:underline">
                           Nenhum certificado emitido
                         </span>
