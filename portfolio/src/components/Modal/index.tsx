@@ -32,7 +32,11 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
             className="flex flex-col overflow-hidden bg-dark_gray fixed select-none w-80 max-w-xs lg:max-w-2xl lg:w-3/4"
             initial={{ opacity: 0, scale: 1.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3 }}
+            transition={{
+              type: "spring",
+              stiffness: 500,
+              damping: 30,
+            }}
           >
             <AnimatedBorder />
 
@@ -86,7 +90,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
                   <a
                     href={project?.deploy}
                     target="_blank"
-                    className="text-light_gray duration-300 transition-all hover:scale-110 border-[1px] rounded-full px-4 border-gray-400 hover:bg-gray-400 hover:text-dark_gray"
+                    className="text-light_gray duration-300 transition-all hover:scale-110 border-[1px] rounded-full px-4 border-gray-400 hover:bg-gray-400 hover:text-dark_gray lg:rounded-lg lg:py-2 lg:px-2"
                   >
                     <li className="flex items-center lg:mr-4 gap-px">
                       <AiOutlineRocket />
@@ -97,7 +101,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
                 <a
                   href={project?.repository}
                   target="_blank"
-                  className=" text-light_gray duration-300 transition-all hover:scale-110 border-[1px] rounded-full px-4 border-gray-400 hover:bg-gray-400 hover:text-dark_gray"
+                  className=" text-light_gray duration-300 transition-all hover:scale-110 border-[1px] rounded-full px-4 border-gray-400 hover:bg-gray-400 hover:text-dark_gray lg:rounded-lg lg:py-2 lg:px-2"
                 >
                   <li className="flex items-center lg:mr-4 gap-px">
                     <AiFillGithub />
