@@ -89,13 +89,13 @@ const Technologies = () => {
           <Slider {...settings} className="m-auto p-4">
             {techs.map((tech) => (
               <li key={tech.id} className="">
-                <Parallax scale={[0.5, 1, "easeOutCubic"]}>
-                  <div
-                    className={`text-[100px] relative left-[5.9rem] mt-4 mb-2 ${tech.className} hover:-translate-y-2 duration-300 sm:left-[7.9rem] md:left-[9.9rem] lg:left-[5.9rem] xl:left-[7.2rem] 2xl:left-[4.7rem]`}
-                  >
-                    {tech.badge}
-                  </div>
-                </Parallax>
+                {/* <Parallax scale={[0.5, 1, "easeOutCubic"]}> */}
+                <div
+                  className={`text-[100px] relative left-[5.9rem] mt-4 mb-2 ${tech.className} hover:-translate-y-2 duration-300 sm:left-[7.9rem] md:left-[9.9rem] lg:left-[5.9rem] xl:left-[7.2rem] 2xl:left-[4.7rem]`}
+                >
+                  {tech.badge}
+                </div>
+                {/* </Parallax> */}
                 <div className="flex flex-col">
                   <span className="text-sm font-main-simple text-light_gray font-bold md:text-lg">
                     {tech.name}

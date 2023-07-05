@@ -8,6 +8,6 @@ const Tag = ({ technology }: TagProps) => {
       {technology}
     </li>
   );
-}
+};
 
 export default Tag;

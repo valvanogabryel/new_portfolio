@@ -23,16 +23,16 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
 
       <div className="w-4/5 m-auto sm:w-5/6">
         <div>
-          <Parallax translateX={["-5px", "10px"]}>
-            <Fade
-              cascade
-              duration={100}
-              className="text-center -mt-10 mb-10 text-light_gray m-auto md:text-lg xl:text-xl 2xl:text-2xl"
-              delay={300}
-            >
-              em destaque:
-            </Fade>
-          </Parallax>
+          {/* <Parallax translateX={["-5px", "10px"]}> */}
+          <Fade
+            cascade
+            duration={100}
+            className="text-center -mt-10 mb-10 text-light_gray m-auto md:text-lg xl:text-xl 2xl:text-2xl"
+            delay={300}
+          >
+            em destaque:
+          </Fade>
+          {/* </Parallax> */}
 
           {/* <Fade
             direction="up"
@@ -54,16 +54,16 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
         </div>
 
         <div>
-          <Parallax translateX={["-5px", "10px"]}>
-            <Fade
-              cascade
-              duration={100}
-              delay={600}
-              className="text-center mt-20 mb-10 text-light_gray mx-auto md:text-lg 2xl:text-2xl"
-            >
-              todos os projetos:
-            </Fade>
-          </Parallax>
+          {/* <Parallax translateX={["-5px", "10px"]}> */}
+          <Fade
+            cascade
+            duration={100}
+            delay={600}
+            className="text-center mt-20 mb-10 text-light_gray mx-auto md:text-lg 2xl:text-2xl"
+          >
+            todos os projetos:
+          </Fade>
+          {/* </Parallax> */}
 
           {/* <Fade direction="up" triggerOnce delay={1e3}> */}
           <motion.div

@@ -36,13 +36,13 @@ const Presentation = () => {
           </h3>
         </div>
 
-        <Parallax translate={"yes"}>
+        {/* <Parallax translate={"yes"}> */}
           <div className="text-gray-500 text-xs font-secondary-simple md:text-md xl:text-lg 2xl:text-xl">
             <Fade cascade damping={0.1} duration={500} delay={1500}>
               grandes coisas começam como pequenas ideias...
             </Fade>
           </div>
-        </Parallax>
+        {/* </Parallax> */}
       </Fade>
       <div>
         <ul className="flex gap-36 justify-end text-3xl text-slate-400 items-center -ml-10 md:hidden">

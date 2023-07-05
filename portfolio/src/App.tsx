@@ -49,28 +49,28 @@ const App = () => {
 
   return (
     <>
-      <ParallaxProvider>
-        <ProjectsProvider>
-          <ThemeChanger />
-          <Modal
-            isOpen={isOpen}
-            onClose={handleCloseModal}
-            project={selectedProject}
-          />
-          <Header />
-          <NavBar />
-          <main className="container max-w-xs m-auto sm:max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl">
-            <Presentation />
-            <Projects onProjectClick={handleOpenModal} />
-            <Technologies />
-            <AboutMe />
-            <Contact />
-          </main>
-        </ProjectsProvider>
-        <SocialMediasSide />
-        <PhoneSide />
-        <Footer />
-      </ParallaxProvider>
+      {/* <ParallaxProvider> */}
+      <ProjectsProvider>
+        <ThemeChanger />
+        <Modal
+          isOpen={isOpen}
+          onClose={handleCloseModal}
+          project={selectedProject}
+        />
+        <Header />
+        <NavBar />
+        <main className="container max-w-xs m-auto sm:max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl">
+          <Presentation />
+          <Projects onProjectClick={handleOpenModal} />
+          <Technologies />
+          <AboutMe />
+          <Contact />
+        </main>
+      </ProjectsProvider>
+      <SocialMediasSide />
+      <PhoneSide />
+      <Footer />
+      {/* </ParallaxProvider> */}
     </>
   );
 };
