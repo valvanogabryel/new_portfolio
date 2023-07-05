@@ -1,20 +1,21 @@
 import UseAnimations from "react-useanimations";
-import linkedin from 'react-useanimations/lib/linkedin';
-import github from 'react-useanimations/lib/github';
-import codepen from 'react-useanimations/lib/codepen';
-import twitter from 'react-useanimations/lib/twitter';
+import linkedin from "react-useanimations/lib/linkedin";
+import github from "react-useanimations/lib/github";
+import codepen from "react-useanimations/lib/codepen";
+import twitter from "react-useanimations/lib/twitter";
 import goToPage from "../../utils/goToPage";
 
 const Footer = () => {
   return (
-    <footer className="text-white bg-gradient-to-b from-background_color to-background_color_darker h-60 text-center mt-80">
+    <footer className="text-white bg-gradient-to-b from-white to-gray-200 dark:from-background_color dark:to-background_color_darker h-60 text-center mt-80">
       <div>
         <ul className="flex justify-center gap-4 mb-8 md:hidden">
           <li className="cursor-pointer duration-300 hover:scale-110">
             <a
               href="https://www.linkedin.com/in/gabryel-valvano-94338a204/"
               onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-                event.preventDefault(); goToPage(event.currentTarget.href);
+                event.preventDefault();
+                goToPage(event.currentTarget.href);
               }}
               target="_blank"
             >
@@ -29,7 +30,8 @@ const Footer = () => {
             <a
               href="https://github.com/valvanogabryel"
               onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-                event.preventDefault(); goToPage(event.currentTarget.href);
+                event.preventDefault();
+                goToPage(event.currentTarget.href);
               }}
               target="_blank"
             >
@@ -44,7 +46,8 @@ const Footer = () => {
             <a
               href="https://codepen.io/valvanogabryel"
               onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-                event.preventDefault(); goToPage(event.currentTarget.href);
+                event.preventDefault();
+                goToPage(event.currentTarget.href);
               }}
               target="_blank"
             >
@@ -59,7 +62,8 @@ const Footer = () => {
             <a
               href="https://twitter.com/gabryeldev"
               onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-                event.preventDefault(); goToPage(event.currentTarget.href);
+                event.preventDefault();
+                goToPage(event.currentTarget.href);
               }}
               target="_blank"
             >
@@ -73,7 +77,8 @@ const Footer = () => {
         </ul>
       </div>
       <div className="text-sm text-gray-300">
-        projetado e construído por <a
+        projetado e construído por{" "}
+        <a
           href="https://github.com/valvanogabryel/new_portfolio/tree/main/portfolio"
           target="_blank"
           className="animate-pulse relative after:h-[1px] after:w-0 after:inline-block after:bg-primary transition-all hover:text-primary hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300 link"
@@ -83,6 +88,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

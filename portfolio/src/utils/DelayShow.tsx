@@ -6,7 +6,7 @@ const DelayShow = () => {
   useEffect(() => {
     setTimeout(() => {
       setShow(true);
-    }, 100);
+    }, 10);
   }, []);
 
   return show;

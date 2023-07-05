@@ -18,7 +18,7 @@
 }
 
 .link:not(:hover) {
-  @apply text-gray-300 duration-300;
+  @apply text-dark_red_light duration-300 dark:text-gray-300;
 }
 
 .link:not(:hover)::after {
@@ -26,7 +26,7 @@
 }
 
 ::-webkit-scrollbar {
-  @apply bg-transparent w-[6px];
+  @apply w-[6px] bg-transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -35,4 +35,8 @@
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-light_gray;
+}
+
+body {
+  @apply bg-background_color_light dark:bg-background_color;
 }

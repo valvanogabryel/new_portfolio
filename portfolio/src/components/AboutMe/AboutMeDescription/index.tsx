@@ -1,18 +1,11 @@
-import {
-  useEffect,
-  useRef,
-  useState
-} from 'react';
-import {
-  animateScroll,
-} from 'react-scroll';
-import Typing from 'react-typing-effect';
+import { useEffect, useRef, useState } from "react";
+import { animateScroll } from "react-scroll";
+import Typing from "react-typing-effect";
 
-import aboutMeTexts from '../texts.json';
+import aboutMeTexts from "../texts.json";
 
 interface AboutMeDescriptionProps {
   selected: string;
-
 }
 
 const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
@@ -25,8 +18,8 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
       setIntervalId(
         setInterval(() => {
           animateScroll.scrollToBottom({
-            containerId: 'div-scroll',
-            duration: 500
+            containerId: "div-scroll",
+            duration: 500,
           });
         }, 800)
       );
@@ -37,7 +30,6 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
     if (divRef.current) {
       const element = divRef.current;
       if (element.scrollTop < prevScrollTop) {
-
         clearInterval(intervalId);
 
         setIntervalId(undefined);
@@ -49,24 +41,22 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
 
   return (
     <div
-      className='lg:w-[30vw] mb-10 max-h-40 lg:pr-4 overflow-y-scroll shadow-inner'
-      id='div-scroll'
+      className="lg:w-[30vw] mb-10 max-h-40 lg:pr-4 overflow-y-scroll shadow-inner p-4"
+      id="div-scroll"
       ref={divRef}
       onScroll={handleScroll}
     >
-      {
-        selected === '' &&
+      {selected === "" && (
         <Typing
-          text={['Escolha uma das opções...', 'Me conheça melhor!']}
+          text={["Escolha uma das opções...", "Me conheça melhor!"]}
           speed={50}
           typingDelay={0}
           eraseSpeed={20}
           eraseDelay={5000}
-          className='text-gray-400 select-none'
+          className="text-gray-400 select-none"
         />
-      }
-      {
-        selected === 'resume' &&
+      )}
+      {selected === "resume" && (
         <Typing
           text={aboutMeTexts.resume}
           speed={50}
@@ -74,9 +64,8 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
           eraseSpeed={20}
           eraseDelay={999999}
         />
-      }
-      {
-        selected === 'paragraph' &&
+      )}
+      {selected === "paragraph" && (
         <Typing
           text={aboutMeTexts.paragraph}
           speed={50}
@@ -84,9 +73,8 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
           eraseSpeed={20}
           eraseDelay={999999}
         />
-      }
-      {
-        selected === 'biography' &&
+      )}
+      {selected === "biography" && (
         <Typing
           text={aboutMeTexts.biography}
           speed={50}
@@ -94,11 +82,9 @@ const AboutMeDescription = ({ selected }: AboutMeDescriptionProps) => {
           eraseSpeed={20}
           eraseDelay={999999}
         />
-      }
-
+      )}
     </div>
-
   );
-}
+};
 
 export default AboutMeDescription;

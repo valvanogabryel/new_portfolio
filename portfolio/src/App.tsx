@@ -16,8 +16,11 @@ import SocialMediasSide from "./components/SocialMediasSide";
 import { IProject } from "./interfaces/IProject";
 
 import { ProjectsProvider } from "./contexts/ProjectsContext";
-
 import { ParallaxProvider } from "react-scroll-parallax";
+import { useTheme } from "./hooks/useTheme";
+import ThemeChanger from "./components/ThemeChanger";
+
+// #TODO: CORRIGIR FUNCIONALIDADE DE TEMAS
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,6 +51,7 @@ const App = () => {
     <>
       <ParallaxProvider>
         <ProjectsProvider>
+          <ThemeChanger />
           <Modal
             isOpen={isOpen}
             onClose={handleCloseModal}
