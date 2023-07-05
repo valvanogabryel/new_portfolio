@@ -41,7 +41,7 @@ const ProjectsCarousel = ({
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col justify-center items-center h-40 w-80 bg-dark_gray text-center lg:m-auto duration-300 hover:shadow-2xl hover:z-50 lg:h-40 2xl:h-60 group"
+            className="flex flex-col justify-center items-center h-40 w-80 bg-dark_gray text-center lg:m-auto duration-300 hover:scale-105 hover:z-50 lg:h-40 2xl:h-60 group"
             onClick={() => onProjectClick(project)}
           >
             <img
