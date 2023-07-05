@@ -22,12 +22,13 @@ const FeaturedProject = ({
     rotateXMax: 10,
     rotateYMax: 10,
     highlight: true,
+    className: "h-[21.5rem]",
   };
 
   return (
     <>
       <div
-        className="flex flex-col items-center p-4 overflow-hidden duration-300 hover:px-8 shadow-2xl relative bg-darkSlateBlue dark:bg-dark_gray w-full m-auto bg-opacity-75 scale-125 lg:scale-100 lg:w-[65%]"
+        className="flex flex-col items-center overflow-hidden p-4 duration-300 shadow-2xl relative bg-darkSlateBlue dark:bg-dark_gray w-full m-auto bg-opacity-75 scale-125 lg:scale-100 lg:w-[65%]"
         onClick={() => onProjectClick(featuredProject)}
       >
         <AnimatedBorder />
