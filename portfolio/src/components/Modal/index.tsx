@@ -5,7 +5,6 @@ import Tag from "../Tag";
 
 import { IProject } from "../../interfaces/IProject";
 
-import cn from "classnames";
 import { motion } from "framer-motion";
 
 interface ModalProps {
@@ -29,7 +28,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
           onClick={onClose}
         >
           <motion.div
-            className="flex flex-col overflow-hidden bg-dark_gray fixed select-none w-80 max-w-xs lg:max-w-2xl lg:w-3/4"
+            className="flex flex-col overflow-hidden bg-dark_gray fixed select-none w-80 max-w-xs lg:w-3/4 lg:grid lg:grid-cols-2 lg:h-48rem lg:max-w-none xl:h-56rem"
             initial={{ opacity: 0, scale: 1.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -40,34 +39,36 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
           >
             <AnimatedBorder />
 
-            <div className="p-4 mt-4 relative overflow-hidden m-auto bg-black bg-opacity-20 max-w-[18rem] lg:max-w-[40rem]">
-              <img
-                src={project?.image}
-                alt={`Capa do projeto ${project?.name}`}
-                aria-hidden="true"
-              />
-            </div>
+            <header>
+              <div className="p-4 mt-4 relative overflow-hidden m-auto bg-black bg-opacity-20 max-w-[18rem] lg:max-w-[40rem]">
+                <img
+                  src={project?.image}
+                  alt={`Capa do projeto ${project?.name}`}
+                  aria-hidden="true"
+                />
+              </div>
 
-            <div>
-              <header className="p-4 border-b-[1px] border-light_gray lg:mt-4 lg:text-center">
-                <h2 className="lg:text-2xl text-gray-200">{project?.name}</h2>
-                {project?.inDevelopment && (
-                  <span className="text-sm font-light text-gray-400">
-                    Projeto em desenvolvimento
-                  </span>
-                )}
-              </header>
-            </div>
+              <div>
+                <header className="p-4 border-b-[1px] border-light_gray lg:text-center lg:py-4 lg:border-none lg:mt-0">
+                  <h2 className="lg:text-2xl text-gray-200">{project?.name}</h2>
+                  {project?.inDevelopment && (
+                    <span className="text-sm font-light text-gray-400">
+                      Projeto em desenvolvimento
+                    </span>
+                  )}
+                </header>
+              </div>
+            </header>
 
             <div className="p-4 lg:w-11/12 lg:m-auto lg:my-4 overflow-y-auto max-h-40 lg:max-h-64">
-              <p className="text-gray-300 text-xs font-thin font-secondary-simple lg:text-base">
+              <p className="text-gray-300 text-xs font-thin font-secondary-simple lg:text-base xl:leading-relaxed">
                 {project?.description}
               </p>
             </div>
 
             <div>
               <motion.ul
-                className="flex cursor-grab active:cursor-grabbing gap-2 pb-4 lg:gap-4 lg:w-11/12 lg:px-8"
+                className="flex cursor-grab active:cursor-grabbing gap-2 pb-4 lg:gap-4 lg:px-8 lg:flex-wrap lg:justify-center lg:w-full lg:touch-pan-y"
                 drag="x"
                 dragConstraints={{ left: -150, right: 0 }}
               >
@@ -78,7 +79,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
             </div>
 
             <div>
-              <ul className="flex gap-2 text-3xl py-4 pl-1 lg:pl-10 lg:pb-8">
+              <ul className="flex gap-2 text-3xl py-4 pl-1 lg:pb-8 lg:pt-16 lg:justify-end lg:pl-0 lg:pr-4">
                 {project?.inDevelopment ? (
                   <div className="text-light_gray duration-300 transition-all border-[1px] rounded-full px-4 border-gray-400 lg:rounded-lg lg:px-2 lg:py-2 opacity-30">
                     <li className="flex items-center lg:mr-4 gap-px">
