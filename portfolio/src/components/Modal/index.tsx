@@ -60,8 +60,8 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
               </div>
             </header>
 
-            <div className="p-4 lg:w-11/12 lg:m-auto lg:my-4 overflow-y-auto max-h-40 lg:max-h-64">
-              <p className="text-gray-300 text-xs font-thin font-secondary-simple lg:text-base xl:leading-relaxed">
+            <div className="p-4 lg:w-11/12 lg:m-auto lg:my-4 overflow-y-auto max-h-40 lg:max-h-64 xl:max-h-96">
+              <p className="text-gray-300 text-xs font-thin font-secondary-simple lg:text-base xl:leading-relaxed 2xl:text-xl">
                 {project?.description}
               </p>
             </div>
@@ -79,7 +79,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
             </div>
 
             <div>
-              <ul className="flex gap-2 text-3xl py-4 pl-1 lg:pb-8 lg:pt-16 lg:justify-end lg:pl-0 lg:pr-4">
+              <ul className="flex gap-2 text-3xl py-4 pl-1 lg:pb-8 lg:pt-16 lg:justify-end lg:pl-0 lg:pr-4 xl:pr-8">
                 {project?.inDevelopment ? (
                   <div className="text-light_gray duration-300 transition-all border-[1px] rounded-full px-4 border-gray-400 lg:rounded-lg lg:px-2 lg:py-2 opacity-30">
                     <li className="flex items-center lg:mr-4 gap-px">
@@ -95,7 +95,9 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
                   >
                     <li className="flex items-center lg:mr-4 gap-px">
                       <AiOutlineRocket />
-                      <span className="text-xs lg:text-sm lg:pt-1">Deploy</span>
+                      <span className="text-xs lg:text-sm lg:pt-1 2xl:text-base">
+                        Deploy
+                      </span>
                     </li>
                   </a>
                 )}
@@ -106,7 +108,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
                 >
                   <li className="flex items-center lg:mr-4 gap-px">
                     <AiFillGithub />
-                    <span className="text-xs lg:text-sm lg:pt-1">
+                    <span className="text-xs lg:text-sm lg:pt-1 2xl:text-base">
                       Repositório
                     </span>
                   </li>
