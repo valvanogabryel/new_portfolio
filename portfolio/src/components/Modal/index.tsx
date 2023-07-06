@@ -69,7 +69,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
               <motion.ul
                 className="flex cursor-grab active:cursor-grabbing gap-2 pb-4 lg:gap-4 lg:w-11/12 lg:px-8"
                 drag="x"
-                dragConstraints={{ left: 0, right: 0 }}
+                dragConstraints={{ left: -150, right: 0 }}
               >
                 {project?.technologies.map((tech) => (
                   <Tag key={tech} technology={tech} />
