@@ -96,27 +96,23 @@ const AboutMe = () => {
       </div>
 
       <div className="lg:grid lg:grid-cols-2 overflow-hidden">
-        {/* <Fade direction="left" triggerOnce delay={1000}> */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
           viewport={{ once: true }}
         >
           <AboutCard type={"Soft Skills"} />
         </motion.div>
-        {/* </Fade> */}
 
-        {/* <Fade direction="right" triggerOnce delay={1500}> */}
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
           viewport={{ once: true }}
         >
           <AboutCard type={"Formação"} />
         </motion.div>
-        {/* </Fade> */}
       </div>
     </section>
   );

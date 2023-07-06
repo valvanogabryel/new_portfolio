@@ -89,7 +89,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
             <div>
               <ul className="flex gap-2 text-3xl py-4 pl-1 lg:pb-8 lg:pt-16 lg:justify-end lg:pl-0 lg:pr-4 xl:pr-8">
                 {project?.inDevelopment ? (
-                  <div className="text-light_gray duration-300 transition-all border-[1px] rounded-full px-4 border-gray-400 lg:rounded-lg lg:px-2 lg:py-2 opacity-30">
+                  <div className="text-light_gray duration-300 transition-all border-[1px] rounded-full px-4 border-gray-400 lg:rounded-lg lg:px-2 lg:py-2 opacity-30 cursor-not-allowed">
                     <li className="flex items-center lg:mr-4 gap-px">
                       <AiOutlineRocket />
                       <span className="text-xs lg:text-sm lg:pt-1">Deploy</span>

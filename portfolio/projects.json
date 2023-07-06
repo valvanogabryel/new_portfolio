@@ -87,19 +87,6 @@
   },
   {
     "id": 7,
-    "name": "Studies",
-    "description": "Este é um aplicativo de organização de estudos que permite aos usuários gerenciar suas tarefas diárias de maneira eficiente. Com a opção de adicionar uma tarefa e definir um temporizador, o usuário pode iniciar e acompanhar o progresso do cronômetro para cada tarefa.",
-    "image": "/assets/cover/project3.png",
-    "deploy": "https://react-projects-cvrq-af88uyc9o-valvanogabryel.vercel.app/",
-    "repository": "https://github.com/valvanogabryel/react_projects/tree/main/studies",
-    "technologies": [
-      "ReactJS",
-      "TypeScript",
-      "contextAPI"
-    ]
-  },
-  {
-    "id": 8,
     "name": "HZC",
     "description": "Este é o HZC, um site de vídeos, produtos e locais de skate com um design de interface baseado em grid. O projeto foi desenvolvido para apresentar os vídeos de skate de forma organizada e intuitiva. Utilizando o grid, os elementos da página são exibidos em uma grade uniforme, facilitando a navegação do usuário. Além disso, foram utilizados recursos visuais como imagens e tipografia modernas para reforçar a identidade do site.",
     "image": "/assets/cover/project4.png",
@@ -109,10 +96,11 @@
       "JavaScript",
       "CSS",
       "HTML"
-    ]
+    ],
+    "gif": "/assets/gifs/hzc-gif.gif"
   },
   {
-    "id": 9,
+    "id": 8,
     "name": "SelfCare | Home",
     "description": "SelfCare é uma página de compras de produtos de auto cuidado.",
     "image": "/assets/cover/project5.png",
@@ -121,10 +109,11 @@
     "technologies": [
       "CSS",
       "HTML"
-    ]
+    ],
+    "gif": "/assets/gifs/selfcare-gif.gif"
   },
   {
-    "id": 10,
+    "id": 9,
     "name": "Mundo Invertido",
     "description": "Esta é uma landing page do seriado Stranger Things, criada junto com a plataforma DIO. O objetivo do projeto foi criar uma página que exibisse informações sobre a trama, personagens e elenco, além de trailers e imagens de divulgação. A página foi desenvolvida utilizando HTML, CSS e JavaScript, com o objetivo de proporcionar uma experiência imersiva e atrativa para os fãs da série.",
     "image": "/assets/cover/project6.png",
@@ -138,7 +127,7 @@
     "inDevelopment": true
   },
   {
-    "id": 11,
+    "id": 10,
     "name": "SPLITTER",
     "description": "Esta é uma simples e prática calculadora de gorjetas, que ajuda os usuários a calcular a quantidade adequada a ser deixada em uma conta de restaurante. Com uma interface amigável e intuitiva, basta inserir o valor total da conta, selecionar a porcentagem de gorjeta desejada e informar quantas pessoas irão contribuir.",
     "image": "/assets/cover/project7.png",
@@ -151,7 +140,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 11,
     "name": "FilmFinder",
     "description": "Este é o FilmFinder, um projeto simples que desenvolvi para praticar minhas habilidades em JavaScript. A ideia foi criar uma página que consuma dados de uma API de filmes e permita ao usuário favoritar e salvar seus filmes preferidos no armazenamento local do navegador. O layout foi mantido minimalista e de fácil navegação, com uma barra de pesquisa para que o usuário possa encontrar rapidamente o filme que deseja.",
     "image": "/assets/cover/project8.png",
@@ -163,10 +152,11 @@
       "Local Storage",
       "CSS",
       "HTML"
-    ]
+    ],
+    "gif": "/assets/gifs/filmfinder-gif.gif"
   },
   {
-    "id": 13,
+    "id": 12,
     "name": "Jogo da velha",
     "description": "Este é um jogo da velha, também conhecido como tic-tac-toe, que pode ser jogado entre duas pessoas.",
     "image": "/assets/cover/project9.png",
@@ -179,7 +169,7 @@
     ]
   },
   {
-    "id": 14,
+    "id": 13,
     "name": "Galleria | Home",
     "description": "Uma página inicial de galeria de imagens que apresenta uma grade de imagens. Projeto feito no começo dos meus estudos de SASS.",
     "image": "/assets/cover/project10.png",
@@ -191,7 +181,7 @@
     ]
   },
   {
-    "id": 15,
+    "id": 14,
     "name": "Super Trunfo Pokémon",
     "description": "Este é um jogo de Super Trunfo de Pokémon que permite aos jogadores sortear uma carta com um determinado Pokémon e competir com o computador. Cada carta tem uma série de estatísticas, incluindo ataque, defesa e magia, e o objetivo é escolher uma estatística que seja maior do que a do adversário para vencer a rodada. Quando o jogador ganhar 10 rodadas, ele vence o jogo.",
     "image": "/assets/cover/project11.png",
