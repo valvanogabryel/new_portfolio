@@ -4,7 +4,6 @@ import ProjectsCarousel from "./ProjectsCarousel";
 import { useProjectsContext } from "../../contexts/ProjectsContext";
 import { IProject } from "../../interfaces/IProject";
 import SectionHeader from "../SectionHeader";
-import { Parallax } from "react-scroll-parallax";
 import { motion } from "framer-motion";
 
 interface ProjectsProps {

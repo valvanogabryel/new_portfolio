@@ -3,7 +3,6 @@ import useTechnologies from "../../hooks/useTechnologies";
 import InvisibleArrows from "../InvisibleArrows";
 import { Fade } from "react-awesome-reveal";
 import { ITech } from "../../interfaces/ITech";
-import { Parallax } from "react-scroll-parallax";
 import { motion } from "framer-motion";
 
 const Technologies = () => {

@@ -1,11 +1,11 @@
-import cn from "classnames";
+import { AiFillLinkedin } from "react-icons/ai";
+import { FaGithub } from "react-icons/fa";
+
 import { Fade, JackInTheBox } from "react-awesome-reveal";
 
-import { AiFillLinkedin } from "react-icons/ai";
-
-import { FaGithub } from "react-icons/fa";
 import DelayShow from "../../utils/DelayShow";
-import { Parallax } from "react-scroll-parallax";
+
+import cn from "classnames";
 
 const Presentation = () => {
   const show = DelayShow();
@@ -37,11 +37,11 @@ const Presentation = () => {
         </div>
 
         {/* <Parallax translate={"yes"}> */}
-          <div className="text-gray-500 text-xs font-secondary-simple md:text-md xl:text-lg 2xl:text-xl">
-            <Fade cascade damping={0.1} duration={500} delay={1500}>
-              grandes coisas começam como pequenas ideias...
-            </Fade>
-          </div>
+        <div className="text-gray-500 text-xs font-secondary-simple md:text-md xl:text-lg 2xl:text-xl">
+          <Fade cascade damping={0.1} duration={500} delay={1500}>
+            grandes coisas começam como pequenas ideias...
+          </Fade>
+        </div>
         {/* </Parallax> */}
       </Fade>
       <div>
