@@ -14,7 +14,8 @@
       "contextAPI",
       "FramerMotion"
     ],
-    "featured": true
+    "featured": true,
+    "gif": "/assets/gifs/meteora-gif.gif"
   },
   {
     "id": 2,
@@ -27,7 +28,8 @@
       "ReactJS",
       "React Router",
       "CSS Modules"
-    ]
+    ],
+    "gif": "/assets/gifs/codechella-gif.gif"
   },
   {
     "id": 3,
@@ -54,7 +56,8 @@
       "TypeScript",
       "StyledComponents",
       "FramerMotion"
-    ]
+    ],
+    "gif": "/assets/gifs/tokners-gif.gif"
   },
   {
     "id": 5,

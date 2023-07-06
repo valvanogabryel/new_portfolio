@@ -8,4 +8,5 @@ export interface IProject {
   technologies: string[];
   featured?: boolean;
   inDevelopment?: boolean;
+  gif?: string;
 }

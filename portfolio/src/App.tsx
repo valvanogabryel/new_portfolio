@@ -16,11 +16,8 @@ import SocialMediasSide from "./components/SocialMediasSide";
 import { IProject } from "./interfaces/IProject";
 
 import { ProjectsProvider } from "./contexts/ProjectsContext";
-import { ParallaxProvider } from "react-scroll-parallax";
-import { useTheme } from "./hooks/useTheme";
-import ThemeChanger from "./components/ThemeChanger";
 
-// #TODO: CORRIGIR FUNCIONALIDADE DE TEMAS
+import ThemeChanger from "./components/ThemeChanger";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +46,6 @@ const App = () => {
 
   return (
     <>
-      {/* <ParallaxProvider> */}
       <ProjectsProvider>
         <ThemeChanger />
         <Modal
@@ -70,7 +66,6 @@ const App = () => {
       <SocialMediasSide />
       <PhoneSide />
       <Footer />
-      {/* </ParallaxProvider> */}
     </>
   );
 };

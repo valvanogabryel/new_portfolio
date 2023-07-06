@@ -23,7 +23,6 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
 
       <div className="w-4/5 m-auto sm:w-5/6">
         <div>
-          {/* <Parallax translateX={["-5px", "10px"]}> */}
           <Fade
             cascade
             duration={100}
@@ -32,13 +31,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
           >
             em destaque:
           </Fade>
-          {/* </Parallax> */}
 
-          {/* <Fade
-            direction="up"
-            triggerOnce
-            delay={1e2}
-          > */}
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -50,11 +43,9 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
               onProjectClick={onProjectClick}
             />
           </motion.div>
-          {/* </Fade> */}
         </div>
 
         <div>
-          {/* <Parallax translateX={["-5px", "10px"]}> */}
           <Fade
             cascade
             duration={100}
@@ -63,9 +54,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
           >
             todos os projetos:
           </Fade>
-          {/* </Parallax> */}
 
-          {/* <Fade direction="up" triggerOnce delay={1e3}> */}
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +68,6 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
               />
             </div>
           </motion.div>
-          {/* </Fade> */}
         </div>
       </div>
     </section>

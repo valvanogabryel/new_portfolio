@@ -41,11 +41,19 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
 
             <header>
               <div className="p-4 mt-4 relative overflow-hidden m-auto bg-black bg-opacity-20 max-w-[18rem] lg:max-w-[40rem]">
-                <img
-                  src={project?.image}
-                  alt={`Capa do projeto ${project?.name}`}
-                  aria-hidden="true"
-                />
+                {!project?.gif ? (
+                  <img
+                    src={project?.image}
+                    alt={`Capa do projeto ${project?.name}`}
+                    aria-hidden="true"
+                  />
+                ) : (
+                  <img
+                    src={project?.gif}
+                    alt={`Gif do projeto ${project?.name}`}
+                    aria-hidden="true"
+                  />
+                )}
               </div>
 
               <div>
