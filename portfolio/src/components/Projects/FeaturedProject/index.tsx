@@ -22,7 +22,7 @@ const FeaturedProject = ({
     rotateXMax: 10,
     rotateYMax: 10,
     highlight: true,
-    className: "lg:h-[21.5rem]",
+    className: "lg:h-auto 2xl:h-[21.5rem]",
   };
 
   return (

@@ -49,11 +49,6 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
                     aria-hidden="true"
                   />
                 ) : (
-                  // <img
-                  //   src={project?.gif}
-                  //   alt={`Gif do projeto ${project?.name}`}
-                  //   aria-hidden="true"
-                  // />
                   <ProjectGif
                     gif={project.gif}
                     alt={`Gif do projeto ${project.name}`}
