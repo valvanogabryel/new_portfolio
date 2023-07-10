@@ -6,6 +6,7 @@ import Tag from "../Tag";
 import { IProject } from "../../interfaces/IProject";
 
 import { motion } from "framer-motion";
+import ProjectGif from "./ProjectGif";
 
 interface ModalProps {
   isOpen: boolean;
@@ -48,10 +49,14 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
                     aria-hidden="true"
                   />
                 ) : (
-                  <img
-                    src={project?.gif}
-                    alt={`Gif do projeto ${project?.name}`}
-                    aria-hidden="true"
+                  // <img
+                  //   src={project?.gif}
+                  //   alt={`Gif do projeto ${project?.name}`}
+                  //   aria-hidden="true"
+                  // />
+                  <ProjectGif
+                    gif={project.gif}
+                    alt={`Gif do projeto ${project.name}`}
                   />
                 )}
               </div>
