@@ -68,7 +68,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
               </div>
             </header>
 
-            <div className="p-4 lg:w-11/12 lg:m-auto lg:my-4 overflow-y-auto max-h-40 lg:max-h-64 xl:max-h-96">
+            <div className="p-4 lg:w-11/12 shadow-inner lg:shadow-none lg:m-auto lg:my-4 overflow-y-auto max-h-40 lg:max-h-64 xl:max-h-96">
               <p className="text-gray-300 text-xs font-thin font-secondary-simple lg:text-base xl:leading-relaxed 2xl:text-xl">
                 {project?.description}
               </p>
