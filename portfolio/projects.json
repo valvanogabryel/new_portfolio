@@ -48,16 +48,17 @@
   },
   {
     "id": 4,
-    "name": "Olá, mundo! - Blog",
-    "description": "Olá, mundo! Desenvolvido como projeto para um curso que me apresentou o React Router Dom, o 'Olá, mundo!' possui uma interface simples e fácil de navegar.",
-    "image": "/assets/cover/project1.png",
-    "deploy": "https://react-projects-nb56-7duothlch-valvanogabryel.vercel.app/",
-    "repository": "https://github.com/valvanogabryel/alura-cursos/tree/main/forma%C3%A7%C3%B5es/formacao_react_com_javascript/blog_ola_mundo/ola_mundo",
+    "name": "Mundo Invertido",
+    "description": "Esta é uma landing page do seriado Stranger Things, criada junto com a plataforma DIO. O objetivo do projeto foi criar uma página que exibisse informações sobre a trama, personagens e elenco, além de trailers e imagens de divulgação. A página foi desenvolvida utilizando HTML, CSS e JavaScript, com o objetivo de proporcionar uma experiência imersiva e atrativa para os fãs da série.",
+    "image": "/assets/cover/project6.png",
+    "deploy": "https://valvanogabryel.github.io/projetoST/index.html",
+    "repository": "https://github.com/valvanogabryel/projetoST",
     "technologies": [
-      "ReactJS",
-      "React Router",
-      "CSS"
-    ]
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "gif": "/assets/gifs/stranger-things-gif.gif"
   },
   {
     "id": 5,
@@ -101,33 +102,6 @@
   },
   {
     "id": 8,
-    "name": "Mundo Invertido",
-    "description": "Esta é uma landing page do seriado Stranger Things, criada junto com a plataforma DIO. O objetivo do projeto foi criar uma página que exibisse informações sobre a trama, personagens e elenco, além de trailers e imagens de divulgação. A página foi desenvolvida utilizando HTML, CSS e JavaScript, com o objetivo de proporcionar uma experiência imersiva e atrativa para os fãs da série.",
-    "image": "/assets/cover/project6.png",
-    "deploy": "https://valvanogabryel.github.io/projetoST/index.html",
-    "repository": "https://github.com/valvanogabryel/projetoST",
-    "technologies": [
-      "JavaScript",
-      "CSS",
-      "HTML"
-    ],
-    "gif": "/assets/gifs/stranger-things-gif.gif"
-  },
-  {
-    "id": 9,
-    "name": "SPLITTER",
-    "description": "Esta é uma simples e prática calculadora de gorjetas, que ajuda os usuários a calcular a quantidade adequada a ser deixada em uma conta de restaurante. Com uma interface amigável e intuitiva, basta inserir o valor total da conta, selecionar a porcentagem de gorjeta desejada e informar quantas pessoas irão contribuir.",
-    "image": "/assets/cover/project7.png",
-    "deploy": "https://valvanogabryel.github.io/projetos/projetos-treinamento/funcionalidades/tip-calculator-app/index.html",
-    "repository": "https://github.com/valvanogabryel/projetos/tree/main/projetos-treinamento/funcionalidades/tip-calculator-app",
-    "technologies": [
-      "JavaScript",
-      "CSS",
-      "HTML"
-    ]
-  },
-  {
-    "id": 10,
     "name": "FilmFinder",
     "description": "Este é o FilmFinder, um projeto simples que desenvolvi para praticar minhas habilidades em JavaScript. A ideia foi criar uma página que consuma dados de uma API de filmes e permita ao usuário favoritar e salvar seus filmes preferidos no armazenamento local do navegador. O layout foi mantido minimalista e de fácil navegação, com uma barra de pesquisa para que o usuário possa encontrar rapidamente o filme que deseja.",
     "image": "/assets/cover/project8.png",
@@ -141,6 +115,32 @@
       "HTML"
     ],
     "gif": "/assets/gifs/filmfinder-gif.gif"
+  },
+  {
+    "id": 9,
+    "name": "Olá, mundo! - Blog",
+    "description": "Olá, mundo! Desenvolvido como projeto para um curso que me apresentou o React Router Dom, o 'Olá, mundo!' possui uma interface simples e fácil de navegar.",
+    "image": "/assets/cover/project1.png",
+    "deploy": "https://react-projects-nb56-7duothlch-valvanogabryel.vercel.app/",
+    "repository": "https://github.com/valvanogabryel/alura-cursos/tree/main/forma%C3%A7%C3%B5es/formacao_react_com_javascript/blog_ola_mundo/ola_mundo",
+    "technologies": [
+      "ReactJS",
+      "React Router",
+      "CSS"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "SPLITTER",
+    "description": "Esta é uma simples e prática calculadora de gorjetas, que ajuda os usuários a calcular a quantidade adequada a ser deixada em uma conta de restaurante. Com uma interface amigável e intuitiva, basta inserir o valor total da conta, selecionar a porcentagem de gorjeta desejada e informar quantas pessoas irão contribuir.",
+    "image": "/assets/cover/project7.png",
+    "deploy": "https://valvanogabryel.github.io/projetos/projetos-treinamento/funcionalidades/tip-calculator-app/index.html",
+    "repository": "https://github.com/valvanogabryel/projetos/tree/main/projetos-treinamento/funcionalidades/tip-calculator-app",
+    "technologies": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ]
   },
   {
     "id": 11,
