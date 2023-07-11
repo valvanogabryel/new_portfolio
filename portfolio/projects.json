@@ -77,13 +77,12 @@
     "name": "Alura Space",
     "description": "O Alura Space foi meu primeiro projeto em React, que me introduziu à biblioteca e suas principais funcionalidades. Ele é uma página simples que exibe informações sobre planetas, estrelas, galáxias, luas e nebulosas, com a possibilidade de filtrá-las por categoria. O projeto foi uma ótima oportunidade para aprender sobre componentização e gerenciamento de estados.",
     "image": "/assets/cover/project2.png",
-    "deploy": "https://react-projects-e1o9dp7qn-valvanogabryel.vercel.app/",
+    "deploy": "https://react-projects-valvanogabryel.vercel.app",
     "repository": "https://github.com/valvanogabryel/alura-cursos/tree/main/forma%C3%A7%C3%B5es/formacao_react_com_javascript/alura_space/spacialstation_project/alura_space",
     "technologies": [
       "ReactJS",
       "SCSS"
-    ],
-    "inDevelopment": true
+    ]
   },
   {
     "id": 7,
