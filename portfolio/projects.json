@@ -178,19 +178,5 @@
       "SASS",
       "HTML"
     ]
-  },
-  {
-    "id": 14,
-    "name": "Super Trunfo Pokémon",
-    "description": "Este é um jogo de Super Trunfo de Pokémon que permite aos jogadores sortear uma carta com um determinado Pokémon e competir com o computador. Cada carta tem uma série de estatísticas, incluindo ataque, defesa e magia, e o objetivo é escolher uma estatística que seja maior do que a do adversário para vencer a rodada. Quando o jogador ganhar 10 rodadas, ele vence o jogo.",
-    "image": "/assets/cover/project11.png",
-    "deploy": "https://valvanogabryel.github.io/projetos/games/supertrunfo-pokemon/index.html",
-    "repository": "https://github.com/valvanogabryel/projetos/tree/main/games/supertrunfo-pokemon",
-    "technologies": [
-      "JavaScript",
-      "CSS",
-      "HTML"
-    ],
-    "inDevelopment": true
   }
 ]
