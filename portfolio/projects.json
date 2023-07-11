@@ -33,19 +33,6 @@
   },
   {
     "id": 3,
-    "name": "Orbi Notícias",
-    "description": "Site de notícias feito para um teste de emprego",
-    "image": "/assets/cover/orbi.png",
-    "deploy": "",
-    "repository": "https://github.com/valvanogabryel/Teste-Vaga-Emprego",
-    "technologies": [
-      "CSS",
-      "HTML"
-    ],
-    "inDevelopment": true
-  },
-  {
-    "id": 4,
     "name": "Tokners - Landing Page",
     "description": "Uma landing page",
     "image": "/assets/cover/tokners.png",
@@ -60,7 +47,7 @@
     "gif": "/assets/gifs/tokners-gif.gif"
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "Olá, mundo! - Blog",
     "description": "Olá, mundo! Desenvolvido como projeto para um curso que me apresentou o React Router Dom, o 'Olá, mundo!' possui uma interface simples e fácil de navegar.",
     "image": "/assets/cover/project1.png",
@@ -73,7 +60,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 5,
     "name": "Alura Space",
     "description": "O Alura Space foi meu primeiro projeto em React, que me introduziu à biblioteca e suas principais funcionalidades. Ele é uma página simples que exibe informações sobre planetas, estrelas, galáxias, luas e nebulosas, com a possibilidade de filtrá-las por categoria. O projeto foi uma ótima oportunidade para aprender sobre componentização e gerenciamento de estados.",
     "image": "/assets/cover/project2.png",
@@ -85,7 +72,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 6,
     "name": "HZC",
     "description": "Este é o HZC, um site de vídeos, produtos e locais de skate com um design de interface baseado em grid. O projeto foi desenvolvido para apresentar os vídeos de skate de forma organizada e intuitiva. Utilizando o grid, os elementos da página são exibidos em uma grade uniforme, facilitando a navegação do usuário. Além disso, foram utilizados recursos visuais como imagens e tipografia modernas para reforçar a identidade do site.",
     "image": "/assets/cover/project4.png",
@@ -99,7 +86,7 @@
     "gif": "/assets/gifs/hzc-gif.gif"
   },
   {
-    "id": 8,
+    "id": 7,
     "name": "SelfCare | Home",
     "description": "SelfCare é uma página de compras de produtos de auto cuidado.",
     "image": "/assets/cover/project5.png",
@@ -112,7 +99,7 @@
     "gif": "/assets/gifs/selfcare-gif.gif"
   },
   {
-    "id": 9,
+    "id": 8,
     "name": "Mundo Invertido",
     "description": "Esta é uma landing page do seriado Stranger Things, criada junto com a plataforma DIO. O objetivo do projeto foi criar uma página que exibisse informações sobre a trama, personagens e elenco, além de trailers e imagens de divulgação. A página foi desenvolvida utilizando HTML, CSS e JavaScript, com o objetivo de proporcionar uma experiência imersiva e atrativa para os fãs da série.",
     "image": "/assets/cover/project6.png",
@@ -126,7 +113,7 @@
     "gif": "/assets/gifs/stranger-things-gif.gif"
   },
   {
-    "id": 10,
+    "id": 9,
     "name": "SPLITTER",
     "description": "Esta é uma simples e prática calculadora de gorjetas, que ajuda os usuários a calcular a quantidade adequada a ser deixada em uma conta de restaurante. Com uma interface amigável e intuitiva, basta inserir o valor total da conta, selecionar a porcentagem de gorjeta desejada e informar quantas pessoas irão contribuir.",
     "image": "/assets/cover/project7.png",
@@ -139,7 +126,7 @@
     ]
   },
   {
-    "id": 11,
+    "id": 10,
     "name": "FilmFinder",
     "description": "Este é o FilmFinder, um projeto simples que desenvolvi para praticar minhas habilidades em JavaScript. A ideia foi criar uma página que consuma dados de uma API de filmes e permita ao usuário favoritar e salvar seus filmes preferidos no armazenamento local do navegador. O layout foi mantido minimalista e de fácil navegação, com uma barra de pesquisa para que o usuário possa encontrar rapidamente o filme que deseja.",
     "image": "/assets/cover/project8.png",
@@ -155,7 +142,7 @@
     "gif": "/assets/gifs/filmfinder-gif.gif"
   },
   {
-    "id": 12,
+    "id": 11,
     "name": "Jogo da velha",
     "description": "Este é um jogo da velha, também conhecido como tic-tac-toe, que pode ser jogado entre duas pessoas.",
     "image": "/assets/cover/project9.png",
@@ -168,7 +155,7 @@
     ]
   },
   {
-    "id": 13,
+    "id": 12,
     "name": "Galleria | Home",
     "description": "Uma página inicial de galeria de imagens que apresenta uma grade de imagens. Projeto feito no começo dos meus estudos de SASS.",
     "image": "/assets/cover/project10.png",
