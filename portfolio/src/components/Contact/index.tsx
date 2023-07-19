@@ -15,7 +15,7 @@ const Contact = () => {
           transition={{
             type: "spring",
             damping: 10,
-            stiffness: 50,
+            stiffness: 100,
           }}
         >
           Estou buscando por oportunidades.
