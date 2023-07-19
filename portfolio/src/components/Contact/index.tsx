@@ -1,5 +1,6 @@
 import { Fade } from "react-awesome-reveal";
 import SectionHeader from "../SectionHeader";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -7,9 +8,18 @@ const Contact = () => {
       <SectionHeader title="Contato" />
 
       <div className="flex flex-col items-center gap-6">
-        <h2 className="text-3xl font-bold text-gray-500 w-2/3 dark:text-gray-300 mt-8 lg:w-2/5 lg:text-5xl">
+        <motion.h2
+          className="text-3xl font-bold text-gray-500 w-2/3 dark:text-gray-300 mt-8 lg:w-2/5 lg:text-5xl"
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            type: "spring",
+            damping: 10,
+            stiffness: 50,
+          }}
+        >
           Estou buscando por oportunidades.
-        </h2>
+        </motion.h2>
         <Fade
           cascade
           duration={100}
