@@ -1,13 +1,13 @@
-import { createContext, useState, useContext } from 'react';
-import { IProject } from '../interfaces/IProject';
+import { ReactNode, createContext, useContext } from "react";
+import { IProject } from "../interfaces/IProject";
 
-import projectsAPI from '../../projects.json';
+import projectsAPI from "../../projects.json";
 
 export const ProjectsContext = createContext<IProject[]>(projectsAPI);
-ProjectsContext.displayName = 'Projects';
+ProjectsContext.displayName = "Projects";
 
 interface ProjectsContextProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export const ProjectsProvider = ({ children }: ProjectsContextProps) => {
@@ -17,11 +17,10 @@ export const ProjectsProvider = ({ children }: ProjectsContextProps) => {
     <ProjectsContext.Provider value={projects}>
       {children}
     </ProjectsContext.Provider>
-  )
-}
+  );
+};
 
 export const useProjectsContext = () => {
   const projects = useContext(ProjectsContext);
   return projects;
-}
-
+};
