@@ -5,9 +5,9 @@ const useScrollPosition = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const position = window.pageYOffset;
+      const position = window.screenY;
       if (position > 20) {
-        setScrollPos(position)
+        setScrollPos(position);
       }
     };
 
@@ -19,6 +19,6 @@ const useScrollPosition = () => {
   }, []);
 
   return scrollPos;
-}
+};
 
 export default useScrollPosition;
