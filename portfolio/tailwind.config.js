@@ -22,6 +22,10 @@ export default {
         red_light: "#B82727",
         dark_red_light: "#6B3737",
       },
+      textColor: {
+        muted: "#767676",
+        "muted-dark": "#B0B0B0",
+      },
       fontFamily: {
         logo: ["Sedgwick Ave Display", "cursive"],
         "main-simple": ["Josefin Sans", "sans-serif"],

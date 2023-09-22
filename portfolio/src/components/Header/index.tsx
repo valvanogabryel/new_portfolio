@@ -42,6 +42,11 @@ const Header = () => {
               </Link>
             </li>
             <li className="cursor-pointer xl:text-lg link relative after:h-[1px] after:w-0 after:inline-block after:bg-primary transition-all hover:text-primary hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300">
+              <Link to="skills" smooth offset={-100}>
+                Skills
+              </Link>
+            </li>
+            <li className="cursor-pointer xl:text-lg link relative after:h-[1px] after:w-0 after:inline-block after:bg-primary transition-all hover:text-primary hover:after:w-full after:absolute after:bottom-0 after:left-0 hover:after:duration-300">
               <Link to="about" smooth offset={-100}>
                 Sobre mim
               </Link>

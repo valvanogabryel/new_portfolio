@@ -57,7 +57,10 @@ const Technologies = () => {
   const techs: ITech[] = useTechnologies();
 
   return (
-    <section className="text-white overflow-hidden text-center my-10 mt-40 border-b-[1px] border-b-slate-300 border-opacity-20 h-96 2xl:h-[28rem]">
+    <section
+      className="text-white overflow-hidden text-center my-10 mt-40 border-b-[1px] border-b-slate-600 dark:border-b-slate-300 border-opacity-20 dark:border-opacity-20 h-96 2xl:h-[28rem]"
+      id="skills"
+    >
       <motion.header
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
