@@ -4,7 +4,6 @@ import { useTheme } from "../../hooks/useTheme";
 import useScrollDirection from "../../hooks/useScrollDirection";
 
 import { motion } from "framer-motion";
-import { Fade } from "react-awesome-reveal";
 
 const ThemeChanger = () => {
   const { theme, setTheme } = useTheme();
