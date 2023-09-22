@@ -4,4 +4,11 @@ export interface ITech {
   name: string;
   className: string;
   description: string;
-}; 
+  stack:
+    | "Front-end"
+    | "Back-end"
+    | "UI/UX"
+    | "Banco de dados"
+    | "Versionamento"
+    | "Testes";
+}
