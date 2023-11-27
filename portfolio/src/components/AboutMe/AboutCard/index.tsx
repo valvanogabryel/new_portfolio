@@ -1,12 +1,11 @@
-import Slider from "react-slick";
-import InvisibleArrows from "../../InvisibleArrows";
-import useSoftSkills from "../../../hooks/useSoftSkills";
-import useTraining from "../../../hooks/useTraining";
-import { ISkill } from "../../../interfaces/ISkill";
-import { ITraining } from "../../../interfaces/ITraining";
+import Slider from 'react-slick';
+import InvisibleArrows from '../../InvisibleArrows';
+import useSoftSkills from '../../../hooks/useSoftSkills';
+import useTraining from '../../../hooks/useTraining';
+import { ISkill } from '../../../interfaces/ISkill';
+import { ITraining } from '../../../interfaces/ITraining';
 
-import { GrCertificate } from "react-icons/gr";
-import { motion } from "framer-motion";
+import { PiCertificateBold } from 'react-icons/pi';
 
 interface AboutCardProps {
   type: string;
@@ -14,9 +13,9 @@ interface AboutCardProps {
 
 const AboutCard = ({ type }: AboutCardProps) => {
   const softSkill: ISkill[] | undefined =
-    type === "Soft Skills" ? useSoftSkills() : undefined;
+    type === 'Soft Skills' ? useSoftSkills() : undefined;
   const training: ITraining[] | undefined =
-    type === "Formação" ? useTraining() : undefined;
+    type === 'Formação' ? useTraining() : undefined;
 
   const settings = {
     infinite: true,
@@ -26,29 +25,31 @@ const AboutCard = ({ type }: AboutCardProps) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 10000,
-    cssEase: "ease-in-out",
+    autoplaySpeed: 4000,
+    cssEase: 'ease-in-out',
     pauseOnHover: true,
     prevArrow: <InvisibleArrows />,
     nextArrow: <InvisibleArrows />,
   };
 
   return (
-    <div className="bg-transparent shadow-lg items-center text-center my-10 w-11/12 m-auto dark:shadow-2xl rounded-md min-h-[30rem] slick-wrapper lg:w-4/6 2xl:w-3/5 dark:bg-dark_gray">
-      <header className=" border-b py-4 mb-4 dark:border-none dark:bg-gray-900 dark:bg-opacity-30">
+    <div className="bg-transparent shadow-lg items-center relative text-center pb-16 my-10 w-full m-auto dark:shadow-2xl rounded-lg min-h-[30rem] slick-wrapper lg:w-4/6 2xl:w-3/5 dark:bg-dark_gray">
+      <header className="text-gray-900 dark:text-gray-200 border-b border-gray-300 py-4 mb-6 dark:border-none dark:bg-gray-900 dark:bg-opacity-30">
         <h3 className="text-3xl font-secondary-simple font-bold">{type}</h3>
       </header>
       <Slider {...settings}>
-        {type.match("Soft Skills")
+        {type === 'Soft Skills'
           ? softSkill?.map((info) => (
               <div key={info.id}>
-                <div className="flex flex-col items-center gap-4">
-                  <div className="text-4xl">{info.icon}</div>
-                  <h4 className="text-2xl text-gray-400 pb-4 mb-10 border-b-0  w-full dark:border-opacity-[5%] dark:border-b-gray-200  dark:border-b">
+                <div className="flex flex-col items-center gap-2">
+                  <div className="text-4xl text-gray-900 dark:text-gray-300">
+                    {info.icon}
+                  </div>
+                  <h4 className="text-2xl text-gray-800 dark:text-gray-300 pb-4 w-full dark:border-opacity-[5%] dark:border-b-gray-200">
                     {info.title}
                   </h4>
                 </div>
-                <div className="text-md text-center w-4/5 m-auto min-h-[12rem]">
+                <div className="text-gray-600 dark:text-gray-400 text-center w-4/5 m-auto min-h-[12rem]">
                   {info.text}
                 </div>
               </div>
@@ -56,37 +57,28 @@ const AboutCard = ({ type }: AboutCardProps) => {
           : training?.map((info) => (
               <div key={info.id}>
                 <div className="flex flex-col items-center">
-                  <div className="text-2xl font-bold font-secondary-simple">
-                    {info.platform}
-                  </div>
+                  <h4 className="text-2xl dark:text-gray-300 border-opacity-[5%] w-11/12 m-auto">
+                    {info.course} -{' '}
+                    <span className="text-gray-900 pt-4 dark:text-gray-300 text-2xl font-bold font-secondary-simple">
+                      {info.platform}
+                    </span>
+                  </h4>
                   <div>
-                    <span className="text-xs font-thin text-gray-900 dark:text-gray-200 w-screen">
+                    <span className="text-xs font-light text-gray-700 dark:text-gray-400 w-screen">
                       ({info.duration} horas)
                     </span>
-                    <h4 className="text-2xl text-gray-400 pb-4 mb-10 border-b-[1px] border-opacity-[5%] border-b-gray-200 w-11/12 m-auto">
-                      {info.course}
-                    </h4>
                   </div>
                 </div>
-                <div className="min-h-fit lg:min-h-[10rem]">
-                  {info.link ===
-                    "https://cursos.alura.com.br/vitrinedev/valvanogabryel" && (
-                    <a
-                      href={info.link}
-                      target="_blank"
-                      className="text-xs inline-block w-4/5 text-gray-400 duration-300 dark:hover:text-white hover:underline animate-pulse"
-                    >
-                      Clique aqui para ver todos os cursos que fiz na Alura
-                    </a>
-                  )}
+                <div className="flex flex-col justify-end gap-4 items-center py-8">
                   {info.certificate ? (
                     <a
                       href={info.certificate}
                       target="_blank"
-                      className="text-xs inline-block w-4/5 duration-300 mt-10"
+                      className="text-lg certificate text-gray-500 bg-gray-300 rounded-lg px-4 py-2 w-2/4 mx-4 font-bold inline-block duration-100 hover:ring ring-gray-400 dark:text-gray-800 dark:bg-gray-500 dark:hover:ring-gray-700"
                     >
-                      <div className="text-2xl certificate">
-                        <GrCertificate />
+                      <div className="flex items-center gap-2 justify-center">
+                        <PiCertificateBold className="h-6 w-6 stroke-current" />
+                        <span>Certificado</span>
                       </div>
                     </a>
                   ) : (
@@ -100,6 +92,16 @@ const AboutCard = ({ type }: AboutCardProps) => {
                           Nenhum certificado emitido
                         </span>
                       </div>
+                    </a>
+                  )}
+                  {info.link ===
+                    'https://cursos.alura.com.br/vitrinedev/valvanogabryel' && (
+                    <a
+                      href={info.link}
+                      target="_blank"
+                      className="text-lg text-gray-500 rounded-lg p-2 w-9/12 mx-4 font-bold inline-block duration-100  hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-900 dark:hover:bg-opacity-20 mb-10"
+                    >
+                      Veja os cursos feitos
                     </a>
                   )}
                 </div>

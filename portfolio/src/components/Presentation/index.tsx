@@ -1,11 +1,11 @@
-import { AiFillLinkedin } from "react-icons/ai";
-import { FaGithub } from "react-icons/fa";
+import { AiFillLinkedin } from 'react-icons/ai';
+import { FaGithub } from 'react-icons/fa';
 
-import { Fade, JackInTheBox } from "react-awesome-reveal";
+import { Fade, JackInTheBox } from 'react-awesome-reveal';
 
-import DelayShow from "../../utils/DelayShow";
+import DelayShow from '../../utils/DelayShow';
 
-import cn from "classnames";
+import cn from 'classnames';
 
 const Presentation = () => {
   const show = DelayShow();
@@ -13,9 +13,9 @@ const Presentation = () => {
   return (
     <section
       className={cn(
-        "flex flex-col min-h-screen justify-center items-start -mt-24 transition-all duration-500 select-none p-4 border-b-[1px] border-slate-500 border-opacity-20 2xl:-mt-40 xl:mb-40 lg:border-b-0 lg:max-w-full lg:pl-10 invisible",
+        'flex flex-col min-h-screen justify-center items-start -mt-24 transition-all duration-500 select-none p-4 border-b-[1px] border-slate-500 border-opacity-20 2xl:-mt-40 xl:mb-40 lg:border-b-0 lg:max-w-full lg:pl-10 invisible',
         {
-          "!visible": show,
+          '!visible': show,
         }
       )}
     >
@@ -24,19 +24,19 @@ const Presentation = () => {
           <h1 className="text-md">👋 Olá, mundo! Meu nome é</h1>
         </div>
 
-        <div className="text-gray-500 dark:text-gray-400 m-0">
+        <div className="text-gray-800 dark:text-gray-400 m-0">
           <h2 className="text-3xl font-bold md:text-5xl xl:text-6xl 2xl:text-7xl">
             Gabryel Valvano.
           </h2>
         </div>
 
-        <div className="text-gray-600 dark:text-gray-500">
+        <div className="text-gray-600 dark:text-gray-700">
           <h3 className="text-2xl font-bold md:text-4xl xl:text-5xl 2xl:text-6xl 2xl:mb-5">
             Desenvolvedor Front-End.
           </h3>
         </div>
 
-        <div className="text-gray-500 text-xs font-secondary-simple md:text-md xl:text-lg 2xl:text-xl">
+        <div className="text-gray-500 dark:text-gray-600 text-xs font-secondary-simple md:text-md xl:text-lg 2xl:text-xl">
           <Fade cascade damping={0.1} duration={500} delay={1500}>
             grandes coisas começam como pequenas ideias...
           </Fade>

@@ -1,10 +1,10 @@
-import { Fade } from "react-awesome-reveal";
+import { Fade } from 'react-awesome-reveal';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import scrollToTop from "../../../utils/scrollToTop";
+import scrollToTop from '../../../utils/scrollToTop';
 
-import cn from "classnames";
+import cn from 'classnames';
 
 interface LogoProps {
   scrollPosition: number;
@@ -25,9 +25,9 @@ const Logo = ({ scrollPosition }: LogoProps) => {
 
         <span
           className={cn(
-            "transition-all inline-block duration-300 text-navyBlue dark:text-white",
+            'transition-all inline-block duration-300 text-gray-900 dark:text-white',
             {
-              "opacity-0 w-0": scrollPosition >= 200,
+              'opacity-0 w-0': scrollPosition >= 200,
             }
           )}
         >
@@ -38,9 +38,9 @@ const Logo = ({ scrollPosition }: LogoProps) => {
 
         <span
           className={cn(
-            "transition-all  inline-block duration-300 text-navyBlue dark:text-white",
+            'transition-all  inline-block duration-300 text-gray-900 dark:text-white',
             {
-              "opacity-0 w-0": scrollPosition >= 210,
+              'opacity-0 w-0': scrollPosition >= 210,
             }
           )}
         >
@@ -49,9 +49,9 @@ const Logo = ({ scrollPosition }: LogoProps) => {
 
         <span
           className={cn(
-            "transition-all inline-block duration-300 text-navyBlue dark:text-white",
+            'transition-all inline-block duration-300 text-gray-900 dark:text-white',
             {
-              "opacity-0 w-0": scrollPosition >= 220,
+              'opacity-0 w-0': scrollPosition >= 220,
             }
           )}
         >
@@ -60,9 +60,9 @@ const Logo = ({ scrollPosition }: LogoProps) => {
 
         <span
           className={cn(
-            "transition-all inline-block duration-300 text-navyBlue dark:text-white",
+            'transition-all inline-block duration-300 text-gray-900 dark:text-white',
             {
-              "opacity-0 w-0": scrollPosition >= 230,
+              'opacity-0 w-0': scrollPosition >= 230,
             }
           )}
         >
@@ -71,9 +71,9 @@ const Logo = ({ scrollPosition }: LogoProps) => {
 
         <span
           className={cn(
-            "transition-all inline-block duration-300 text-navyBlue dark:text-white",
+            'transition-all inline-block duration-300 text-gray-900 dark:text-white',
             {
-              "opacity-0 w-0": scrollPosition >= 240,
+              'opacity-0 w-0': scrollPosition >= 240,
             }
           )}
         >
@@ -82,8 +82,8 @@ const Logo = ({ scrollPosition }: LogoProps) => {
 
         <span
           className={`${
-            scrollPosition > 200 ? "text-primary" : ""
-          } text-navyBlue dark:text-white`}
+            scrollPosition > 200 ? 'text-primary' : ''
+          } text-gray-900 dark:text-white`}
         >
           .
         </span>

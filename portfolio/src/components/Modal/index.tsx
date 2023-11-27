@@ -1,12 +1,12 @@
-import { AiFillGithub, AiOutlineRocket } from "react-icons/ai";
+import { AiFillGithub, AiOutlineRocket } from 'react-icons/ai';
 
-import AnimatedBorder from "../AnimatedBorder";
-import Tag from "../Tag";
+import AnimatedBorder from '../AnimatedBorder';
+import Tag from '../Tag';
 
-import { IProject } from "../../interfaces/IProject";
+import { IProject } from '../../interfaces/IProject';
 
-import { motion } from "framer-motion";
-import ProjectGif from "./ProjectGif";
+import { motion } from 'framer-motion';
+import ProjectGif from './ProjectGif';
 
 interface ModalProps {
   isOpen: boolean;
@@ -16,9 +16,9 @@ interface ModalProps {
 
 const Modal = ({ isOpen, onClose, project }: ModalProps) => {
   if (isOpen) {
-    document.body.style.overflowY = "hidden";
+    document.body.style.overflowY = 'hidden';
   } else {
-    document.body.style.overflowY = "scroll";
+    document.body.style.overflowY = 'scroll';
   }
 
   return (
@@ -29,11 +29,11 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
           onClick={onClose}
         >
           <motion.div
-            className="flex flex-col overflow-hidden bg-dark_gray fixed select-none w-80 max-w-xs lg:w-3/4 lg:grid lg:grid-cols-2 lg:h-48rem lg:max-w-none xl:h-56rem"
+            className="flex flex-col overflow-hidden bg-gray-800 fixed select-none w-80 max-w-xs lg:w-3/4 lg:grid lg:grid-cols-2 lg:h-48rem lg:max-w-none xl:h-56rem"
             initial={{ opacity: 0, scale: 1.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "spring",
+              type: 'spring',
               stiffness: 500,
               damping: 30,
             }}
@@ -41,7 +41,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
             <AnimatedBorder />
 
             <header>
-              <div className="p-4 mt-4 relative overflow-hidden m-auto bg-black bg-opacity-20 max-w-[18rem] lg:max-w-[40rem]">
+              <div className="p-4 mt-4 relative overflow-hidden m-auto bg-gray-900 bg-opacity-50 rounded-lg max-w-[18rem] lg:max-w-[40rem]">
                 {!project?.gif ? (
                   <img
                     src={project?.image}
@@ -58,9 +58,9 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
 
               <div>
                 <header className="p-4 border-b-[1px] border-light_gray lg:text-center lg:py-4 lg:border-none lg:mt-0">
-                  <h2 className="lg:text-2xl text-gray-200">{project?.name}</h2>
+                  <h2 className="lg:text-2xl text-gray-50">{project?.name}</h2>
                   {project?.inDevelopment && (
-                    <span className="text-sm font-light text-gray-400">
+                    <span className="text-sm font-light text-gray-500">
                       Projeto em desenvolvimento
                     </span>
                   )}
@@ -87,7 +87,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
             </div>
 
             <div>
-              <ul className="flex gap-2 text-3xl py-4 pl-1 lg:pb-8 lg:pt-16 lg:justify-end lg:pl-0 lg:pr-4 xl:pr-8">
+              <ul className="flex gap-2 lg:gap-4 text-3xl py-4 pl-2 lg:pb-8 lg:pt-16 lg:justify-end lg:pl-0 lg:pr-4 xl:pr-8">
                 {project?.inDevelopment ? (
                   <div className="text-light_gray duration-300 transition-all border-[1px] rounded-full px-4 border-gray-400 lg:rounded-lg lg:px-2 lg:py-2 opacity-30 cursor-not-allowed">
                     <li className="flex items-center lg:mr-4 gap-px">
@@ -99,7 +99,7 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
                   <a
                     href={project?.deploy}
                     target="_blank"
-                    className="text-light_gray duration-300 transition-all hover:scale-110 border-[1px] rounded-full px-4 border-gray-400 hover:bg-gray-400 hover:text-dark_gray lg:rounded-lg lg:py-2 lg:px-2"
+                    className="text-gray-600 duration-300 transition-all hover:scale-110 outline outline-1 rounded-2xl px-4 border-gray-400 hover:bg-gray-400 hover:text-dark_gray lg:rounded-lg lg:py-2 lg:px-2"
                   >
                     <li className="flex items-center lg:mr-4 gap-px">
                       <AiOutlineRocket />
@@ -112,10 +112,10 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
                 <a
                   href={project?.repository}
                   target="_blank"
-                  className=" text-light_gray duration-300 transition-all hover:scale-110 border-[1px] rounded-full px-4 border-gray-400 hover:bg-gray-400 hover:text-dark_gray lg:rounded-lg lg:py-2 lg:px-2"
+                  className=" text-gray-600 duration-300 transition-all hover:scale-110 outline outline-1 rounded-2xl px-4 border-gray-400 hover:bg-gray-400 hover:text-dark_gray lg:rounded-lg lg:py-2 lg:px-2"
                 >
                   <li className="flex items-center lg:mr-4 gap-px">
-                    <AiFillGithub />
+                    <AiFillGithub className="" />
                     <span className="text-xs lg:text-sm lg:pt-1 2xl:text-base">
                       Repositório
                     </span>

@@ -6,15 +6,11 @@
   @apply -ml-4 -mb-8 lg:-mb-14;
 }
 .slick-dots li button::before {
-  @apply text-white scale-150;
+  @apply text-black scale-150 dark:text-white;
 }
 
 .slick-wrapper .slick-dots {
   @apply -ml-0 -mb-0;
-}
-
-.certificate svg {
-  @apply fill-white m-auto duration-300 drop-shadow-md text-5xl hover:fill-gray-400 hover:drop-shadow-lg;
 }
 
 .link:not(:hover) {

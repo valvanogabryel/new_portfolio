@@ -1,9 +1,9 @@
-import Slider from "react-slick";
-import useTechnologies from "../../hooks/useTechnologies";
-import InvisibleArrows from "../InvisibleArrows";
-import { Fade } from "react-awesome-reveal";
-import { ITech } from "../../interfaces/ITech";
-import { motion } from "framer-motion";
+import Slider from 'react-slick';
+import useTechnologies from '../../hooks/useTechnologies';
+import InvisibleArrows from '../InvisibleArrows';
+import { Fade } from 'react-awesome-reveal';
+import { ITech } from '../../interfaces/ITech';
+import { motion } from 'framer-motion';
 
 const Technologies = () => {
   const dots = (dots: any) => (
@@ -16,16 +16,17 @@ const Technologies = () => {
     </ul>
   );
 
+  // ! MUDAR AQUI (scroll)
   const settings = {
     infinite: true,
-    speed: 200,
+    speed: 300,
     dots: true,
     appendDots: dots,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     slidesToShow: 5,
-    slidesToScroll: 5,
-    cssEase: "ease-in-out",
+    slidesToScroll: 2,
+    cssEase: 'ease-in-out',
     pauseOnHover: true,
     prevArrow: <InvisibleArrows />,
     nextArrow: <InvisibleArrows />,
@@ -78,6 +79,20 @@ const Technologies = () => {
           (aperte no ícone para parar a rolagem automática)
         </Fade>
       </motion.header>
+      {/* //!FILTRO */}
+      {/* <div className="my-2 text-muted dark:text-muted-dark">
+        <ul className="flex space-x-4 justify-end">
+          <li>
+            <button>front-end</button>
+          </li>
+          <li>back-end</li>
+          <li>ui/ux</li>
+          <li>banco de dados</li>
+          <li>versionamento</li>
+          <li>testes</li>
+        </ul>
+      </div> */}
+
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -87,18 +102,18 @@ const Technologies = () => {
         <ul>
           <Slider {...settings} className="m-auto p-4">
             {techs.map((tech) => (
-              <li key={tech.id} className="">
+              <li key={tech.id}>
                 <div
                   className={`text-[100px] relative left-[5.9rem] mt-4 mb-2 ${tech.className} hover:-translate-y-2 duration-300 sm:left-[7.9rem] md:left-[9.9rem] lg:left-[5.9rem] xl:left-[7.2rem] 2xl:left-[4.7rem]`}
                 >
                   {tech.badge}
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-sm font-main-simple text-light_gray font-bold md:text-lg">
+                  <span className="text-sm font-main-simple text-gray-700 font-bold md:text-lg">
                     {tech.name}
                   </span>
 
-                  <span className="text-xs text-jutify font-secondary-simple text-gray-500 text-opacity-80 mt-4 font-bold md:text-md lg:w-4/5 lg:m-auto">
+                  <span className="text-xs text-jutify font-secondary-simple text-gray-600 text-opacity-80 mt-4 font-bold md:text-md lg:w-4/5 lg:m-auto">
                     {tech.description}
                   </span>
                 </div>

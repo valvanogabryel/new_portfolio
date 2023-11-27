@@ -1,10 +1,10 @@
-import { Fade } from "react-awesome-reveal";
-import FeaturedProject from "./FeaturedProject";
-import ProjectsCarousel from "./ProjectsCarousel";
-import { useProjectsContext } from "../../contexts/ProjectsContext";
-import { IProject } from "../../interfaces/IProject";
-import SectionHeader from "../SectionHeader";
-import { motion } from "framer-motion";
+import { Fade } from 'react-awesome-reveal';
+import FeaturedProject from './FeaturedProject';
+import ProjectsCarousel from './ProjectsCarousel';
+import { useProjectsContext } from '../../contexts/ProjectsContext';
+import { IProject } from '../../interfaces/IProject';
+import SectionHeader from '../SectionHeader';
+import { motion } from 'framer-motion';
 
 interface ProjectsProps {
   onProjectClick: (project: IProject) => void;

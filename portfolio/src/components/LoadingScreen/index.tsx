@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { PropagateLoader } from "react-spinners";
+import { ClipLoader } from 'react-spinners';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const LoadingScreen = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -22,7 +22,7 @@ const LoadingScreen = () => {
       }}
       transition={{ duration: 0.3 }}
     >
-      <PropagateLoader color="#ED2B2A" />
+      <ClipLoader color="#ED2B2A" />
     </motion.div>
   );
 };

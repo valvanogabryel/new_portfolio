@@ -1,17 +1,16 @@
-import { BsSun as SunIcon, BsMoon as MoonIcon } from "react-icons/bs";
+import { BsSun as SunIcon, BsMoon as MoonIcon } from 'react-icons/bs';
 
-import { useTheme } from "../../hooks/useTheme";
-import useScrollDirection from "../../hooks/useScrollDirection";
+import { useTheme } from '../../hooks/useTheme';
+import useScrollDirection from '../../hooks/useScrollDirection';
 
-import { motion } from "framer-motion";
-import { Fade } from "react-awesome-reveal";
+import { motion } from 'framer-motion';
 
 const ThemeChanger = () => {
   const { theme, setTheme } = useTheme();
 
   const scrollDirection = useScrollDirection();
 
-  const isScrollingDown = scrollDirection === "down";
+  const isScrollingDown = scrollDirection === 'down';
 
   const exitAnimation = {
     x: isScrollingDown ? -100 : 0,
@@ -20,17 +19,17 @@ const ThemeChanger = () => {
 
   return (
     <motion.div
-      className={`fixed bottom-10 sm:bottom-auto sm:top-1/2 bg-opacity-50 dark:bg-opacity-90 sm:-translate-y-1/2 pl-1 transition-all bg-black pr-1 py-1 rounded-r-full hover:pl-4 hover:bg-opacity-100 dark:hover:bg-opacity-100 dark:bg-white`}
+      className={`fixed bottom-24 sm:bottom-auto sm:top-1/2 bg-opacity-50 dark:bg-opacity-90 sm:-translate-y-1/2 pl-1 transition-all bg-black pr-1 py-1 rounded-r-full hover:pl-4 hover:bg-opacity-100 dark:hover:bg-opacity-100 dark:bg-white`}
       initial={{ opacity: 0, x: -100 }}
       animate={exitAnimation}
       transition={{
         duration: 0.1,
       }}
     >
-      {theme === "light" ? (
+      {theme === 'light' ? (
         <MoonIcon
           className="text-slate-900 cursor-pointer"
-          onClick={() => setTheme("dark")}
+          onClick={() => setTheme('dark')}
           size={20}
           color="white"
           aria-label="Mudar para tema escuro"
@@ -40,7 +39,7 @@ const ThemeChanger = () => {
       ) : (
         <SunIcon
           className="text-slate-400 cursor-pointer"
-          onClick={() => setTheme("light")}
+          onClick={() => setTheme('light')}
           size={20}
           color="black"
           aria-label="Mudar para tema claro"
