@@ -109,7 +109,7 @@ const Technologies = () => {
                   {tech.badge}
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-sm font-main-simple text-gray-700 font-bold md:text-lg">
+                  <span className="text-sm font-main-simple text-gray-700 dark:text-gray-500 font-bold md:text-lg">
                     {tech.name}
                   </span>
 

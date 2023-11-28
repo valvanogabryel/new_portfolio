@@ -33,7 +33,7 @@ const AboutCard = ({ type }: AboutCardProps) => {
   };
 
   return (
-    <div className="bg-white shadow-lg items-center relative text-center pb-16 my-10 w-full m-auto dark:shadow-2xl rounded-lg min-h-[30rem] slick-wrapper lg:w-4/6 2xl:w-3/5 dark:bg-dark_gray">
+    <div className="bg-white shadow-md items-center relative text-center pb-16 my-10 w-full m-auto dark:shadow-2xl rounded-lg min-h-[30rem] slick-wrapper lg:w-4/6 2xl:w-3/5 dark:bg-dark_gray">
       <header className="text-gray-900 dark:text-gray-200 border-b border-gray-300 py-4 mb-6 dark:border-none dark:bg-gray-900 dark:bg-opacity-30">
         <h3 className="text-3xl font-secondary-simple font-bold">{type}</h3>
       </header>
@@ -64,7 +64,7 @@ const AboutCard = ({ type }: AboutCardProps) => {
                     </span>
                   </h4>
                   <div>
-                    <span className="text-xs font-light text-gray-700 dark:text-gray-400 w-screen">
+                    <span className="text-sm font-light text-gray-700 dark:text-gray-400 w-screen">
                       ({info.duration} horas)
                     </span>
                   </div>
@@ -88,7 +88,7 @@ const AboutCard = ({ type }: AboutCardProps) => {
                       className="text-xs inline-block duration-300"
                     >
                       <div className="text-2xl m-auto w-3/4">
-                        <span className="text-2xl font-thin text-gray-900 dark:text-gray-200 hover:underline">
+                        <span className="text-2xl font-light text-gray-900 dark:text-gray-200 hover:underline">
                           Nenhum certificado emitido
                         </span>
                       </div>

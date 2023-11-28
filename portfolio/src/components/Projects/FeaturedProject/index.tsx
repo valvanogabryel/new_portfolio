@@ -27,7 +27,7 @@ const FeaturedProject = ({
 
   return (
     <div
-      className="flex flex-col items-center overflow-hidden p-4 duration-300 shadow-md relative bg-transparent dark:bg-dark_gray w-full m-auto bg-opacity-75 scale-125 lg:scale-100 lg:w-[65%]"
+      className="flex flex-col items-center overflow-hidden p-4 duration-300 shadow-lg relative bg-white dark:bg-dark_gray w-full m-auto bg-opacity-75 scale-125 lg:scale-100 lg:w-[65%]"
       onClick={() => onProjectClick(featuredProject)}
       // !AJEITAR AQUI DEPOIS (desconhecido)
       onKeyDown={() => {}}
