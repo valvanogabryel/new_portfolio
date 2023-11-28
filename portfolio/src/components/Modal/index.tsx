@@ -1,4 +1,8 @@
-import { AiFillGithub, AiOutlineRocket } from 'react-icons/ai';
+import {
+  AiFillGithub,
+  AiOutlineCloseSquare,
+  AiOutlineRocket,
+} from 'react-icons/ai';
 
 import AnimatedBorder from '../AnimatedBorder';
 import Tag from '../Tag';
@@ -58,7 +62,9 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
 
               <div>
                 <header className="p-4 border-b-[1px] border-light_gray lg:text-center lg:py-4 lg:border-none lg:mt-0">
-                  <h2 className="lg:text-2xl text-gray-50">{project?.name}</h2>
+                  <h2 className="lg:text-2xl text-gray-50 lg:hidden">
+                    {project?.name}
+                  </h2>
                   {project?.inDevelopment && (
                     <span className="text-sm font-light text-gray-500">
                       Projeto em desenvolvimento
@@ -69,6 +75,9 @@ const Modal = ({ isOpen, onClose, project }: ModalProps) => {
             </header>
 
             <div className="p-4 lg:w-11/12 shadow-inner lg:shadow-none lg:m-auto lg:my-4 overflow-y-auto max-h-40 lg:max-h-64 xl:max-h-96">
+              <h2 className="hidden lg:block lg:text-2xl xl:text-4xl leading-relaxed text-gray-50 pb-2 mb-4 border-b border-gray-600">
+                {project?.name}
+              </h2>
               <p className="text-gray-300 text-xs font-thin font-secondary-simple lg:text-base xl:leading-relaxed 2xl:text-xl">
                 {project?.description}
               </p>

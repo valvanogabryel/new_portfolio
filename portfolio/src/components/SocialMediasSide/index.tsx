@@ -1,21 +1,24 @@
-import UseAnimations from "react-useanimations";
+import UseAnimations from 'react-useanimations';
 import linkedin from 'react-useanimations/lib/linkedin';
 import github from 'react-useanimations/lib/github';
 import codepen from 'react-useanimations/lib/codepen';
 import twitter from 'react-useanimations/lib/twitter';
-import { JackInTheBox } from "react-awesome-reveal";
-import goToPage from "../../utils/goToPage";
-import DelayShow from "../../utils/DelayShow";
-import cn from "classnames";
+import { JackInTheBox } from 'react-awesome-reveal';
+import goToPage from '../../utils/goToPage';
+import DelayShow from '../../utils/DelayShow';
+import cn from 'classnames';
 
 const SocialMediasSide = () => {
   const show = DelayShow();
 
   return (
     <JackInTheBox
-      className={cn('w-[4%] after:inline-block after:h-[90px] after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2 invisible', {
-        '!visible': show
-      })}
+      className={cn(
+        'w-[4%] after:inline-block after:h-[90px] after:w-[1px] after:bg-light_gray after:animate-grow_up after:mt-2 invisible',
+        {
+          '!visible': show,
+        }
+      )}
       triggerOnce
       delay={3000}
       duration={300}
@@ -26,8 +29,10 @@ const SocialMediasSide = () => {
           <a
             href="https://www.linkedin.com/in/gabryel-valvano-94338a204/"
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-              event.preventDefault(); goToPage(event.currentTarget.href);
+              event.preventDefault();
+              goToPage(event.currentTarget.href);
             }}
+            className="hover:scale-110"
           >
             <UseAnimations
               animation={linkedin}
@@ -40,7 +45,8 @@ const SocialMediasSide = () => {
           <a
             href="https://github.com/valvanogabryel"
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-              event.preventDefault(); goToPage(event.currentTarget.href);
+              event.preventDefault();
+              goToPage(event.currentTarget.href);
             }}
             target="_blank"
           >
@@ -55,7 +61,8 @@ const SocialMediasSide = () => {
           <a
             href="https://codepen.io/valvanogabryel"
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-              event.preventDefault(); goToPage(event.currentTarget.href);
+              event.preventDefault();
+              goToPage(event.currentTarget.href);
             }}
             target="_blank"
           >
@@ -70,7 +77,8 @@ const SocialMediasSide = () => {
           <a
             href="https://twitter.com/gabryeldev"
             onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-              event.preventDefault(); goToPage(event.currentTarget.href);
+              event.preventDefault();
+              goToPage(event.currentTarget.href);
             }}
             target="_blank"
           >
@@ -84,6 +92,6 @@ const SocialMediasSide = () => {
       </ul>
     </JackInTheBox>
   );
-}
+};
 
 export default SocialMediasSide;

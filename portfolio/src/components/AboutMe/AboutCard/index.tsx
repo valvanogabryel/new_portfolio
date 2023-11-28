@@ -99,9 +99,9 @@ const AboutCard = ({ type }: AboutCardProps) => {
                     <a
                       href={info.link}
                       target="_blank"
-                      className="text-lg text-gray-500 rounded-lg p-2 min-w-fit mx-4 font-bold inline-block duration-100  hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-900 dark:hover:bg-opacity-20"
+                      className="text-lg text-gray-500 rounded-lg px-4 py-2 min-w-fit  w-2/4 mx-4 font-bold inline-block duration-100  hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-900 dark:hover:bg-opacity-20"
                     >
-                      Veja os cursos feitos
+                      Todos os cursos
                     </a>
                   )}
                 </div>
