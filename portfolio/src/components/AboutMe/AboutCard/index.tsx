@@ -25,7 +25,7 @@ const AboutCard = ({ type }: AboutCardProps) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 8000,
     cssEase: 'ease-in-out',
     pauseOnHover: true,
     prevArrow: <InvisibleArrows />,
@@ -33,11 +33,11 @@ const AboutCard = ({ type }: AboutCardProps) => {
   };
 
   return (
-    <div className="bg-transparent shadow-lg items-center relative text-center pb-16 my-10 w-full m-auto dark:shadow-2xl rounded-lg min-h-[30rem] slick-wrapper lg:w-4/6 2xl:w-3/5 dark:bg-dark_gray">
+    <div className="bg-white shadow-lg items-center relative text-center pb-16 my-10 w-full m-auto dark:shadow-2xl rounded-lg min-h-[30rem] slick-wrapper lg:w-4/6 2xl:w-3/5 dark:bg-dark_gray">
       <header className="text-gray-900 dark:text-gray-200 border-b border-gray-300 py-4 mb-6 dark:border-none dark:bg-gray-900 dark:bg-opacity-30">
         <h3 className="text-3xl font-secondary-simple font-bold">{type}</h3>
       </header>
-      <Slider {...settings}>
+      <Slider {...settings} className="card">
         {type === 'Soft Skills'
           ? softSkill?.map((info) => (
               <div key={info.id}>
@@ -49,14 +49,14 @@ const AboutCard = ({ type }: AboutCardProps) => {
                     {info.title}
                   </h4>
                 </div>
-                <div className="text-gray-600 dark:text-gray-400 text-center w-4/5 m-auto min-h-[12rem]">
+                <div className="text-gray-600 dark:text-gray-400 text-center w-4/5 m-auto h-56">
                   {info.text}
                 </div>
               </div>
             ))
           : training?.map((info) => (
               <div key={info.id}>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center h-24">
                   <h4 className="text-2xl dark:text-gray-300 border-opacity-[5%] w-11/12 m-auto">
                     {info.course} -{' '}
                     <span className="text-gray-900 pt-4 dark:text-gray-300 text-2xl font-bold font-secondary-simple">
@@ -69,7 +69,7 @@ const AboutCard = ({ type }: AboutCardProps) => {
                     </span>
                   </div>
                 </div>
-                <div className="flex flex-col justify-end gap-4 items-center py-8">
+                <div className="flex flex-col justify-center items-center gap-4 py-8 h-56">
                   {info.certificate ? (
                     <a
                       href={info.certificate}
@@ -85,10 +85,10 @@ const AboutCard = ({ type }: AboutCardProps) => {
                     <a
                       href={info.link}
                       target="_blank"
-                      className="text-xs inline-block w-4/5 duration-300 mt-10"
+                      className="text-xs inline-block duration-300"
                     >
-                      <div className="text-2xl">
-                        <span className="text-xs font-thin text-gray-900 dark:text-gray-200 w-screen hover:underline">
+                      <div className="text-2xl m-auto w-3/4">
+                        <span className="text-2xl font-thin text-gray-900 dark:text-gray-200 hover:underline">
                           Nenhum certificado emitido
                         </span>
                       </div>
@@ -99,7 +99,7 @@ const AboutCard = ({ type }: AboutCardProps) => {
                     <a
                       href={info.link}
                       target="_blank"
-                      className="text-lg text-gray-500 rounded-lg p-2 w-9/12 mx-4 font-bold inline-block duration-100  hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-900 dark:hover:bg-opacity-20 mb-10"
+                      className="text-lg text-gray-500 rounded-lg p-2 min-w-fit mx-4 font-bold inline-block duration-100  hover:bg-gray-300 dark:text-gray-100 dark:hover:bg-gray-900 dark:hover:bg-opacity-20"
                     >
                       Veja os cursos feitos
                     </a>

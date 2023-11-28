@@ -5,6 +5,11 @@
 .slick-dots {
   @apply -ml-4 -mb-8 lg:-mb-14;
 }
+
+.card .slick-dots {
+  @apply absolute top-[100%];
+}
+
 .slick-dots li button::before {
   @apply text-black scale-150 dark:text-white;
 }
