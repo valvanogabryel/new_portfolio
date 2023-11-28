@@ -35,7 +35,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
           >
             <FeaturedProject
               featuredProject={featuredProject}
@@ -58,7 +58,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
           >
             <div className="-my-4">
               <ProjectsCarousel

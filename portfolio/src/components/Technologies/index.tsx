@@ -66,7 +66,7 @@ const Technologies = () => {
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.3, duration: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
         <h2 className="flex flex-grow items-center gap-8 before:h-[1px] before:w-1/6 before:bg-primary before:flex before:flex-grow after:h-[1px] after:w-1/6 after:flex after:bg-primary after:flex-grow text-2xl text-neutral-600 dark:text-neutral-300 md:text-3xl select-none">
           Minhas Skills
@@ -97,7 +97,7 @@ const Technologies = () => {
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5, duration: 0.8 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
         <ul>
           <Slider {...settings} className="m-auto p-4">

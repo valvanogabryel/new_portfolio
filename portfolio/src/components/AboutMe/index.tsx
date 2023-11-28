@@ -102,7 +102,7 @@ const AboutMe = () => {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <AboutCard type={'Soft Skills'} />
         </motion.div>
@@ -111,7 +111,7 @@ const AboutMe = () => {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <AboutCard type={'Formação'} />
         </motion.div>
