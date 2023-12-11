@@ -19,14 +19,14 @@ const Technologies = () => {
   // ! MUDAR AQUI (scroll)
   const settings = {
     infinite: true,
-    speed: 300,
+    speed: 4000,
     dots: true,
     appendDots: dots,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 0,
     slidesToShow: 5,
-    slidesToScroll: 2,
-    cssEase: 'ease-in-out',
+    slidesToScroll: 1,
+    cssEase: 'linear',
     pauseOnHover: true,
     prevArrow: <InvisibleArrows />,
     nextArrow: <InvisibleArrows />,
@@ -36,13 +36,32 @@ const Technologies = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          speed: 300,
+          autoplaySpeed: 2000,
+        },
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 4000,
         },
       },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
+          speed: 4000,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          speed: 4000,
         },
       },
       {
