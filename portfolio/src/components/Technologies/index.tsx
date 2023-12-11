@@ -16,7 +16,6 @@ const Technologies = () => {
     </ul>
   );
 
-  // ! MUDAR AQUI (scroll)
   const settings = {
     infinite: true,
     speed: 4000,
@@ -45,7 +44,8 @@ const Technologies = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          speed: 4000,
+          speed: 2000,
+          autoplaySpeed: 2000,
         },
       },
       {
@@ -54,6 +54,7 @@ const Technologies = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           speed: 4000,
+          autoplaySpeed: 4000,
         },
       },
       {
@@ -61,7 +62,8 @@ const Technologies = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          speed: 4000,
+          speed: 2000,
+          autoplaySpeed: 2000,
         },
       },
       {
@@ -98,19 +100,6 @@ const Technologies = () => {
           (aperte no ícone para parar a rolagem automática)
         </Fade>
       </motion.header>
-      {/* //!FILTRO */}
-      {/* <div className="my-2 text-muted dark:text-muted-dark">
-        <ul className="flex space-x-4 justify-end">
-          <li>
-            <button>front-end</button>
-          </li>
-          <li>back-end</li>
-          <li>ui/ux</li>
-          <li>banco de dados</li>
-          <li>versionamento</li>
-          <li>testes</li>
-        </ul>
-      </div> */}
 
       <motion.div
         initial={{ opacity: 0, x: 100 }}

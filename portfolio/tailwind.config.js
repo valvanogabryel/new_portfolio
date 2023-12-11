@@ -22,6 +22,14 @@ export default {
         red_light: '#B82727',
         dark_red_light: '#6B3737',
 
+        stack: {
+          front: '#6BD1FF',
+          back: '#00C86F',
+          database: '#9CD33B',
+          design: '#DC6EBE',
+          tests: '#FFBA05',
+        },
+
         gray: {
           50: '#FBFBFB',
           100: '#F6F6F6',

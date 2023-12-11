@@ -5,10 +5,10 @@ export interface ITech {
   className: string;
   description: string;
   stack:
-    | "Front-end"
-    | "Back-end"
-    | "UI/UX"
-    | "Banco de dados"
-    | "Versionamento"
-    | "Testes";
+    | 'Front-end'
+    | 'Back-end'
+    | 'Design'
+    | 'Banco de dados'
+    | 'Testes'
+    | 'Outros';
 }
