@@ -55,6 +55,20 @@
   },
   {
     "id": 4,
+    "name": "Manage - Landing Page",
+    "description": "Uma landing page",
+    "image": "/assets/cover/manage.png",
+    "deploy": "https://frontend-mentor-challenges-seven-puce.vercel.app/",
+    "repository": "https://github.com/valvanogabryel/frontend-mentor-challenges/tree/main/manage-landing-page",
+    "technologies": [
+      "ReactJS",
+      "TypeScript",
+      "TailwindCSS"
+    ],
+    "gif": "/assets/gifs/manage-gif.gif"
+  },
+  {
+    "id": 5,
     "name": "Tokners - Landing Page",
     "description": "Uma landing page",
     "image": "/assets/cover/tokners.png",
