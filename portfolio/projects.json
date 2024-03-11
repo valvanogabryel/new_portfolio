@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "featured": true,
     "name": "Meteora | Home",
     "description": "Meteora é um projeto desenvolvido para o Alura Challenge 2023 do segundo semestre, que consiste em uma página inicial envolvente de uma loja de roupas. Utilizando NextJS, ReactJS, TypeScript, TailwindCSS, Framer Motion e ContextAPI, o Meteora oferece recursos de pesquisa, filtragem por categorias e visualização detalhada dos produtos.",
     "image": "/assets/cover/meteora.png",
