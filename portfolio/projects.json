@@ -1,29 +1,6 @@
 [
   {
     "id": 1,
-    "name": "Chat App FullStack",
-    "description": "Uma aplicação de chat desenvolvida como parte do teste técnico da empresa 'Play For A Cause'. É um sistema de chat que fornece autenticação simples, armazenamento de mensagens e comunicação em tempo real entre usuários em um chat global.",
-    "image": "/assets/cover/chat-app-cover.png",
-    "deploy": "https://challenge-pfac-frontend.vercel.app/login",
-    "repository": "https://github.com/valvanogabryel/challenge-pfac",
-    "technologies": [
-      "NextJS",
-      "NodeJS",
-      "TypeScript",
-      "TailwindCSS",
-      "Figma",
-      "contextAPI",
-      "NestJS",
-      "PostgreSQL",
-      "Prisma ORM",
-      "Redis",
-      "WebSockets"
-    ],
-    "featured": true,
-    "gif": "/assets/gifs/chat-app-gif.gif"
-  },
-  {
-    "id": 2,
     "name": "Meteora | Home",
     "description": "Meteora é um projeto desenvolvido para o Alura Challenge 2023 do segundo semestre, que consiste em uma página inicial envolvente de uma loja de roupas. Utilizando NextJS, ReactJS, TypeScript, TailwindCSS, Framer Motion e ContextAPI, o Meteora oferece recursos de pesquisa, filtragem por categorias e visualização detalhada dos produtos.",
     "image": "/assets/cover/meteora.png",
@@ -40,7 +17,7 @@
     "gif": "/assets/gifs/meteora-gif.gif"
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "<CodeChella/>",
     "description": "Este é o CodeChella, um projeto que desenvolvi para o Alura Challenge 2023 do primeiro semestre. O objetivo era criar um site de shows a partir do design fornecido no figma. Durante quatro semanas, recriei toda a interface do site, utilizando ReactJS e CSS Modules. Planejo migrá-lo para TypeScript e Styled Components.",
     "image": "/assets/cover/featuredProject.png",
@@ -54,7 +31,7 @@
     "gif": "/assets/gifs/codechella-gif.gif"
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "Manage - Landing Page",
     "description": "Uma landing page",
     "image": "/assets/cover/manage.png",
@@ -68,7 +45,7 @@
     "gif": "/assets/gifs/manage-gif.gif"
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "Tokners - Landing Page",
     "description": "Uma landing page",
     "image": "/assets/cover/tokners.png",
